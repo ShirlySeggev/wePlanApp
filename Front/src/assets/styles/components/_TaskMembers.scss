@@ -1,0 +1,76 @@
+// ---- MEMBERS ACTION MODAL --- \\
+.task-add-members-container {
+    padding: 0 15px;
+    position: absolute;
+    z-index: 2;
+    width: 250px;
+    height: fit-content;
+    border-radius: 5px;
+    padding-block-end: 15px;
+    box-shadow: 0 0px 3px 2px #7e7d7d78;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    .modalHeader {
+        @include modalHeader;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        .task-members-ul-title {
+            color: #5e6c84;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            line-height: 16px;
+            margin-block: 5px 14px;
+            text-transform: uppercase;
+        }
+        li {
+            display: flex;
+            margin-block-end: 10px;
+            justify-content: flex-start;
+            align-items: center;
+            h4 {
+                margin-inline-start: 7px;
+            }
+            svg {
+                color: green;
+                justify-self: flex-end;
+                margin-inline-start: 10px;
+            }
+        }
+    }
+}
+
+// --- TASK DETAILS - MEMBERS PREVIEW --- \\
+.task-members-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    h3 {
+        color: #5e6c84;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        line-height: 16px;
+        text-transform: uppercase;
+        display: block;
+        line-height: 20px;
+        margin: 0 8px 4px 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+.task-members-preview-avatar {
+    display: flex;
+    flex-wrap: wrap;
+    .sb-avatar {
+        height: 28px;
+        line-height: 28px;
+        width: 28px;
+    }
+}

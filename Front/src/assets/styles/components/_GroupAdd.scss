@@ -1,0 +1,14 @@
+.groupAdd {
+    input {
+        width: 100%;
+        padding: 5px;
+        border: none;
+        outline: none;
+        background: transparent;
+        &:hover {
+            background-color: rgba(9, 30, 66, 0.08);
+            color: #172b4d;
+            cursor: pointer;
+        }
+    }
+}

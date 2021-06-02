@@ -1,0 +1,136 @@
+//  --- CHECKLIST MAIN --- \\
+.task-details-checklist-container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    input {
+        background-color: inherit;
+        font-size: inherit;
+    }
+}
+
+// --- CHECKLIST HEADER --- \\
+.checklist-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .checklist-title-container {
+        text-transform: capitalize;
+        display: flex;
+        justify-content: space-between;
+    }
+    .checklist-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .easy-edit-wrapper {
+        margin-inline-start: 5px;
+    }
+}
+
+//  --- CHECKLIST TODOS --- \\
+.checklist-todos-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .checklist-todo-container {
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        width: 100%;
+        margin-block-end: 7px;
+        input {
+            grid-column: 1;
+        }
+        div {
+            display: flex;
+            grid-column: 2;
+            text-align: start;
+            input {
+                width: 100%;
+            }
+        }
+        button {
+            grid-column: 3;
+        }
+    }
+    .checklist-todo-add-btn {
+        grid-column: 2;
+        width: fit-content;
+    }
+}
+
+// --- CHEACKLIST TODO ADD --- \\
+.checklist-add-todo-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 5px;
+    .checklist-add-todo-actions {
+        display: flex;
+        align-self: flex-start;
+        justify-content: space-evenly;
+    }
+}
+
+// --- NEW CHECKLIST MODAL --- \\
+.checklist-new-container {
+    padding: 0 15px;
+    position: absolute;
+    z-index: 2;
+    width: 250px;
+    height: 140px;
+    border-radius: 5px;
+    box-shadow: 0 0px 3px 2px #7e7d7d78;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    .modalHeader {
+        @include modalHeader;
+    }
+    input {
+        border: none;
+        border-radius: 2px;
+        height: 25px;
+        cursor: pointer;
+        padding-left: 8px;
+        margin-block-end: 10px;
+    }
+}
+
+// --- CHECKLIST PROGRESS BAR --- \\
+.checklist-progress-bar-main {
+    display: flex;
+    width: 100%;
+    background-color: rgba(9, 30, 66, 0.04);
+    border-radius: 2em;
+    margin-block: 15px;
+    height: 8px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    h4{
+        text-align: center;
+        margin-inline-end: 10px;
+    }
+
+    .checklist-progress-bar-secondery {
+        display: flex;
+        height: 100%;
+        background-color: #61BD4F;
+        border-radius: 2em;
+        color: rgb(95, 82, 64);
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+        min-width: 2%;
+        transition: width 0.7s ease-in-out;
+    }
+}

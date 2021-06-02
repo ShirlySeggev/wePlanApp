@@ -1,0 +1,79 @@
+/* Modal mixins */
+@mixin modalHeader {
+    &.container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 10px;
+        border-bottom: 1px solid rgba(9, 30, 66, 0.13);
+    }
+    &.title {
+        flex-grow: 1;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .icon {
+        right: 10px;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+}
+
+/* Breakpoint mixins */
+
+@mixin for-mobile-layout {
+    @media (max-width: $mobile-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-narrow-layout {
+    @media (max-width: $mobile-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-normal-layout {
+    @media (max-width: $narrow-breakpoint) {
+        @content;
+    }
+}
+
+@mixin for-wide-layout {
+    @media (max-width: $normal-breakpoint) {
+        @content;
+    }
+}
+
+/* Media  Mixins */
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    overflow: hidden;
+    &::before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+    > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    > img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// Mixin for removing hover efects on iphone screen
+@mixin hover-supported {
+    @media not all and (pointer: coarse) {
+        &:hover {
+            @content;
+        }
+    }
+}

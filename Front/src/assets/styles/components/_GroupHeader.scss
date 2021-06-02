@@ -1,0 +1,66 @@
+.GroupHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2px;
+    input {
+        width: 100%;
+        padding: 5px;
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 16px;
+        font-family: Poppings-Medium, "Segoe UI", sans-serif;
+        color: $font;
+    }
+    
+    .modalHeader {
+        @include modalHeader;
+    }
+    .icon{ 
+        margin-inline-end: 5px;
+    }
+    .group-menu {
+        padding: 0 15px;
+        position: absolute;
+        z-index: 2;
+        border-radius: 5px;
+        box-shadow: 0 0px 3px 2px #7e7d7d78;
+        background-color: #fff;
+      
+    }
+    .menu-options {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li:hover{
+        background-color: rgba(0,0,0,.2);
+        border-radius: .0625rem;
+    }
+    li:first-of-type {
+        margin-top: 10px;
+    }
+    li/* :not(:last-of-type) */ {
+        margin-bottom: 10px;
+    }
+}
+.b{ 
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin:2px;
+    box-shadow: 0 0px 3px 2px #7e7d7d78;
+    display:GRIDex;
+    flex-direction: column;
+}
+.colors-container{
+    padding: 20px 10px;
+    border-radius: 2px;
+    background-color: hsla(0,0%,60%,.10980392156862745);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 100%;
+    grid-gap: 5px;
+}
+

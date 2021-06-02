@@ -1,0 +1,82 @@
+.boardApp-main {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 10px;
+    box-shadow: 0 0px 3px 2px #7e7d7d78;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    .boardApp-header {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    .boards-container {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        // justify-items: center;
+        padding: 15px 0px;
+    }
+
+    .boardAdd {
+        background-color: $clr4;
+    }
+    .single-board-preview,
+    .boardAdd {
+        height: 120px;
+        text-decoration: none;
+        cursor: pointer;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        box-shadow: 0 0px 3px 2px #7e7d7d78;
+        // background-image: linear-gradient(rgb(150, 169, 194), rgb(222, 233, 238));
+        .boardAdd-input {
+            width: 100%;
+            padding: 2px;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+        &:hover {
+            transform: scale(1.025);
+            box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 15px #000033;
+        }
+    }
+    .boardAdd-modal {
+        padding: 0 15px;
+        position: absolute;
+        z-index: 2;
+        width: 300px;
+        height: 250px;
+        border-radius: 5px;
+        box-shadow: 0 0px 3px 2px #7e7d7d78;
+        background-color: #fff;
+        .modalHeader {
+            @include modalHeader;
+        }
+
+        .label-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            background-color: #F4F4F4;
+            border: none;
+            border-radius: 2px;
+            height: 30px;
+            cursor: pointer;
+            padding-left: 8px;
+            margin-bottom: 10px;
+        }
+        .secondary-btn{
+            margin-top: 20px;
+        }
+    }
+}

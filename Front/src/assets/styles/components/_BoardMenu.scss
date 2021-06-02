@@ -1,0 +1,60 @@
+.wePlanApp-menu {
+    position: fixed;
+    bottom: 0;
+    top: 40px;
+    width: 300px;
+    background-color: $modalBgc;
+    right: -100%;
+    z-index: 2;
+    transition: right 0.5s;
+    padding: 0 15px;
+    box-shadow: 0 0px 3px 2px #7e7d7d78;
+    &.open {
+        right: 0px;
+    }
+    .modalHeader {
+        @include modalHeader;
+    }
+    .menu-options {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    li:hover{
+        background-color: rgba(0,0,0,.2);
+        border-radius: .0625rem;
+    }
+    li:first-of-type {
+        margin-top: 10px;
+    }
+    li/* :not(:last-of-type) */ {
+        margin-bottom: 10px;
+    }
+
+    li:last-of-type{
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(9, 30, 66, 0.13);
+    }
+
+    .delete-board-container{
+        p{
+            margin: 0 0 0.5rem;
+        }
+    }
+
+    .activity {
+        display: flex;
+        align-items: center;
+    }
+    .activity-description {
+        font-size: 14px;
+        margin-left: 10px;
+        p {
+            margin-bottom: 0;
+           
+        }
+        span {
+            font-weight: bold;
+        }
+    }
+}

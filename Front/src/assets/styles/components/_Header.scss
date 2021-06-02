@@ -1,0 +1,44 @@
+.app-header {
+    background-color: rgba(0, 0, 0, 0.32);
+    padding: 0.25rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+.boards-btn{
+    display: flex;
+    align-items: center;
+}
+    nav {
+       display: flex;
+       margin-inline-end: .25rem;
+    }
+    span {
+        margin-inline-start: 0.5rem;
+    }
+
+    h1 {
+        color: $clr5;
+        font-size: rem(30px);
+        font-family: Permanent Marker;
+    }
+
+}
+
+.header-format {
+    align-items: center;
+    background: hsla(0, 0%, 100%, 0.24);
+    border-radius: 4px;
+    font-size: 0.875rem;
+    padding: 0 12px;
+    font-family: Poppings-bold, "Segoe UI", sans-serif;
+    color: #fff;
+    padding: 0.5rem;
+    margin-inline-start: 0.5rem;
+    &:hover {
+        background-color: hsla(0, 0%, 100%, 0.377);
+        transition-duration: 0.15s;
+        cursor: pointer;
+    }
+}

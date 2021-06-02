@@ -1,0 +1,28 @@
+// Setup
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+@import "setup/typography.scss";
+
+// Basics
+@import "basic/helpers.scss";
+@import "basic/layout.scss";
+@import "basic/base.scss";
+@import "basic/buttons.scss";
+
+// Components
+@import "components/WePlanApp.scss";
+@import "components/BoardMenu.scss";
+@import "components/Group.scss";
+@import "components/Home.scss";
+@import "components/Header.scss";
+@import "components/Boards.scss";
+@import "components/BoardHeder.scss";
+@import "components/TaskDetails.scss";
+@import "components/TaskPreview.scss";
+@import "components/TaskAdd.scss";
+@import "components/TaskLabel.scss";
+@import "components/TaskChecklist.scss";
+@import "components/GroupAdd.scss";
+@import "components/GroupHeader.scss";
+@import "components/TaskMembers.scss";
