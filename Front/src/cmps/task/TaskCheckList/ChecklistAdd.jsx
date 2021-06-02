@@ -12,6 +12,7 @@ export class ChecklistAdd extends Component {
 
     onAddChecklist = (ev) => {
         ev.preventDefault();
+        // ev.stoppropagation()
         const { task, updateTask } = this.props
         const { title } = this.state
         if (!title) return
@@ -24,7 +25,8 @@ export class ChecklistAdd extends Component {
 
     onEnter = (ev) => {
         if (ev.key === "Enter" && ev.shiftKey === false) {
-            ev.preventDefault()
+            ev.preventDefault();
+            // ev.stoppropagation()
             this.onAddChecklist()
         }
     }
@@ -48,13 +50,15 @@ export class ChecklistAdd extends Component {
 
 
     render() {
-        const { toggleAddCheckList } = this.props
+        const { toggleAddCheckList, modalPos } = this.props
         return (
-            <div className="checklist-new-container">
+            <div className="checklist-new-container" style={{ ...modalPos }}>
                 <ModalHeader title='Add checklist' closeModal={toggleAddCheckList} />
                 <input name="title" label="Title" placeholder="Checklist Header..."
                     onChange={this.handleChange}
-                    onKeyDown={this.onEnter}>
+                    onKeyDown={this.onEnter}
+                    spellCheck="false">
+                        
                 </input>
                 <button className="secondary-btn" onClick={this.onAddChecklist}>Add</button>
             </div>

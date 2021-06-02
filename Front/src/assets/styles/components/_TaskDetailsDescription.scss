@@ -1,0 +1,27 @@
+.text-area-description {
+    resize: none;
+    padding: 7px 12px;
+    width: 96%;
+    height: 75px;
+    border: none;
+    background: transparent;
+    font-family: Poppings, "Segoe UI", sans-serif;
+    background-color: rgba(9, 30, 66, 0.04);
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    display: block;
+    min-height: 40px;
+    padding: 8px 12px;
+    text-decoration: none;
+    margin-block: 10px;
+    margin-inline-start: 20px;
+    &:focus {
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid #0079bf;
+    }
+    &:hover {
+        background: #fff;
+    }
+}

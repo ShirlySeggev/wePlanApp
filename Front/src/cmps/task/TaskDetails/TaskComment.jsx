@@ -76,11 +76,11 @@ export class TaskComment extends Component {
         return (
             <section>
                 <div className="taskDetails-coment">
-                    <MemberAvatar member={{
+                    <span className="avatar"><MemberAvatar member={{
                         "_id": "u1001",
                         "fullname": "Guess User",
                         "imgUrl": "http://some-img"
-                    }} />
+                    }} /></span>
                     <textarea className="text-area-comment"
                         value={comment.txt}
                         name="txt"

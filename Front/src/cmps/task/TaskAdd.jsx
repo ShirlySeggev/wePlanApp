@@ -71,6 +71,7 @@ export class TaskAdd extends Component {
                         value={title}
                         placeholder="+ Add another card"
                         autoComplete="off"
+                        spellCheck="false"
                         onChange={this.handleChange}
                         onFocus={this.toggleUpdate}
                     />

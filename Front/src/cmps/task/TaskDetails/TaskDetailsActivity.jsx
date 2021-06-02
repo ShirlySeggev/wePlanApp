@@ -50,15 +50,15 @@ export class TaskDetailsActivity extends Component {
 
             <div className="taskActivity-container" >
                 <div className="activity-header">
-                    <SectionTitle Icon={BiCommentDots}>Activity</SectionTitle>
+                    <SectionTitle className="detailsIcon" Icon={BiCommentDots}>Activity</SectionTitle>
                     <button className="secondary-btn" onClick={this.onToggleActivity}>{toggleActivity ? 'Hide details' : 'Show details'}</button>
                 </div>
-               
+
                 <TaskComment task={this.props.task} updateTask={this.props.updateTask} />
                 {comments &&
                     task.comments.map((comment, idx) => {
                         return <div key={comment.id} className="activity">
-                            <MemberAvatar member={comment.byMember} />
+                            <span className="avatar"><MemberAvatar member={comment.byMember} /></span>
                             <div className="activity-description">
                                 <p><span>{comment.byMember.fullname}</span> {formatDistance(comment.createdAt, Date.now())} </p>
                                 <p className="comment-txt">{comment.txt}</p>
@@ -71,7 +71,7 @@ export class TaskDetailsActivity extends Component {
                     {activities.map(activity => {
                         return <div key={activity.id}>
                             <div className="activity">
-                                <MemberAvatar member={activity.byMember} />
+                                <span className="avatar"><MemberAvatar member={activity.byMember} /></span>
                                 <div className="activity-description">
                                     <p ><span>{activity.byMember.fullname}</span> {activity.txt} to {activity.task.title}</p>
                                     <p>{formatDistance(activity.createdAt, Date.now())} ago</p>

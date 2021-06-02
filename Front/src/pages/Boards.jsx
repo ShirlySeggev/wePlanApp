@@ -96,7 +96,7 @@ class _Boards extends Component {
                 </div>
                 {isModalOpen && <div className="boardAdd-modal">
                     <ModalHeader title='New Board' closeModal={this.newBoardModal} />
-                    <input className="boardAdd-input" type="text" name="title" id="title" placeholder="Board title" autoComplete="off" required onChange={this.handleChange} />
+                    <input className="boardAdd-input" type="text" name="title" id="title" placeholder="Board title" autoComplete="off" spellCheck="false" required onChange={this.handleChange} />
                     <BoardBackground onBoardsCompose={true} chooseBgc={this.chooseBgc} />
                     <button className="secondary-btn" onClick={this.onAddBoard}>Create Board</button>
                 </div>

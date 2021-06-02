@@ -64,6 +64,7 @@ export class GroupAdd extends Component {
                     value={title} 
                     placeholder="+ Add another list" 
                     autoComplete="off" 
+                    spellCheck="false"
                     onChange={this.handleChange} 
                     onFocus={this.toggleUpdate}
                     />

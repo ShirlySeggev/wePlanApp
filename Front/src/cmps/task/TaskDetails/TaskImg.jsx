@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { cloudinaryService } from '../../../services/cloudinary.service';
+import { ModalHeader } from '../../shared/ModalHeader';
 
 export class TaskImg extends React.Component {
     state = {
@@ -10,27 +11,17 @@ export class TaskImg extends React.Component {
     onUpload = async (ev) => {
         ev.preventDefault()
         const imgUrl = await cloudinaryService.uploadImg(ev)
-        this.setState({imgUrl})
-        // this.setState(prevState => {
-        //     return {
-        //         ...prevState.imgUrl,
-        //         imgUrl: img.url
-        //     }
-        // }
-        // )
+        this.setState({ imgUrl })
         this.props.updateImg(this.state.imgUrl);
-        this.props.toggleImgUpload();
     }
 
 
     render() {
+        const { modalPos, toggleImgUpload } = this.props;
         return (
-            <div className="upload-img">
-                <div className="upload-img-modal">
-                    <label>
-                        <input type="file" onChange={(ev) => this.onUpload(ev)} />
-                    </label>
-                </div>
+            <div className="TaskImg-modal" style={{ ...modalPos }}>
+                <ModalHeader title='Upload image' closeModal={toggleImgUpload} />
+                <input type="file" onChange={(ev) => this.onUpload(ev)} />
             </div>
 
         )

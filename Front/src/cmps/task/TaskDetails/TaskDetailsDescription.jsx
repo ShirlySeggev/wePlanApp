@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { BsTextLeft } from 'react-icons/bs';
+import { CgClose } from 'react-icons/cg';
 import { SectionTitle } from '../../shared/SectionTitle';
 
 
@@ -36,14 +37,21 @@ export class TaskDetailsDescription extends Component {
         const { description, toggleUpdate } = this.state;
         return (
             <section className="taskDetails-description">
-                 <SectionTitle Icon={BsTextLeft}>Description</SectionTitle>
+                 <SectionTitle className="detailsIcon" Icon={BsTextLeft}>Description</SectionTitle>
                 {(description)
                     ? <textarea className="text-area-description" value={description} name="description" spellCheck="false" onChange={this.handleChange} onFocus={this.toggleUpdate} />
                     : <textarea className="text-area-description" value={description} name="description" placeholder="Add a more detailed description..." spellCheck="false" onChange={this.handleChange} rows="2"
                         onBlur={this.updateTaskDescription} onFocus={this.toggleUpdate}
                     />
                 }
-                {toggleUpdate && <button className="primary-btn" onClick={this.updateTaskDescription}>Save</button>}
+                {/* {toggleUpdate && <button className="primary-btn" onClick={this.updateTaskDescription}>Save</button>} */}
+            
+                {toggleUpdate &&
+                    <div className="yes-no-btns">
+                        <button className="primary-btn" onClick={this.updateTaskDescription}>Save</button>
+                        <CgClose className="cancel-btn" onClick={this.toggleUpdate}/> 
+                    </div>}
+            
             </section>
         )
     }

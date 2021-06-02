@@ -9,9 +9,10 @@ export default function MemberAvatar({ member }) {
                 < Avatar  src={member.imgUrl}  round={true} size={30}/>
             } */}
             {/* {!isImg && */}
-                < Avatar color={'#172b4d'} /* src={member.imgUrl} */ name={member.fullname.charAt(0)} round={true} size={30}/>
+                < Avatar color={'#0079bf'} /* src={member.imgUrl} */ name={member.fullname.charAt(0)} round={true} size={30}/>
             {/* } */}
 
         </div>
     )
 }
+

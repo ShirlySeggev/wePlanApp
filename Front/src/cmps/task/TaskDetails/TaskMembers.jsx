@@ -51,10 +51,10 @@ export class TaskMembers extends Component {
 
 
     render() {
-        const { toggleMembers } = this.props
+        const { toggleMembers,  modalPos={modalPos} } = this.props
         const { taskMembers, notTaskMembers } = this.state
         return (
-            <div className="task-add-members-container">
+            <div className="task-add-members-container" style={{ ...modalPos }}>
                 <ModalHeader title='Members' closeModal={toggleMembers} />
                 <ul>
                 <h4 className="task-members-ul-title">Board members</h4>

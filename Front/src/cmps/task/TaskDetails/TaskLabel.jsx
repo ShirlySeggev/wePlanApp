@@ -86,6 +86,7 @@ export class TaskLabel extends Component {
                             <input
                                 style={{ backgroundColor: label.color }}
                                 value={label.title}
+                                spellCheck="false"
                                 onClick={() => this.onPickLabel(idx)}
                                 onChange={(ev) => this.handleChange(ev, label.id, idx)}
                                 ref={labelsRef[idx]}

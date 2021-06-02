@@ -80,7 +80,7 @@ export class ChecklistPreview extends Component {
                 <header className="checklist-header">
                     <div className="checklist-title-container">
                         <div className="checklist-title">
-                            <BsCheckBox />
+                            <BsCheckBox className="detailsIcon"/>
                             <EasyEdit
                                 type={Types.TEXT}
                                 value={title}

@@ -75,7 +75,7 @@ export class GroupHeader extends Component {
         return (
             <section className="GroupHeader group-layout" style={{ backgroundColor: style.bgc }}>
                 <form onSubmit={this.editGroupName}>
-                    <input className="board-header" type="text" name="title" value={title} autoComplete="off" onChange={this.handleChange} />
+                    <input className="board-header" type="text" name="title" value={title} autoComplete="off" spellCheck="false" onChange={this.handleChange} />
                 </form>
                 <div className="group-actions">
                     <BsThreeDots className="icon" onClick={this.toggleActions} />
