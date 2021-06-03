@@ -7,13 +7,24 @@ import { BoardHeader } from '../cmps/board/BoardHeader';
 import { TaskDetails } from '../cmps/task/TaskDetails/TaskDetails';
 import { Loading } from '../cmps/shared/Loading';
 import { Fragment } from 'react';
+import { socketService } from '../services/socket.service';
 
 class _WePlanApp extends Component {
     state = {
     }
 
     componentDidMount() {
+        // const { boardId } = this.props.match.params;
         this.loadBoard();
+        socketService.setup();
+        socketService.on('board updated', boardId => {
+            console.log(boardId, this.props.match.params.boardId);
+            if (boardId === this.props.match.params.boardId) {
+                this.loadBoard();
+            }
+        })
+
+
     }
     // componentDidUpdate(prevProps,prevState) {
     //     console.log('this.props.match.params.boardId: ', this.props.match.params)
@@ -28,6 +39,7 @@ class _WePlanApp extends Component {
         }
     }
 
+
     updateBoard = async (board) => {
         try {
             await this.props.updateBoard(board);
@@ -36,20 +48,25 @@ class _WePlanApp extends Component {
         }
     }
 
-    removeBoard = async (boardId) => {
+    /* removeBoard = async (boardId) => {
         try {
             await this.props.removeBoard(boardId);
         } catch (err) {
             console.log('Delete Board:', err)
         }
-    }
+    } */
 
     onUpdateBoard = (board) => {
         this.updateBoard(board);
     }
 
-    onRemoveBoard = (boardId) => {
-        this.removeBoard(boardId);
+    onRemoveBoard = async (boardId) => {
+        try {
+            await this.props.removeBoard(boardId);
+            this.props.history.push('/board')
+        } catch (err) {
+            console.log('couldnt remove board', err)
+        }
     }
 
     updateGroup = (newGroup) => {

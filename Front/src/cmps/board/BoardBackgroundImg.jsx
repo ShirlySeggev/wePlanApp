@@ -26,7 +26,7 @@ export class BoardBackgroundImg extends Component {
 
     onPickBgcImg = (idx) => {
         const bgcImg = this.state.imgs[idx]
-        const { onBoardsCompose } = this.props;
+        // const { onBoardsCompose } = this.props;
         // if (!onBoardsCompose) this.props.onUpdateBgcImg(style);
         // else this.props.chooseBgcImg(style);
         this.props.chooseBgcImg(bgcImg)

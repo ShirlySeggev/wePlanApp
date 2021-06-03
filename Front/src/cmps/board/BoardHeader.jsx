@@ -22,6 +22,14 @@ export class BoardHeader extends Component {
         this.setState({ board });
     }
 
+    componentDidUpdate(prevProps){
+        if (prevProps.board !== this.props.board) {
+            const { title } = this.props.board;
+            const board = { title };
+            this.setState({ board });
+        }
+    }
+
     handleChange = (ev) => {
         var board = { ...this.state.board };
         var { name, value } = ev.target;
@@ -37,8 +45,6 @@ export class BoardHeader extends Component {
         onUpdateBoard(updatedBoard);
     }
 
-
-
     toggleBoardMenu = () => {
         this.setState({ toggleMenu: !this.state.toggleMenu })
     }
@@ -48,7 +54,7 @@ export class BoardHeader extends Component {
     }
 
     render() {
-        const { board , onUpdateBoard} = this.props;
+        const { board, onUpdateBoard } = this.props;
         const { toggleMenu, isMembers } = this.state;
         const { title } = this.state.board;
         if (!board) return <Loading />
@@ -67,7 +73,7 @@ export class BoardHeader extends Component {
                     <span>Show menu</span>
                 </div>
                 {toggleMenu && <BoardMenu board={board} toggleMembers={this.toggleMembers} isMembers={isMembers} toggleBoardMenu={this.toggleBoardMenu} onRemoveBoard={this.props.onRemoveBoard} onUpdateBoard={this.props.onUpdateBoard} />}
-               {isMembers && <BoardMembers toggleMembers={this.toggleMembers} onUpdateBoard={onUpdateBoard} members={board.members} board={board} />}
+                {isMembers && <BoardMembers toggleMembers={this.toggleMembers} onUpdateBoard={onUpdateBoard} members={board.members} board={board} />}
                 {/* {toggleMenu && <BoardMenu board={board} toggleBoardMenu={this.toggleBoardMenu} onRemoveBoard={this.props.onRemoveBoard} onUpdateBoard={this.props.onUpdateBoard} />} */}
             </section >
         )

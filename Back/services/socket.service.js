@@ -10,7 +10,13 @@ function emit({ type, data }) {
 
 
 function connectSockets(http, session) {
-    gIo = require('socket.io')(http);
+    gIo = require('socket.io')(http, {
+        cors: {
+            origin: 'http://localhost:3000',
+            methods: ["GET", "POST", "PUT", "DELETE"],
+            credentials: true
+        }
+    });
 
     const sharedSession = require('express-socket.io-session');
 
@@ -22,11 +28,6 @@ function connectSockets(http, session) {
         console.log('connection');
         gSocketBySessionIdMap[socket.handshake.sessionID] = socket
 
-        socket.on('board update', msg => {
-            socket.to(socket.myTopic).emit('update board', 'update from server')
-            // socket.broadcast.emit('update board', 'update from server')
-        })
-
         socket.on('disconnect', socket => {
             console.log('Someone disconnected')
             if (socket.handshake) {
@@ -34,22 +35,24 @@ function connectSockets(http, session) {
             }
         })
 
-        socket.on('chat topic', topic => {
-            if (socket.myTopic) {
-                socket.leave(socket.myTopic)
-            }
-            console.log('topic', topic);
-            socket.join(topic)
-            socket.myTopic = topic
+        socket.on('board added', msg => {
+            socket.broadcast.emit('board added', 'board created')
         })
-        socket.on('boards update', msg => {
-            // socket.to(socket.myTopic).emit('update boards', 'update from server')
-            socket.broadcast.emit('update boards', 'update from server')
+
+        socket.on('board updated', boardId => {
+            console.log(boardId)
+            socket.broadcast.emit('board updated', boardId)
         })
-        socket.on('task add member', (notification) => {
-            // socket.to(socket.myTopic).emit('board add notification', notification)
-            socket.broadcast.emit('board add notification', notification)
+
+        socket.on('board removed', msg => {
+            console.log(msg)
+            socket.broadcast.emit('board removed', msg)
         })
+
+
+
+
+
 
 
     })

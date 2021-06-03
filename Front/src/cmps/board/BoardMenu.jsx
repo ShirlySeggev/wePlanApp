@@ -4,10 +4,10 @@ import { BoardBackground } from './BoardBackground.jsx';
 import { ActivityLog } from './ActivityLog.jsx';
 import { CgClose } from 'react-icons/cg';
 import { BoardMembers } from './BoardMembers';
+import { BoardBackgroundImg } from './BoardBackgroundImg.jsx';
 
 export class BoardMenu extends Component {
     state = {
-        isAlreadyOpen: false,
         toggleBoardBcg: false,
         toggleRemoveBoard: false,
         toggleActivity: false,
@@ -18,14 +18,14 @@ export class BoardMenu extends Component {
 
 
     toggleBoardBcg = () => {
-        this.setState({ toggleBoardBcg: !this.state.toggleBoardBcg, isAlreadyOpen: !this.state.isAlreadyOpen })
+        this.setState({ toggleBoardBcg: !this.state.toggleBoardBcg })
     }
 
     toggleRemoveBoard = () => {
-        this.setState({ toggleRemoveBoard: !this.state.toggleRemoveBoard, isAlreadyOpen: !this.state.isAlreadyOpen })
+        this.setState({ toggleRemoveBoard: !this.state.toggleRemoveBoard })
     }
     toggleActivity = () => {
-        this.setState({ toggleActivity: !this.state.toggleActivity, isAlreadyOpen: !this.state.isAlreadyOpen })
+        this.setState({ toggleActivity: !this.state.toggleActivity })
     }
     toggleMembers = () => {
         this.setState({ isMembers: !this.state.isMembers })
@@ -46,9 +46,17 @@ export class BoardMenu extends Component {
         onUpdateBoard(updatedBoard);
     }
 
+    onUpdateBgImg = (newStyle) => {
+        const { board, onUpdateBoard } = this.props;
+        const updatedBoard = { ...board };
+        updatedBoard.style.img = newStyle;
+        console.log(updatedBoard.style);
+        onUpdateBoard(updatedBoard);
+    }
+
 
     render() {
-        const { isAlreadyOpen, toggleBoardBcg, toggleRemoveBoard, toggleActivity } = this.state;
+        const { toggleBoardBcg, toggleRemoveBoard, toggleActivity } = this.state;
         const { toggleBoardMenu, toggleMembers, isMembers, board, onUpdateBoard } = this.props;
         const { activities } = this.props.board;
         return (
@@ -60,11 +68,15 @@ export class BoardMenu extends Component {
                     <li onClick={toggleMembers} >Add a member</li>
                     {isMembers && <BoardMembers toggleMembers={toggleMembers} onUpdateBoard={onUpdateBoard} members={board.members} board={board} />}
 
-
                     <li onClick={this.toggleRemoveBoard}>Delete board</li>
                     <li onClick={this.toggleActivity}>Activity menu</li>
                     <li>Board dashboard</li>
-                    {toggleBoardBcg && <BoardBackground onUpdateBgc={this.onUpdateBgc} />}
+                    {toggleBoardBcg &&
+                        <div>
+                            <BoardBackground onUpdateBgc={this.onUpdateBgc} />
+                            <BoardBackgroundImg chooseBgcImg={this.onUpdateBgImg} />
+                        </div>
+                    }
                     {toggleRemoveBoard &&
                         <div className="delete-board-container">
                             <p>Are you shure?</p>
@@ -81,4 +93,3 @@ export class BoardMenu extends Component {
         )
     }
 }
-
