@@ -7,6 +7,7 @@ import { Avatar } from "@material-ui/core";
 import MemberAvatar from './shared/MemberAvatar'
 import { connect } from 'react-redux';
 
+
 class _Header extends Component {
 
     render() {

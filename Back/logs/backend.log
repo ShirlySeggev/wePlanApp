@@ -137,6 +137,7 @@
 02/06/2021, 15:22:50 - INFO - Server is running on port: 3030 
 02/06/2021, 19:52:21 - INFO - Server is running on port: 3030 
 02/06/2021, 19:54:16 - INFO - Server is running on port: 3030 
+<<<<<<< HEAD
 3.6.2021, 12:33:56 - INFO - Server is running on port: 3030 
 3.6.2021, 16:10:08 - INFO - Server is running on port: 3030 
 3.6.2021, 17:25:41 - INFO - Server is running on port: 3030 
@@ -221,3 +222,28 @@
 4.6.2021, 1:17:01 - DEBUG - auth.service - signup with username: Gali, fullname: Gal Nelken,email: gali@google.com, imgUrl:  (sid: DN-KKs38JVRLEHNaMUmMOMDOiDc1IdUp)
 4.6.2021, 1:17:01 - DEBUG - auth.route - new account created: {"fullname":"Gal Nelken","username":"Gali","email":"gali@google.com","imgUrl":"","password":"$2b$10$akD5uNWm44/XAKC3xax2dOpZbG.mNXgUHWrHeU5RIunQ1cVhWHjPS","_id":"60b954dd2065702714d720ca"} (sid: DN-KKs38JVRLEHNaMUmMOMDOiDc1IdUp)
 4.6.2021, 1:17:01 - DEBUG - auth.service - login with username/email: Gali (sid: DN-KKs38JVRLEHNaMUmMOMDOiDc1IdUp)
+=======
+03/06/2021, 20:03:06 - ERROR - while finding board undefined | {} (sid: RI9M15y-PXcLOqfU7Rk9_WeHaVOWrGq_)
+03/06/2021, 20:03:06 - ERROR - Failed to get board | {} (sid: RI9M15y-PXcLOqfU7Rk9_WeHaVOWrGq_)
+03/06/2021, 22:03:02 - INFO - Server is running on port: 3030 
+03/06/2021, 22:03:40 - INFO - Server is running on port: 3030 
+03/06/2021, 22:04:50 - INFO - Server is running on port: 3030 
+03/06/2021, 22:09:11 - INFO - Server is running on port: 3030 
+03/06/2021, 22:09:57 - INFO - Server is running on port: 3030 
+03/06/2021, 22:10:30 - INFO - Server is running on port: 3030 
+03/06/2021, 22:10:35 - INFO - Server is running on port: 3030 
+03/06/2021, 22:10:38 - INFO - Server is running on port: 3030 
+03/06/2021, 22:20:04 - INFO - Server is running on port: 3030 
+03/06/2021, 22:20:33 - INFO - Server is running on port: 3030 
+03/06/2021, 22:20:47 - INFO - Server is running on port: 3030 
+03/06/2021, 22:44:44 - INFO - Server is running on port: 3030 
+03/06/2021, 22:51:12 - INFO - Server is running on port: 3030 
+03/06/2021, 22:52:15 - INFO - Server is running on port: 3030 
+03/06/2021, 23:00:14 - INFO - Server is running on port: 3030 
+03/06/2021, 23:02:47 - INFO - Server is running on port: 3030 
+03/06/2021, 23:03:34 - INFO - Server is running on port: 3030 
+03/06/2021, 23:08:36 - INFO - Server is running on port: 3030 
+03/06/2021, 23:09:16 - INFO - Server is running on port: 3030 
+03/06/2021, 23:14:41 - INFO - Server is running on port: 3030 
+03/06/2021, 23:35:05 - INFO - Server is running on port: 3030 
+>>>>>>> 505599f1529de53a59645b1f892155e26cdd5494

@@ -24,7 +24,7 @@ async function query(filterBy = {}) {
 }
 
 async function add(board) {
-    console.log('on add', board);
+    //console.log('on add', board);
     try {
         const boardToAdd = { ...board }
         const collection = await dbService.getCollection('board')

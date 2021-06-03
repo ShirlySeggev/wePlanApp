@@ -1,4 +1,6 @@
 import { boardService } from '../../services/board.service.js'
+import { socketService } from '../../services/socket.service'
+
 
 
 export function loadBoards() {
@@ -11,8 +13,8 @@ export function loadBoards() {
         }
     }
 }
-
-export function loadBoard(boardId) { 
+  
+export function loadBoard(boardId) {
     return async dispatch => {
         try {
             const board = await boardService.getById(boardId)
@@ -28,6 +30,7 @@ export function addBoard(board) {
         try {
             const newBoard = await boardService.save(board)
             dispatch({ type: 'ADD_BOARD', board: newBoard })
+            socketService.emit('board added', 'creating new board')
         } catch (err) {
             console.log('BoardActions: err in save board', err)
         }
@@ -39,7 +42,7 @@ export function updateBoard(board) {
         try {
             dispatch({ type: 'SET_BOARD', board })
             await boardService.update(board)
-            // const updatedBoard = await boardService.update(board)
+            socketService.emit('board updated', board._id)
         } catch (err) {
             console.log('BoardActions: err in updateBoard', err)
         }
@@ -51,6 +54,7 @@ export function removeBoard(boardId) {
         try {
             dispatch({ type: 'REMOVE_BOARD', boardId })
             await boardService.remove(boardId)
+            socketService.emit('board removed', 'removing board')
         } catch (err) {
             console.log('BoardActions: err in removeBoard', err)
         }

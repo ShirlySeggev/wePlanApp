@@ -78,7 +78,7 @@ export class TaskComment extends Component {
                 <div className="taskDetails-coment">
                     <span className="avatar"><MemberAvatar member={{
                         "_id": "u1001",
-                        "fullname": "Guess User",
+                        "fullname": "Shirly User",
                         "imgUrl": "http://some-img"
                     }} /></span>
                     <textarea className="text-area-comment"

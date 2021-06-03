@@ -10,7 +10,8 @@ import { BoardBackground } from '../cmps/board/BoardBackground.jsx';
 import { ModalHeader } from '../cmps/shared/ModalHeader.jsx';
 import { Loading } from '../cmps/shared/Loading.jsx';
 import { BoardBackgroundImg } from '../cmps/board/BoardBackgroundImg.jsx';
-
+import { socketService } from '../services/socket.service';
+import { MdSpeakerGroup } from 'react-icons/md';
 
 class _Boards extends Component {
     state = {
@@ -26,6 +27,14 @@ class _Boards extends Component {
 
     async componentDidMount() {
         this.loadBoards();
+        socketService.setup();
+        socketService.on('board added', msg => {
+           this.loadBoards();
+        })
+        socketService.on('board removed', msg => {
+            console.log(msg);
+            this.loadBoards();
+         })
     }
 
     async loadBoards() {
@@ -35,6 +44,7 @@ class _Boards extends Component {
             console.log('Error at loading boards:', err)
         }
     }
+
     newBoardModal = () => {
         this.setState({ isModalOpen: !this.state.isModalOpen });
     }
@@ -46,11 +56,9 @@ class _Boards extends Component {
     }
 
     chooseBgcImg = (style) => {
-        console.log(style);
         const board = { ...this.state.board };
         board.style.bgcImg = style;
         this.setState({ board });
-        // this.props.updateBoard(board)
     }
 
     handleChange = (ev) => {
@@ -110,7 +118,7 @@ class _Boards extends Component {
                     <ModalHeader title='New Board' closeModal={this.newBoardModal} />
                     <input className="boardAdd-input" type="text" name="title" id="title" placeholder="Board title" autoComplete="off" spellCheck="false" required onChange={this.handleChange} />
                     <BoardBackground onBoardsCompose={true} chooseBgc={this.chooseBgc} />
-                    <BoardBackgroundImg onBoardsCompose={true} onUpdate={this.updateBoard} chooseBgcImg={this.chooseBgcImg} />
+                    <BoardBackgroundImg chooseBgcImg={this.chooseBgcImg} />
                     <button className="secondary-btn" onClick={this.onAddBoard}>Create Board</button>
                 </div>
                 }

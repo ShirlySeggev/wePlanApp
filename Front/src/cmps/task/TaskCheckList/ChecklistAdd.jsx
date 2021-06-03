@@ -25,9 +25,10 @@ export class ChecklistAdd extends Component {
 
     onEnter = (ev) => {
         if (ev.key === "Enter" && ev.shiftKey === false) {
-            // ev.preventDefault();
-            this.onAddChecklist()
+            ev.preventDefault();
+            // ev.stoppropagation()
         }
+        this.onAddChecklist()
     }
 
 
@@ -59,7 +60,7 @@ export class ChecklistAdd extends Component {
                     spellCheck="false">
                         
                 </input>
-                <button className="secondary-btn" onClick={this.onAddChecklist}>Add</button>
+                <button className="secondary-btn" onClick={(ev)=>{this.onAddChecklist(ev)}}>Add</button>
             </div>
         )
     }
