@@ -5,7 +5,6 @@ import { ActivityLog } from './ActivityLog.jsx';
 import { CgClose } from 'react-icons/cg';
 import { BoardMembers } from './BoardMembers';
 
-
 export class BoardMenu extends Component {
     state = {
         isAlreadyOpen: false,
@@ -28,13 +27,16 @@ export class BoardMenu extends Component {
     toggleActivity = () => {
         this.setState({ toggleActivity: !this.state.toggleActivity, isAlreadyOpen: !this.state.isAlreadyOpen })
     }
+    toggleMembers = () => {
+        this.setState({ isMembers: !this.state.isMembers })
+    }
 
 
     onRemove = () => {
         console.log('here');
         const { board, onRemoveBoard } = this.props;
         onRemoveBoard(board._id);
-        this.props.history.push('/board');
+        // this.props.history.push('/board');
     }
 
     onUpdateBgc = (newStyle) => {
@@ -61,18 +63,18 @@ export class BoardMenu extends Component {
 
                     <li onClick={this.toggleRemoveBoard}>Delete board</li>
                     <li onClick={this.toggleActivity}>Activity menu</li>
-                    <li /* onClick={this.openDashboard} */>Board dashboard</li>
-                    {/* isAlreadyOpen && */ toggleBoardBcg && <BoardBackground onUpdateBgc={this.onUpdateBgc} />}
-                    {/* isAlreadyOpen && */ toggleRemoveBoard &&
+                    <li>Board dashboard</li>
+                    {toggleBoardBcg && <BoardBackground onUpdateBgc={this.onUpdateBgc} />}
+                    {toggleRemoveBoard &&
                         <div className="delete-board-container">
                             <p>Are you shure?</p>
                             <div className="yes-no-btns">
                                 <button className="primary-btn" onClick={this.onRemove}>Yes, delete board</button>
-                                <CgClose className="cancel-btn" onClick={this.toggleRemoveBoard}/> 
+                                <CgClose className="cancel-btn" onClick={this.toggleRemoveBoard} />
                             </div>
                         </div>
                     }
-                    {/* isAlreadyOpen && */ toggleActivity && <ActivityLog activities={activities} />}
+                    {toggleActivity && <ActivityLog activities={activities} />}
                 </ul>
 
             </section >

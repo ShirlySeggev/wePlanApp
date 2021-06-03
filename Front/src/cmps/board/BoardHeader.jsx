@@ -5,9 +5,11 @@ import { BsThreeDots } from 'react-icons/bs';
 import { Loading } from '../shared/Loading';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { BoardMembers } from './BoardMembers';
 
 export class BoardHeader extends Component {
     state = {
+        isMembers: false,
         toggleMenu: false,
         board: {
             title: '',
@@ -36,6 +38,8 @@ export class BoardHeader extends Component {
         onUpdateBoard(updatedBoard);
     }
 
+
+
     toggleBoardMenu = () => {
         this.setState({ toggleMenu: !this.state.toggleMenu })
     }
@@ -45,7 +49,7 @@ export class BoardHeader extends Component {
     }
 
     render() {
-        const { board, onUpdateBoard } = this.props;
+        const { board , onUpdateBoard} = this.props;
         const { toggleMenu, isMembers } = this.state;
         const { title } = this.state.board;
         if (!board) return <Loading />
@@ -62,12 +66,15 @@ export class BoardHeader extends Component {
                     }}
                     >{<FontAwesomeIcon icon={faPlus} />}</div>
                     {members.map(member => <MemberAvatar member={member} key={member._id} />)}
+                    <div onClick={this.toggleMembers}><MemberAvatar member={{ fullname: '+' }} key={Date.now()} /></div>
                 </div>
                 <div className="board-menu-btn btn" onClick={this.toggleBoardMenu}>
                     <BsThreeDots />
                     <span>Show menu</span>
                 </div>
                 {toggleMenu && <BoardMenu board={board} toggleMembers={this.toggleMembers} isMembers={isMembers} toggleBoardMenu={this.toggleBoardMenu} onRemoveBoard={this.props.onRemoveBoard} onUpdateBoard={this.props.onUpdateBoard} />}
+               {isMembers && <BoardMembers toggleMembers={this.toggleMembers} onUpdateBoard={onUpdateBoard} members={board.members} board={board} />}
+                {/* {toggleMenu && <BoardMenu board={board} toggleBoardMenu={this.toggleBoardMenu} onRemoveBoard={this.props.onRemoveBoard} onUpdateBoard={this.props.onUpdateBoard} />} */}
             </section >
         )
     }

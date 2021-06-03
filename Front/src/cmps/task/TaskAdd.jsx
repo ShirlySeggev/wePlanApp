@@ -30,6 +30,7 @@ export class TaskAdd extends Component {
         const updatedGroup = { ...group };
         updatedGroup.tasks.push(task);
         updateGroup(updatedGroup);
+        this.clearTask();
     }
 
     clearTask = () => {
