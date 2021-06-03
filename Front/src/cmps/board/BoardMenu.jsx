@@ -3,6 +3,7 @@ import { ModalHeader } from '../shared/ModalHeader.jsx';
 import { BoardBackground } from './BoardBackground.jsx';
 import { ActivityLog } from './ActivityLog.jsx';
 import { CgClose } from 'react-icons/cg';
+import { BoardMembers } from './BoardMembers';
 
 
 export class BoardMenu extends Component {
@@ -46,7 +47,7 @@ export class BoardMenu extends Component {
 
     render() {
         const { isAlreadyOpen, toggleBoardBcg, toggleRemoveBoard, toggleActivity } = this.state;
-        const { toggleBoardMenu } = this.props;
+        const { toggleBoardMenu, toggleMembers, isMembers, board, onUpdateBoard } = this.props;
         const { activities } = this.props.board;
         return (
             <section className="wePlanApp-menu open" >
@@ -54,8 +55,8 @@ export class BoardMenu extends Component {
                 <ul className="menu-options">
                     <li onClick={this.toggleBoardBcg}>Change board background</li>
 
-                    {/* ----------------- HERE BROTHER ------------------------ */}
-                    <li /* onClick={this.openToggle} */>Add a member</li>
+                    <li onClick={toggleMembers} >Add a member</li>
+                    {isMembers && <BoardMembers toggleMembers={toggleMembers} onUpdateBoard={onUpdateBoard} members={board.members} board={board} />}
 
 
                     <li onClick={this.toggleRemoveBoard}>Delete board</li>
