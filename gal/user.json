@@ -1,0 +1,63 @@
+[
+    {
+        "_id": "u101",
+        "fullname": "Abi Abambi",
+        "email": "abi@ababmi.com",
+        "username": "abimbi",
+        "password": "abambi123",
+        "imgUrl": "http://some-img.jpg",
+        "mentions": [
+            {
+                "id": "m101",
+                "boardId": "m101",
+                "taskId": "t101"
+            }
+        ]
+    },
+    {
+        "_id": "u102",
+        "fullname": "Poki King",
+        "email": "PoKi23@pokemon.rule",
+        "username": "PoKi23",
+        "password": "poki123",
+        "imgUrl": "http://some-img.jpg",
+        "mentions": [
+            {
+                "id": "m102",
+                "boardId": "m102",
+                "taskId": "t102"
+            }
+        ]
+    },
+    {
+        "_id": "u103",
+        "fullname": "Zipi Shavit",
+        "email": "zipi123@google.com",
+        "username": "zipi123",
+        "password": "zipi123",
+        "imgUrl": "http://some-img.jpg",
+        "mentions": [
+            {
+                "id": "m103",
+                "boardId": "m103",
+                "taskId": "t103"
+            }
+        ]
+    },
+    {
+        "_id": "u106",
+        "username": "Gali",
+        "fullname": "Gal Meir Nelken",
+        "email": "gilgolim87@google.com",
+        "password": "1234qwer",
+        "imgUrl": "http://some-img"
+    },
+    {
+        "_id": "u107",
+        "username": "Maayan",
+        "fullname": "Maayan Naidik",
+        "email": "maayan123@google.com",
+        "password": "maayan123",
+        "imgUrl": "https://www.google.com"
+    }
+]

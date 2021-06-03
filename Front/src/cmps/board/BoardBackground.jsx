@@ -4,6 +4,8 @@ import { Component } from 'react';
 export class BoardBackground extends Component {
     state = {
         bgc: [
+            { color: "#FCF8E8" },
+            { color: "#b1d3dd" },
             { color: "#61bd4f" },
             { color: "#f2d602" },
             { color: "#f99f1b" },

@@ -19,9 +19,10 @@ import { TaskLabelPreview } from './TaskLabelPreview';
 import { Loading } from '../../shared/Loading';
 import { TaskMembersPreview } from './TaskMembersPreview';
 import { CgClose } from 'react-icons/cg';
-
+import { SectionTitle } from '../../shared/SectionTitle';
 
 let modalPos;
+
 class _TaskDetails extends Component {
     state = {
         task: null,
@@ -34,7 +35,7 @@ class _TaskDetails extends Component {
         toggleDueDate: false
     }
 
-    taskDetailsRef = React.createRef()
+
 
     componentDidMount() {
         this.loadTask();
@@ -117,6 +118,8 @@ class _TaskDetails extends Component {
         })
         this.updateBoard(updatedBoard);
     }
+
+    taskDetailsRef = React.createRef();
 
     modalPos = (ev) => {
         let { top, left } = this.taskDetailsRef.current.getBoundingClientRect();
@@ -208,6 +211,7 @@ class _TaskDetails extends Component {
                             <TaskDetailsDescription task={task} updateTask={this.updateTask} />
 
                             {isImg && <div className="">
+                                <SectionTitle className="img-title" Icon={BsImage}>Images</SectionTitle>
                                 <img className="uploaded-img" src={img.url} alt="content" />
                                 <button className="secondary-btn" onClick={this.deletImg}>Delete</button>
                             </div>
@@ -218,7 +222,7 @@ class _TaskDetails extends Component {
                             <TaskDetailsActivity task={task} board={board} updateTask={this.updateTask} />
                         </div>
 
-                        {/* ACTIONS BUTTONS */}
+                        {/* POPUPS BUTTONS */}
                         <ul className="task-actions">
                             {/* ADD MEMBERS */}
                             <li className="detail-act-btn" onClick={this.toggleMembers}><BsPerson /><span className="txt">Memebrs</span></li>
@@ -238,7 +242,7 @@ class _TaskDetails extends Component {
                             <li className="detail-act-btn" onClick={this.removeTask}><BsTrash /><span className="txt">Delete</span></li>
                         </ul>
 
-                        {/* MODALS */}
+                        {/* POPUPS */}
                         {toggleMembers && <TaskMembers modalPos={modalPos} members={board.members} task={task} toggleMembers={this.toggleMembers} updateTask={this.updateTask} />}
                         {toggleTaskLabel && <TaskLabel modalPos={modalPos} task={task} updateTask={this.updateTask} toggleTaskLabel={this.toggleTaskLabel} />}
                         {toggleChecklist && <ChecklistAdd modalPos={modalPos} task={task} toggleAddCheckList={this.toggleAddCheckList} updateTask={this.updateTask} />}

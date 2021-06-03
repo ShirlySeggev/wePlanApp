@@ -1,7 +1,7 @@
 import { Home } from './pages/Home.jsx';
 import { WePlanApp } from './pages/WePlanApp.jsx';
 import { Boards } from './pages/Boards.jsx';
-import {LoginSignIn} from './pages/LoginSignIn.jsx'
+import { LoginSignup } from './pages/LoginSignup.jsx'
 
 export const routes = [
     {
@@ -15,15 +15,19 @@ export const routes = [
     },
     {
         path: '/login',
-        component: LoginSignIn,
+        component: LoginSignup,
     },
     {
-        path: '/signin',
-        component: LoginSignIn,
+        path: '/logout',
+        component: LoginSignup,
+    },
+    {
+        path: '/signup',
+        component: LoginSignup,
     },
     {
         path: '/',
         component: Home,
-    }
+    },
 
 ]

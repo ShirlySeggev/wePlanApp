@@ -1,5 +1,8 @@
 import { httpService } from './http.service'
-const SCORE_FOR_REVIEW = 10
+import { asyncUserStorage } from './user-storage.service.js';
+
+
+const STORAGE_KEY = 'boardUsers'
 
 export const userService = {
     login,
@@ -10,17 +13,20 @@ export const userService = {
     remove,
     update,
     getLoggedinUser,
-    increaseScore
+    // increaseScore
 }
 const BASE_URL = process.env.NODE_ENV === 'production' ? '/api/user' : 'http://localhost:3030/api/user';
 
 
 function getUsers() {
-    return httpService.get(`user`)
+    // return httpService.get(`user`)
+    return asyncUserStorage.query(STORAGE_KEY)
 }
 
 function getById(userId) {
-    return httpService.get(`user/${userId}`)
+    // return httpService.get(`user/${userId}`)
+    return asyncUserStorage.get(STORAGE_KEY, userId);
+
 }
 
 function remove(userId) {
@@ -32,30 +38,42 @@ async function update(user) {
     if (getLoggedinUser()._id === user._id) _saveLocalUser(user)
 }
 
-async function increaseScore(by = SCORE_FOR_REVIEW) {
-    const user = getLoggedinUser()
-    user.score = user.score + by || by
-    await update(user)
-    return user.score
-}
+// async function increaseScore(by = SCORE_FOR_REVIEW) {
+//     const user = getLoggedinUser()
+//     user.score = user.score + by || by
+//     await update(user)
+//     return user.score
+// }
+
+
 
 async function login(userCred) {
-    try{
-        const user = await httpService.post('auth/login', userCred)
+    const user = await asyncUserStorage.get(STORAGE_KEY, userCred)
+    // const user = await httpService.post('auth/login', userCred)
+    try {
         if (user) return _saveLocalUser(user)
-    }catch(err){
-        console.log(err)
+    } catch (err) {
+        console.log('error in user service, problem in login', err)
         throw err
     }
 }
 
-async function logout() {
-    return await httpService.post('auth/logout')
+async function signup(userCred) {
+    console.log('user service signup', userCred);
+    const user = await asyncUserStorage.post(STORAGE_KEY, userCred)
+    // const user = await httpService.post('auth/signup', userCred)
+    try {
+        if (user) {
+            return  _saveLocalUser(user)
+        }
+    } catch (err) {
+        console.log('error in user service signup', err)
+    }
 }
 
-async function signup(userCred) {
-    const user = await httpService.post('auth/signup', userCred)
-    if (user) return _saveLocalUser(user)
+async function logout() {
+    return _clearLocalUser()
+    // return await httpService.post('auth/logout')
 }
 
 function _saveLocalUser(user) {
@@ -63,7 +81,13 @@ function _saveLocalUser(user) {
     return user
 }
 
+function _clearLocalUser() {
+    sessionStorage.clear();
+}
+
 function getLoggedinUser() {
     return JSON.parse(sessionStorage.getItem('loggedinUser') || 'null')
 }
+
+
 
