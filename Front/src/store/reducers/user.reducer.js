@@ -1,6 +1,5 @@
 let localLoggedinUser = null
 if (sessionStorage.loggedinUser) localLoggedinUser = JSON.parse(sessionStorage.loggedinUser)
-console.log('localLoggedinUser', localLoggedinUser);
 
 const initialState = {
   loggedInUser: localLoggedinUser,

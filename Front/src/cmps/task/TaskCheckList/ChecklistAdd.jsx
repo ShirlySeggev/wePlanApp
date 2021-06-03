@@ -10,8 +10,8 @@ export class ChecklistAdd extends Component {
     }
 
 
-    onAddChecklist = (ev) => {
-        ev.preventDefault();
+    onAddChecklist = () => {
+        // ev.preventDefault();
         // ev.stoppropagation()
         const { task, updateTask } = this.props
         const { title } = this.state
@@ -25,8 +25,7 @@ export class ChecklistAdd extends Component {
 
     onEnter = (ev) => {
         if (ev.key === "Enter" && ev.shiftKey === false) {
-            ev.preventDefault();
-            // ev.stoppropagation()
+            // ev.preventDefault();
             this.onAddChecklist()
         }
     }

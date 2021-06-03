@@ -45,6 +45,36 @@
         ]
     },
     {
+        "_id": "u104",
+        "fullname": "Linoy Fakiro",
+        "email": "linoy@google.com",
+        "username": "linoy",
+        "password": "1234567",
+        "imgUrl": "http://some-img.jpg",
+        "mentions": [
+            {
+                "id": "m104",
+                "boardId": "b103",
+                "taskId": "t153"
+            }
+        ]
+    },
+    {
+        "_id": "u105",
+        "fullname": "Shirley Seggev",
+        "email": "Shirly1@google.com",
+        "username": "shirley",
+        "password": "1234567",
+        "imgUrl": "http://some-img.jpg",
+        "mentions": [
+            {
+                "id": "m105",
+                "boardId": "b103",
+                "taskId": "t157"
+            }
+        ]
+    },
+    {
         "_id": "u106",
         "username": "Gali",
         "fullname": "Gal Meir Nelken",

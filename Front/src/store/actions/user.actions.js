@@ -1,5 +1,4 @@
 import { userService } from '../../services/user.service.js';
-// import {sessionService} from '../../services/sessionStorageService'
 
 export function loadUsers() {
   return async dispatch => {
