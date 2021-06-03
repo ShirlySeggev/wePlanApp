@@ -4,7 +4,6 @@ import { Component } from 'react';
 export class BoardBackground extends Component {
     state = {
         bgc: [
-            { color: "#FCF8E8" },
             { color: "#b1d3dd" },
             { color: "#61bd4f" },
             { color: "#f2d602" },
@@ -27,10 +26,10 @@ export class BoardBackground extends Component {
         const { bgc } = this.state;
         return (
             <section className="TaskGroupBgc-modal">
-                <div className="colors-container">
+                <div className="board-colors-container">
                     {bgc.map((bgc, idx) => {
                         return (
-                            <div className="b" key={bgc.id}
+                            <div className="bgColor" key={bgc.id}
                                 style={{ backgroundColor: bgc.color }}
                                 onClick={() => this.onPickBgc(idx)}>
                             </div>

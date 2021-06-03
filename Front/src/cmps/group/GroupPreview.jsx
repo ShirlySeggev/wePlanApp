@@ -18,7 +18,7 @@ export function GroupPreview({ group, board, updateGroup, removeGroup, handleDra
                 </div>
             </Link>
             <section className="group-preview">
-                <div>
+                <div className="group-container">
                     <GroupHeader group={group} updateGroup={updateGroup} removeGroup={removeGroup} />
                     <TaskList tasks={tasks} groupId={id} board={board} handleDragEnd={handleDragEnd} />
                     <TaskAdd group={group} updateGroup={updateGroup} removeGroup={removeGroup}/>

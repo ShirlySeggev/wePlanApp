@@ -9,6 +9,7 @@ import { BsPlus } from 'react-icons/bs';
 import { BoardBackground } from '../cmps/board/BoardBackground.jsx';
 import { ModalHeader } from '../cmps/shared/ModalHeader.jsx';
 import { Loading } from '../cmps/shared/Loading.jsx';
+import { BoardBackgroundImg } from '../cmps/board/BoardBackgroundImg.jsx';
 
 
 class _Boards extends Component {
@@ -17,7 +18,8 @@ class _Boards extends Component {
         board: {
             title: '',
             style: {
-                bgc: '#00AECC'
+                bgc: '#00AECC',
+                bgcImg: ''
             }
         }
     }
@@ -43,6 +45,14 @@ class _Boards extends Component {
         this.setState({ board });
     }
 
+    chooseBgcImg = (style) => {
+        console.log(style);
+        const board = { ...this.state.board };
+        board.style.bgcImg = style;
+        this.setState({ board });
+        // this.props.updateBoard(board)
+    }
+
     handleChange = (ev) => {
         var board = { ...this.state.board };
         var { name, value } = ev.target;
@@ -54,7 +64,8 @@ class _Boards extends Component {
         ev.preventDefault();
         const boardTitle = this.state.board.title;
         const boardBgc = this.state.board.style.bgc;
-        const board = this.createBoard(boardTitle, boardBgc);
+        const boardBgcImg = this.state.board.style.bgcImg;
+        const board = this.createBoard(boardTitle, boardBgc, boardBgcImg);
         const { addBoard } = this.props;
         addBoard(board);
         this.loadBoards();
@@ -63,14 +74,15 @@ class _Boards extends Component {
     }
 
 
-    createBoard = (title, bgc) => {
+    createBoard = (title, bgc, img) => {
         const board = {
             // _id: utilService.makeId(),
             title,
             createdAt: Date.now(),
             createdBy: { _id: "u105", fullname: "Poki King", imgUrl: "http://some-img" },
             style: {
-                bgc
+                bgc,
+                img
             },
             labels: [],
             members: [{ _id: "u105", fullname: "Poki King", imgUrl: "http://some-img" }],
@@ -84,7 +96,7 @@ class _Boards extends Component {
     render() {
         const { boards } = this.props;
         const { isModalOpen } = this.state;
-        if (!boards) return <Loading/>
+        if (!boards) return <Loading />
         return (
             <section className="boardApp-main">
                 <span className="boardApp-header">
@@ -98,6 +110,7 @@ class _Boards extends Component {
                     <ModalHeader title='New Board' closeModal={this.newBoardModal} />
                     <input className="boardAdd-input" type="text" name="title" id="title" placeholder="Board title" autoComplete="off" spellCheck="false" required onChange={this.handleChange} />
                     <BoardBackground onBoardsCompose={true} chooseBgc={this.chooseBgc} />
+                    <BoardBackgroundImg onBoardsCompose={true} onUpdate={this.updateBoard} chooseBgcImg={this.chooseBgcImg} />
                     <button className="secondary-btn" onClick={this.onAddBoard}>Create Board</button>
                 </div>
                 }

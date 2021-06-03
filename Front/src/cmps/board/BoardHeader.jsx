@@ -44,7 +44,6 @@ export class BoardHeader extends Component {
     }
 
     toggleMembers = () => {
-        console.log('here');
         this.setState({ isMembers: !this.state.isMembers })
     }
 

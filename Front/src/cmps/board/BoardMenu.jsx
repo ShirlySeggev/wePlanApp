@@ -36,7 +36,7 @@ export class BoardMenu extends Component {
         console.log('here');
         const { board, onRemoveBoard } = this.props;
         onRemoveBoard(board._id);
-        this.props.history.push('/board');
+        // this.props.history.push('/board');
     }
 
     onUpdateBgc = (newStyle) => {

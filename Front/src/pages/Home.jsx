@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import img from '../assets/img/book.gif';
+import homePage from '../assets/img/homePage.svg';
 
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -8,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 
 const images = [
     {
-      url: img,
+      url: homePage,
       title: <Link className="home-link" to="/board">Check our boards</Link>,
       width: '100%',
     }

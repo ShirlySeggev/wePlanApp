@@ -6,6 +6,7 @@ import { GroupList } from '../cmps/group/GroupList';
 import { BoardHeader } from '../cmps/board/BoardHeader';
 import { TaskDetails } from '../cmps/task/TaskDetails/TaskDetails';
 import { Loading } from '../cmps/shared/Loading';
+import { Fragment } from 'react';
 
 class _WePlanApp extends Component {
     state = {
@@ -46,7 +47,7 @@ class _WePlanApp extends Component {
     onUpdateBoard = (board) => {
         this.updateBoard(board);
     }
-    
+
     onRemoveBoard = (boardId) => {
         this.removeBoard(boardId);
     }
@@ -122,16 +123,20 @@ class _WePlanApp extends Component {
 
     render() {
         const { board } = this.props;
-        if (!board) return <Loading/>
+        if (!board) return <Loading />
         const { title, groups, style } = this.props.board;
+        const bg = style.img ? { backgroundImage: `url(${style.img})` } : { backgroundColor: style.bgc };
         return (
-            <section className="wePlanApp-main-content" style={{ backgroundColor: style.bgc }}>
-                <BoardHeader board={board} onUpdateBoard={this.onUpdateBoard} onRemoveBoard={this.onRemoveBoard} />
-                <Switch>
-                    <Route path='/board/:boardId/group/:groupId/task/:taskId' component={TaskDetails} />
-                </Switch>
-                <GroupList groups={groups} board={board} updateGroup={this.updateGroup} removeGroup={this.removeGroup} addGroup={this.addGroup} handleDragEnd={this.handleDragEnd} />
-            </section >
+            <Fragment>
+                <div className="glass">  </div>
+                <section className="wePlanApp-main-content" style={bg}>
+                    <BoardHeader board={board} onUpdateBoard={this.onUpdateBoard} onRemoveBoard={this.onRemoveBoard} />
+                    <Switch>
+                        <Route path='/board/:boardId/group/:groupId/task/:taskId' component={TaskDetails} />
+                    </Switch>
+                    <GroupList groups={groups} board={board} updateGroup={this.updateGroup} removeGroup={this.removeGroup} addGroup={this.addGroup} handleDragEnd={this.handleDragEnd} />
+                </section >
+            </Fragment>
         )
     }
 }

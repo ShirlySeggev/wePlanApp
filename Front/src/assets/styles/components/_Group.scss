@@ -5,7 +5,10 @@
     overflow: auto;
     margin-inline-start: 10px;
     padding-block-end: 10px;
+    
+    // .group-container{
 
+    // }
     .group-preview {
         background-color: $groupGrey;
         border-radius: 3px;
@@ -16,7 +19,6 @@
 
     .group-layout {
         margin: 4px;
-        padding: 0 4px;
     }
     .task-preview,
     .task-add {
