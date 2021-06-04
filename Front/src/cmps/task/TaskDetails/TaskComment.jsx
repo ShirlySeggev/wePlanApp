@@ -54,12 +54,7 @@ export class TaskComment extends Component {
             id: utilService.makeId(),
             createdAt: Date.now(),
             txt: this.state.comment.txt,
-            byMember: userService.getLoggedinUser()
-            // byMember: {
-            //     _id: "u101",
-            //     fullname: "Neil Seggev",
-            //     imgUrl: "http://res.cloudinary.com/shaishar9/image/upload/v1590850482/j1glw3c9jsoz2py0miol.jpg"
-            // }
+            byMember: userService.getLoggedinUser() || utilService.getGuestUser()
         }
         return newComment;
     }
@@ -77,7 +72,7 @@ export class TaskComment extends Component {
         return (
             <section>
                 <div className="taskDetails-coment">
-                    <span className="avatar"><MemberAvatar member={userService.getLoggedinUser()} /></span>
+                    <span className="avatar"><MemberAvatar member={userService.getLoggedinUser() || utilService.getGuestUser()} /></span>
                     <textarea className="text-area-comment"
                         value={comment.txt}
                         name="txt"

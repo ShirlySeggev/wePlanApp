@@ -3,7 +3,9 @@ export const utilService = {
     makeLorem,
     getRandomIntInclusive,
     getRandomColor,
-    capitalize
+    capitalize,
+    addActivity,
+    getGuestUser
 }
 
 function makeId(length = 6) {
@@ -39,6 +41,32 @@ function getRandomColor() {
     return colors[num];
 }
 
-function capitalize(word){
+function capitalize(word) {
     return word[0].toUpperCase() + word.substring(1)
+}
+
+function addActivity({ user, txt, task = null }) {
+    console.log(user);
+
+    return {
+        id: makeId(),
+        txt,
+        createdAt: Date.now(),
+        // byMember: {
+        //     _id: user._id,
+        //     imgUrl: user?.imgUrl,
+        //     email: user.email,
+        //     fullname: user?.fullname
+        //         || 'Guest'
+        // },
+        task: task ? { id: task.id, title: task.title } : null
+    }
+}
+
+function getGuestUser() {
+    return {
+        _id: "u100",
+        fullname: "Guest User",
+        imgUrl: "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622818054/n5rb78ft88jykqgpnrzt.jpg"
+    }
 }

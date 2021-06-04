@@ -222,9 +222,17 @@
 04/06/2021, 14:58:17 - DEBUG - auth.route - new account created: {"fullname":"reem","username":"reem","email":"reem@gmail.com","imgUrl":"","password":"$2b$10$NuXoKJp/JxqZn0hFEOKEteDZ9jRTYvTQ553nSVQDKD.ufCvB.Eu1S","_id":"60ba1559bd410d30e8aae3cb"} (sid: YOCZ38Cz5CEvo2yGXY_hNYIOrs8Vh-it)
 04/06/2021, 14:58:17 - DEBUG - auth.service - login with username/email: reem (sid: YOCZ38Cz5CEvo2yGXY_hNYIOrs8Vh-it)
 04/06/2021, 15:02:28 - DEBUG - auth.service - login with username/email: shirlys (sid: 2ZEyCHR1xPOXqzeCSDUX682RQAK8ZbB0)
+<<<<<<< HEAD
+04/06/2021, 17:11:25 - DEBUG - auth.service - login with username/email: shirlys (sid: ZNGurzxEK2iYoutnTNyJq9MN8Ju51ilW)
+=======
 >>>>>>> 44f0835f4b0c5524eaf92200d570813529497f3f
 4.6.2021, 17:40:48 - INFO - Server is running on port: 3030 
 4.6.2021, 17:46:51 - DEBUG - auth.service - login with username/email: Gali (sid: evP4UiaYQ3XmLbH73kwme_Cbjq1FQUBz)
 4.6.2021, 17:50:25 - DEBUG - auth.service - login with username/email: Gali (sid: elojoc2fE782hYddJThie5d98Kb3ie0u)
 4.6.2021, 17:51:31 - DEBUG - auth.service - login with username/email: Gali (sid: elojoc2fE782hYddJThie5d98Kb3ie0u)
+<<<<<<< HEAD
 4.6.2021, 18:02:33 - INFO - Server is running on port: 3030 
+=======
+>>>>>>> cd6c349eb9448ebf5a40483643f752385f0c3307
+04/06/2021, 18:05:27 - INFO - Server is running on port: 3030 
+>>>>>>> 7376c56ba6c47b2dcb57c6988c6be070ab7b8636

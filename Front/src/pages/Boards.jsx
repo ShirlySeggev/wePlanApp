@@ -4,13 +4,14 @@ import { loadBoards, addBoard } from '../store/actions/board.actions.js';
 import { SectionTitle } from '../cmps/shared/SectionTitle';
 import { HiOutlineViewBoards } from 'react-icons/hi';
 import { BoardList } from '../cmps/board/BoardList';
+import { utilService } from '../services/util.service.js';
+import { userService } from '../services/user.service.js';
 import { BsPlus } from 'react-icons/bs';
 import { BoardBackground } from '../cmps/board/BoardBackground.jsx';
 import { ModalHeader } from '../cmps/shared/ModalHeader.jsx';
 import { Loading } from '../cmps/shared/Loading.jsx';
 import { BoardBackgroundImg } from '../cmps/board/BoardBackgroundImg.jsx';
 import { socketService } from '../services/socket.service';
-
 
 class _Boards extends Component {
     state = {
@@ -28,12 +29,12 @@ class _Boards extends Component {
         this.loadBoards();
         socketService.setup();
         socketService.on('board added', msg => {
-           this.loadBoards();
+            this.loadBoards();
         })
         socketService.on('board removed', msg => {
             console.log(msg);
             this.loadBoards();
-         })
+        })
     }
 
     async loadBoards() {
@@ -86,20 +87,18 @@ class _Boards extends Component {
         const board = {
             title,
             createdAt: Date.now(),
-            createdBy: user,
+            createdBy: userService.getLoggedinUser() || utilService.getGuestUser(), 
             style: {
                 bgc,
                 img
             },
             labels: [],
-            members: [user],
+            // members: [{ _id: "u105", fullname: "Poki King", imgUrl: "http://some-img" }],
+            members: [userService.getLoggedinUser() || utilService.getGuestUser()],
             groups: [],
             activities: [],
         }
-        if (!user){
-            board.createdBy = {fullname: 'Guest', username: 'Guest', _id: 'guest'}
-            board.members = [{fullname: 'Guest', username: 'Guest', _id: 'guest'}]
-        } 
+        console.log(board);
         return board;
     }
 

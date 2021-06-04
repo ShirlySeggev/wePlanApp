@@ -6,6 +6,7 @@ import { Component } from 'react';
 import { Avatar } from "@material-ui/core";
 import MemberAvatar from './shared/MemberAvatar'
 import { connect } from 'react-redux';
+import { utilService } from '../services/util.service';
 
 
 class _Header extends Component {
@@ -19,7 +20,7 @@ class _Header extends Component {
                     <div className="header-format"><NavLink to="/board" className="boards-btn"><HiOutlineViewBoards /><span className="board">Boards</span></NavLink></div>
                 </nav>
                 <div ><NavLink to="/"><h1>WePLAN</h1></NavLink></div>
-                {!user && <div className="user-avatar"><NavLink to="/login"><Avatar src="/broken-image.jpg" /></NavLink></div>}
+                {!user && <div className="user-avatar"><NavLink to="/login"><span className="header-format">Login</span></NavLink></div>}
                 {user && <div className="user-avatar"><NavLink to="/logout"><MemberAvatar member={user} key={user._id} /></NavLink></div>}
             </header>
         )

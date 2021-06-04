@@ -64,13 +64,8 @@ async function signup(userCred) {
 }
 
 async function logout() {
-    await httpService.post('auth/logout')
-    try {
-        return _clearLocalUser()
-        
-    } catch (err) {
-        console.log('error in user service logout', err)
-    }
+    _clearLocalUser();
+    return await httpService.post('auth/logout')
 }
 
 function _saveLocalUser(user) {
