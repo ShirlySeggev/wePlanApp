@@ -43,6 +43,9 @@ export class TaskAdd extends Component {
     }
 
     createTask = (title) => {
+        const {loggedInUser} = this.props
+        let user
+        loggedInUser ? user = {...loggedInUser} : user = {_id: 'guest', fullname: 'Guest', username: 'Guest'}
         const task = {
             id: utilService.makeId(),
             title,
@@ -54,11 +57,12 @@ export class TaskAdd extends Component {
             labelIds: [],
             createdAt: Date.now(),
             dueDate: '',
-            byMember: {},
+            byMember: user,
             style: {
                 bgColor: utilService.getRandomColor()
             }
         }
+        console.log(task);
         return task;
     }
     render() {

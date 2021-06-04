@@ -44,11 +44,12 @@ export class GroupAdd extends Component {
     createGroup = (title) => {
         const group = {
             id: utilService.makeId(),
+            createdBy: this.props.loggedInUser,
             title,
             tasks: [],
             style: {
                 bgc: utilService.getRandomColor()
-            }
+            },
         }
         return group;
     }

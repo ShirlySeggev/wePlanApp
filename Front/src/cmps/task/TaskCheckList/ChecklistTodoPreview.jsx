@@ -1,17 +1,25 @@
-import { Component } from "react";
-import EasyEdit, { Types } from 'react-easy-edit';
+import { Component, Fragment } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes, faCheck, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { CgClose } from 'react-icons/cg';
 import { Loading } from "../../shared/Loading";
 
 
 export class ChecklistTodoPreview extends Component {
-state ={
-    title: ''
-}
-    onUpdateTodo = (title) => {
+    state = {
+        title: '',
+        isTodoClick: false
+    }
+
+    componentDidMount() {
+        this.setState({ title: this.props.todo.title })
+    }
+
+    onUpdateTodo = () => {
+        const { title } = this.state
         const { todo } = this.props
-        this.props.updateTodo({...todo, title})
+        this.props.updateTodo({ ...todo, title })
+        this.toggleTodoClick()
     }
 
     toggleIsDone = ({ target }) => {
@@ -19,14 +27,19 @@ state ={
         this.props.updateTodo({ ...todo, isDone: target.checked })
     }
 
-    onEnter = (ev) => {
-        ev.preventDefault();
-        if (ev.key === "Enter" && ev.shiftKey === false) {
-            this.onUpdateTodo()
-        }
+    toggleTodoClick = () => {
+        this.setState({ isTodoClick: !this.state.isTodoClick })
     }
 
-    
+    // onEnter = (ev) => {
+    //     ev.preventDefault();
+    //     if (ev.key === "Enter" && ev.shiftKey === false) {
+    //         this.onUpdateTodo()
+    //     } 
+    //     else return
+    // }
+
+
     handleChange = ({ target }) => {
         const field = target.name;
         const value = target.value;
@@ -34,26 +47,32 @@ state ={
     }
 
     render() {
-        if (!this.props.todo) return <Loading/>
+        if (!this.props.todo) return <Loading />
         const { removeTodo } = this.props
-        const { title, isDone, id } = this.props.todo
+        const { isDone, id } = this.props.todo
+        const { title, isTodoClick } = this.state
         return (
 
             <li className="checklist-todo-container">
-                <input type="checkbox" onChange={this.toggleIsDone} checked={isDone} value={isDone} />
+
+                <input className="todo-checkbox" type="checkbox" onChange={this.toggleIsDone} checked={isDone} value={isDone} />
+
                 <div style={isDone ? { textDecoration: 'line-through' } : {}}>
-                    <input type="text" value={title} 
-                    onChange={this.handleChange} 
-                    onBlur={this.onUpdateTodo} 
-                    onKeyDown={this.onEnter}  
-                    />
-                    {/* <EasyEdit
-                        type={Types.TEXT}
-                        value={title}
-                        saveButtonLabel={<FontAwesomeIcon icon={faCheck} />}
-                        cancelButtonLabel={<FontAwesomeIcon icon={faTimes} />}
-                        onSave={this.onUpdateTodo}
-                        onBlur={this.onUpdateTodo} /> */}
+
+                    {!isTodoClick && <h6 onClick={this.toggleTodoClick} className="checklist-todo">{title}</h6>}
+
+                    {isTodoClick && <div className="todo-edit">
+                        <textarea type="text" value={title} name="title"
+                            onBlur={this.onUpdateTodo}
+                            onChange={this.handleChange}
+                            autoFocus={true}
+                        // onKeyDown={this.onEnter} 
+                        ></textarea>
+                        <div className="yes-no-btns">
+                            <button className="primary-btn" onClick={this.onUpdateTodo}>Save</button>
+                            <CgClose className="cancel-btn" onClick={this.toggleTodoClick} />
+                        </div>
+                    </div>}
                 </div>
                 <button className="secondary-btn" onClick={() => removeTodo(id)}>{<FontAwesomeIcon icon={faTrash} />}</button>
             </li>

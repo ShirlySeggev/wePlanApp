@@ -2,12 +2,11 @@ import { TaskList } from '../task/TaskList';
 import { GroupHeader } from './GroupHeader';
 import { TaskAdd } from '../task/TaskAdd';
 import { Link } from 'react-router-dom';
-import { Fragment } from 'react';
 
 
 
 
-export function GroupPreview({ group, board, updateGroup, removeGroup, handleDragEnd }) {
+export function GroupPreview({ group, board, updateGroup, removeGroup, loggedInUser, handleDragEnd }) {
     const { id, title, tasks } = group;
 
 
@@ -21,7 +20,7 @@ export function GroupPreview({ group, board, updateGroup, removeGroup, handleDra
                 <div className="group-container">
                     <GroupHeader group={group} updateGroup={updateGroup} removeGroup={removeGroup} />
                     <TaskList tasks={tasks} groupId={id} board={board} handleDragEnd={handleDragEnd} />
-                    <TaskAdd group={group} updateGroup={updateGroup} removeGroup={removeGroup}/>
+                    <TaskAdd loggedInUser={loggedInUser} group={group} updateGroup={updateGroup} removeGroup={removeGroup}/>
                 </div>
             </section>
         </section>

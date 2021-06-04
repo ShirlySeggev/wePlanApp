@@ -4,13 +4,13 @@ import { loadBoards, addBoard } from '../store/actions/board.actions.js';
 import { SectionTitle } from '../cmps/shared/SectionTitle';
 import { HiOutlineViewBoards } from 'react-icons/hi';
 import { BoardList } from '../cmps/board/BoardList';
-import { utilService } from '../services/util.service.js';
 import { BsPlus } from 'react-icons/bs';
 import { BoardBackground } from '../cmps/board/BoardBackground.jsx';
 import { ModalHeader } from '../cmps/shared/ModalHeader.jsx';
 import { Loading } from '../cmps/shared/Loading.jsx';
 import { BoardBackgroundImg } from '../cmps/board/BoardBackgroundImg.jsx';
 import { socketService } from '../services/socket.service';
+import { utilService } from '../services/util.service.js';
 import { MdSpeakerGroup } from 'react-icons/md';
 
 class _Boards extends Component {
@@ -83,20 +83,24 @@ class _Boards extends Component {
 
 
     createBoard = (title, bgc, img) => {
+        const {user} = this.props
         const board = {
-            // _id: utilService.makeId(),
             title,
             createdAt: Date.now(),
-            createdBy: { _id: "u105", fullname: "Poki King", imgUrl: "http://some-img" },
+            createdBy: user,
             style: {
                 bgc,
                 img
             },
             labels: [],
-            members: [{ _id: "u105", fullname: "Poki King", imgUrl: "http://some-img" }],
+            members: [user],
             groups: [],
             activities: [],
         }
+        if (!user){
+            board.createdBy = {fullname: 'Guest', username: 'Guest', _id: 'guest'}
+            board.members = [{fullname: 'Guest', username: 'Guest', _id: 'guest'}]
+        } 
         return board;
     }
 
@@ -126,10 +130,10 @@ class _Boards extends Component {
         )
     }
 }
-
 function mapStateToProps(state) {
     return {
         boards: state.boardModule.boards,
+        user: state.userModule.loggedInUser,
     }
 }
 const mapDispatchToProps = {

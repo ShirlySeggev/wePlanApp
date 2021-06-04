@@ -1,18 +1,21 @@
 import { Component } from "react";
-import EasyEdit, { Types } from 'react-easy-edit';
 import { ChecklistTodoPreview } from './ChecklistTodoPreview'
 import { CheckListAddTodo } from './ChecklistAddTodo'
 import { ChecklistProgressBar } from './ChecklistProgressBar'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { BsCheckBox } from 'react-icons/bs';
 
 
 
 export class ChecklistPreview extends Component {
     state = {
-        isAddTodo: false
+        isAddTodo: false,
+        title: ''
     }
+
+    componentDidMount(){
+        this.setState({title: this.props.checklist.title})
+    }
+
 
     // --- CHECKLIST FUNCTIONS --- \\
     updateChecklistTitle = (title) => {
@@ -69,27 +72,29 @@ export class ChecklistPreview extends Component {
         this.setState({ isAddTodo: !this.state.isAddTodo })
     }
 
+    handleChange = ({ target }) => {
+        const field = target.name;
+        const value = target.value;
+        this.setState({ [field]: value })
+    }
 
     render() {
         if (!this.props.checklist) return <div>Loading...</div>
         const { checklist } = this.props
-        const { isAddTodo } = this.state
-        const { title, todos } = checklist
+        const { isAddTodo, title } = this.state
+        const { todos } = checklist
         return (
             <ul className="task-details-checklist-container">
                 <header className="checklist-header">
                     <div className="checklist-title-container">
                         <div className="checklist-title">
                             <BsCheckBox className="detailsIcon"/>
-                            <EasyEdit
-                                type={Types.TEXT}
-                                value={title}
-                                focus={true}
-                                saveButtonLabel={<FontAwesomeIcon icon={faCheck} />}
-                                cancelButtonLabel={<FontAwesomeIcon icon={faTimes} />}
-                                onBlur={this.updateChecklistTitle}
-                                onSave={this.updateChecklistTitle}
+                            <input type="text" name="title"  value={title}
+                            onChange={this.handleChange}
+                            onBlur={this.updateChecklistTitle}
+                            value={title}
                             />
+                      
                         </div>
                         <button className="secondary-btn" onClick={this.removeChecklist}>Delete</button>
                     </div>
@@ -103,8 +108,8 @@ export class ChecklistPreview extends Component {
                             todo={todo}
                             updateTodo={this.updateTodo}
                             removeTodo={this.removeTodo}
-                        />)}
-                    {!isAddTodo && <button className="checklist-todo-add-btn secondary-btn" onClick={this.toggleAddTodo}>Add an item</button>}
+                            />)}
+                            {!isAddTodo && <button className="checklist-todo-add-btn secondary-btn" onClick={this.toggleAddTodo}>Add an item</button>}
                     {isAddTodo && <CheckListAddTodo
                         toggleAddTodo={this.toggleAddTodo}
                         addNewTodo={this.addNewTodo} />}

@@ -23,7 +23,7 @@ export class BoardHeader extends Component {
         this.setState({ board });
     }
 
-    componentDidUpdate(prevProps){
+    componentDidUpdate(prevProps) {
         if (prevProps.board !== this.props.board) {
             const { title } = this.props.board;
             const board = { title };
@@ -66,11 +66,8 @@ export class BoardHeader extends Component {
                     <input className="board-header" type="text" name="title" value={title} autoComplete="off" spellCheck="false" onChange={this.handleChange} />
                 </form>
                 <div className="board-members">
-                    <div className="board-header-add-member" onClick={() => {
-                        this.toggleMembers()
-                        this.toggleBoardMenu()
-                    }}
-                    >{<FontAwesomeIcon icon={faPlus} />}</div>
+
+
                     {members.map(member => <MemberAvatar member={member} key={member._id} />)}
                     <div onClick={this.toggleMembers}><MemberAvatar member={{ fullname: '+' }} key={Date.now()} /></div>
                 </div>
@@ -78,7 +75,7 @@ export class BoardHeader extends Component {
                     <BsThreeDots />
                     <span>Show menu</span>
                 </div>
-                {toggleMenu && <BoardMenu board={board} toggleMembers={this.toggleMembers} isMembers={isMembers} toggleBoardMenu={this.toggleBoardMenu} onRemoveBoard={this.props.onRemoveBoard} onUpdateBoard={this.props.onUpdateBoard} />}
+                {toggleMenu && <BoardMenu board={board} toggleBoardMenu={this.toggleBoardMenu} onRemoveBoard={this.props.onRemoveBoard} onUpdateBoard={this.props.onUpdateBoard} />}
                 {isMembers && <BoardMembers toggleMembers={this.toggleMembers} onUpdateBoard={onUpdateBoard} members={board.members} board={board} />}
                 {/* {toggleMenu && <BoardMenu board={board} toggleBoardMenu={this.toggleBoardMenu} onRemoveBoard={this.props.onRemoveBoard} onUpdateBoard={this.props.onUpdateBoard} />} */}
             </section >

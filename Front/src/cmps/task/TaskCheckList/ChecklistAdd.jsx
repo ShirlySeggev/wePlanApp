@@ -1,7 +1,5 @@
 import { Component } from "react";
 import { utilService } from '../../../services/util.service';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faTimes } from '@fortawesome/free-solid-svg-icons';
 import { ModalHeader } from "../../shared/ModalHeader";
 
 export class ChecklistAdd extends Component {
@@ -23,12 +21,11 @@ export class ChecklistAdd extends Component {
         this.props.toggleAddCheckList()
     }
 
-    onEnter = (ev) => {
+    onKeyDown = (ev) => {
         if (ev.key === "Enter" && ev.shiftKey === false) {
             ev.preventDefault();
-            // ev.stoppropagation()
+            this.onAddChecklist()
         }
-        this.onAddChecklist()
     }
 
 
@@ -56,7 +53,7 @@ export class ChecklistAdd extends Component {
                 <ModalHeader title='Add checklist' closeModal={toggleAddCheckList} />
                 <input name="title" label="Title" placeholder="Checklist Header..."
                     onChange={this.handleChange}
-                    onKeyDown={this.onEnter}
+                    onKeyDown={this.onKeyDown}
                     spellCheck="false">
                         
                 </input>

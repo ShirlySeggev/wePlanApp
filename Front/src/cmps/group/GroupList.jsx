@@ -2,7 +2,7 @@ import { GroupPreview } from './GroupPreview.jsx';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { GroupAdd } from './GroupAdd';
 
-export function GroupList({ groups, board, updateGroup, removeGroup, addGroup, handleDragEnd }) {
+export function GroupList({ groups, board, loggedInUser, updateGroup, removeGroup, addGroup, handleDragEnd }) {
     return (
         <section className="group-list" >
             <DragDropContext onDragEnd={handleDragEnd}>
@@ -21,6 +21,7 @@ export function GroupList({ groups, board, updateGroup, removeGroup, addGroup, h
                                                 removeGroup={removeGroup}
                                                 handleDragEnd={handleDragEnd}
                                                 provided={provided}
+                                                loggedInUser={loggedInUser}
                                             />
                                         </div>
                                     )}
@@ -28,7 +29,7 @@ export function GroupList({ groups, board, updateGroup, removeGroup, addGroup, h
                             )
                             }
                             {provided.placeholder}
-                            <GroupAdd addGroup={addGroup} />
+                            <GroupAdd loggedInUser={loggedInUser} addGroup={addGroup} />
                         </div>
                     )}
                 </Droppable>
