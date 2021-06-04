@@ -50,6 +50,7 @@ export class CheckListAddTodo extends Component {
                     onBlur={this.onAddTodo}
                     onChange={this.handleChange}
                     autoFocus={true}
+                    spellCheck="false"
                 // onKeyDown={this.onEnter} 
                 ></textarea>
                 <div className="yes-no-btns">
