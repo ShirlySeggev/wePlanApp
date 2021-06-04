@@ -137,92 +137,6 @@
 02/06/2021, 15:22:50 - INFO - Server is running on port: 3030 
 02/06/2021, 19:52:21 - INFO - Server is running on port: 3030 
 02/06/2021, 19:54:16 - INFO - Server is running on port: 3030 
-<<<<<<< HEAD
-3.6.2021, 12:33:56 - INFO - Server is running on port: 3030 
-3.6.2021, 16:10:08 - INFO - Server is running on port: 3030 
-3.6.2021, 17:25:41 - INFO - Server is running on port: 3030 
-3.6.2021, 17:47:14 - ERROR - while finding board b101 | {} (sid: -Hrv8NlVaRwfnYtzyoanhAZ5yOPAMv_x)
-3.6.2021, 17:47:15 - ERROR - Failed to get board | {} (sid: -Hrv8NlVaRwfnYtzyoanhAZ5yOPAMv_x)
-3.6.2021, 17:48:14 - ERROR - while finding board b101 | {} (sid: -Hrv8NlVaRwfnYtzyoanhAZ5yOPAMv_x)
-3.6.2021, 17:48:14 - ERROR - Failed to get board | {} (sid: -Hrv8NlVaRwfnYtzyoanhAZ5yOPAMv_x)
-3.6.2021, 18:07:26 - ERROR - while finding board b101 | {} (sid: -Hrv8NlVaRwfnYtzyoanhAZ5yOPAMv_x)
-3.6.2021, 18:07:26 - ERROR - Failed to get board | {} (sid: -Hrv8NlVaRwfnYtzyoanhAZ5yOPAMv_x)
-3.6.2021, 18:31:30 - ERROR - while finding board b102 | {} (sid: -Hrv8NlVaRwfnYtzyoanhAZ5yOPAMv_x)
-3.6.2021, 18:31:30 - ERROR - Failed to get board | {} (sid: -Hrv8NlVaRwfnYtzyoanhAZ5yOPAMv_x)
-3.6.2021, 18:31:52 - ERROR - while finding board b102 | {} (sid: -Hrv8NlVaRwfnYtzyoanhAZ5yOPAMv_x)
-3.6.2021, 18:31:52 - ERROR - Failed to get board | {} (sid: -Hrv8NlVaRwfnYtzyoanhAZ5yOPAMv_x)
-3.6.2021, 18:32:00 - ERROR - while finding board b101 | {} (sid: -Hrv8NlVaRwfnYtzyoanhAZ5yOPAMv_x)
-3.6.2021, 18:32:00 - ERROR - Failed to get board | {} (sid: -Hrv8NlVaRwfnYtzyoanhAZ5yOPAMv_x)
-3.6.2021, 20:39:03 - INFO - Server is running on port: 3030 
-3.6.2021, 20:50:48 - INFO - Server is running on port: 3030 
-3.6.2021, 20:52:28 - INFO - Server is running on port: 3030 
-3.6.2021, 20:52:48 - INFO - Server is running on port: 3030 
-3.6.2021, 23:31:06 - INFO - Server is running on port: 3030 
-3.6.2021, 23:31:28 - DEBUG - auth.service - login with username: undefined (sid: dy9dvBqGbPshWPLAh0j0TKVwsAZRlC8p)
-3.6.2021, 23:36:31 - DEBUG - auth.service - login with username: undefined (sid: dy9dvBqGbPshWPLAh0j0TKVwsAZRlC8p)
-3.6.2021, 23:36:32 - ERROR - Failed to Login Invalid username or password (sid: dy9dvBqGbPshWPLAh0j0TKVwsAZRlC8p)
-3.6.2021, 23:37:37 - INFO - Server is running on port: 3030 
-3.6.2021, 23:37:47 - DEBUG - auth.service - login with username: undefined (sid: KsUxqGjThXPb8tPR26ilJqI1wvaHXT6v)
-3.6.2021, 23:37:47 - ERROR - Failed to Login Invalid username or password (sid: KsUxqGjThXPb8tPR26ilJqI1wvaHXT6v)
-3.6.2021, 23:38:25 - INFO - Server is running on port: 3030 
-3.6.2021, 23:38:38 - DEBUG - auth.service - login with username: undefined (sid: xVR6AOvQ7xOrMvGbcWXHT7e0tGOy4UFm)
-3.6.2021, 23:38:38 - ERROR - Failed to Login Invalid username or password (sid: xVR6AOvQ7xOrMvGbcWXHT7e0tGOy4UFm)
-3.6.2021, 23:39:59 - INFO - Server is running on port: 3030 
-3.6.2021, 23:40:39 - DEBUG - auth.service - signup with username: gali, fullname: gal nelken (sid: _47IPvfvF2LQ2qxxHIiQUEGC56j3bA3x)
-3.6.2021, 23:40:39 - DEBUG - auth.route - new account created: {"username":"gali","password":"$2b$10$I4uF.HhKFF3pF8UnF8MQPOnPf4dHi8RyM9dlfg0BnDK3SFEuBNO6W","fullname":"gal nelken","score":0,"_id":"60b93e475d635615fc81580b"} (sid: _47IPvfvF2LQ2qxxHIiQUEGC56j3bA3x)
-3.6.2021, 23:40:39 - DEBUG - auth.service - login with username: gali (sid: _47IPvfvF2LQ2qxxHIiQUEGC56j3bA3x)
-3.6.2021, 23:43:14 - INFO - Server is running on port: 3030 
-3.6.2021, 23:45:57 - INFO - Server is running on port: 3030 
-3.6.2021, 23:49:38 - INFO - Server is running on port: 3030 
-3.6.2021, 23:49:54 - ERROR - Failed to Login ReferenceError: username is not defined (sid: sdE8519Eexhn76HB7vwJzGD2p4eHpe8J)
-4.6.2021, 0:01:02 - ERROR - Failed to Login ReferenceError: username is not defined (sid: sdE8519Eexhn76HB7vwJzGD2p4eHpe8J)
-4.6.2021, 0:01:44 - INFO - Server is running on port: 3030 
-4.6.2021, 0:02:01 - ERROR - Failed to Login ReferenceError: username is not defined (sid: NMUJ3UfqPM0npX0XOvyp9khi2K3f5oxx)
-4.6.2021, 0:27:43 - INFO - Server is running on port: 3030 
-4.6.2021, 0:29:53 - INFO - Server is running on port: 3030 
-4.6.2021, 0:32:06 - INFO - Server is running on port: 3030 
-4.6.2021, 0:32:24 - INFO - Server is running on port: 3030 
-4.6.2021, 0:33:09 - ERROR - Failed to Login ReferenceError: username is not defined (sid: xzxZ_KzPKMrAqxtyCyEbZGEEfEJp9JVK)
-4.6.2021, 0:33:25 - INFO - Server is running on port: 3030 
-4.6.2021, 0:33:38 - INFO - Server is running on port: 3030 
-4.6.2021, 0:33:46 - ERROR - Failed to Login ReferenceError: username is not defined (sid: Msc_B9t_h56--n-uQoGDb_xal9O2Z4P3)
-4.6.2021, 0:35:55 - INFO - Server is running on port: 3030 
-4.6.2021, 0:36:00 - DEBUG - auth.service - login with username/email: gagagaga@gaga.ga (sid: TrJy0rWX0o3wGbNwtrA7aa1b4wj_WJyK)
-4.6.2021, 0:36:01 - ERROR - Failed to Login Invalid username or password (sid: TrJy0rWX0o3wGbNwtrA7aa1b4wj_WJyK)
-4.6.2021, 0:36:22 - DEBUG - auth.service - login with username/email: gali (sid: TrJy0rWX0o3wGbNwtrA7aa1b4wj_WJyK)
-4.6.2021, 0:37:04 - INFO - Server is running on port: 3030 
-4.6.2021, 0:38:04 - DEBUG - auth.service - signup with username: jojo, fullname: jojo halastra (sid: J925z8uWbaY4gZI_7LVGvh-xSaCY3sWr)
-4.6.2021, 0:38:04 - ERROR - Failed to signup ReferenceError: email is not defined (sid: J925z8uWbaY4gZI_7LVGvh-xSaCY3sWr)
-4.6.2021, 0:38:25 - DEBUG - auth.service - login with username/email: jojo@fafa.pip (sid: J925z8uWbaY4gZI_7LVGvh-xSaCY3sWr)
-4.6.2021, 0:38:25 - ERROR - Failed to Login Invalid username or password (sid: J925z8uWbaY4gZI_7LVGvh-xSaCY3sWr)
-4.6.2021, 0:38:55 - INFO - Server is running on port: 3030 
-4.6.2021, 0:39:15 - DEBUG - auth.service - login with username/email: jojo@fafa.pip (sid: 7aCAmLT74fZ51L4s39BioplvIED-hmaS)
-4.6.2021, 0:39:15 - ERROR - Failed to Login Invalid username or password (sid: 7aCAmLT74fZ51L4s39BioplvIED-hmaS)
-4.6.2021, 0:39:44 - DEBUG - auth.service - login with username/email: jojo@fafa.pip (sid: 7aCAmLT74fZ51L4s39BioplvIED-hmaS)
-4.6.2021, 0:39:44 - ERROR - Failed to Login Invalid username or password (sid: 7aCAmLT74fZ51L4s39BioplvIED-hmaS)
-4.6.2021, 0:41:42 - INFO - Server is running on port: 3030 
-4.6.2021, 0:42:05 - INFO - Server is running on port: 3030 
-4.6.2021, 0:42:56 - DEBUG - auth.service - signup with username: jojo, fullname: jojo halastra (sid: Ntuoaw2ajTrlqamWP-NAHDXKGdxM1gWa)
-4.6.2021, 0:42:56 - ERROR - Failed to signup ReferenceError: email is not defined (sid: Ntuoaw2ajTrlqamWP-NAHDXKGdxM1gWa)
-4.6.2021, 0:43:06 - DEBUG - auth.service - login with username/email: jojo (sid: Ntuoaw2ajTrlqamWP-NAHDXKGdxM1gWa)
-4.6.2021, 0:43:07 - ERROR - Failed to Login Invalid username/email or password (sid: Ntuoaw2ajTrlqamWP-NAHDXKGdxM1gWa)
-4.6.2021, 0:45:19 - INFO - Server is running on port: 3030 
-4.6.2021, 0:46:20 - INFO - Server is running on port: 3030 
-4.6.2021, 0:46:34 - INFO - Server is running on port: 3030 
-4.6.2021, 0:48:09 - INFO - Server is running on port: 3030 
-4.6.2021, 0:48:15 - INFO - Server is running on port: 3030 
-4.6.2021, 0:48:48 - INFO - Server is running on port: 3030 
-4.6.2021, 0:49:16 - DEBUG - auth.service - signup with username: jojo, fullname: jojo halastra,email: jojo@fafa.pip, imgUrl:  (sid: NecJe3QRRX6r0NarD0QIG7vwk_y_MfeY)
-4.6.2021, 0:49:16 - DEBUG - auth.route - new account created: {"fullname":"jojo halastra","username":"jojo","email":"jojo@fafa.pip","imgUrl":"","password":"$2b$10$mnf1MDOARmwGYWdKQx6LYuCIGnlGg2/ffQbVtLswJAVqYlpaniXKC","_id":"60b94e5c2065702714d720c9"} (sid: NecJe3QRRX6r0NarD0QIG7vwk_y_MfeY)
-4.6.2021, 0:49:16 - DEBUG - auth.service - login with username/email: jojo (sid: NecJe3QRRX6r0NarD0QIG7vwk_y_MfeY)
-4.6.2021, 0:49:29 - DEBUG - auth.service - login with username/email: jojo@fafa.pip (sid: 88XxIGj-oG0_4cZNDjfKMG_Z_dvSJeXE)
-4.6.2021, 0:49:44 - DEBUG - auth.service - login with username/email: jojo@fafa.pips (sid: fP1Cb4UFfLx1ZgfZQ9sCWW5-JtgjZ4WW)
-4.6.2021, 0:49:44 - ERROR - Failed to Login Invalid username/email or password (sid: fP1Cb4UFfLx1ZgfZQ9sCWW5-JtgjZ4WW)
-4.6.2021, 0:49:59 - DEBUG - auth.service - login with username/email: jojo@fafa.pip (sid: fP1Cb4UFfLx1ZgfZQ9sCWW5-JtgjZ4WW)
-4.6.2021, 1:17:01 - DEBUG - auth.service - signup with username: Gali, fullname: Gal Nelken,email: gali@google.com, imgUrl:  (sid: DN-KKs38JVRLEHNaMUmMOMDOiDc1IdUp)
-4.6.2021, 1:17:01 - DEBUG - auth.route - new account created: {"fullname":"Gal Nelken","username":"Gali","email":"gali@google.com","imgUrl":"","password":"$2b$10$akD5uNWm44/XAKC3xax2dOpZbG.mNXgUHWrHeU5RIunQ1cVhWHjPS","_id":"60b954dd2065702714d720ca"} (sid: DN-KKs38JVRLEHNaMUmMOMDOiDc1IdUp)
-4.6.2021, 1:17:01 - DEBUG - auth.service - login with username/email: Gali (sid: DN-KKs38JVRLEHNaMUmMOMDOiDc1IdUp)
-=======
 03/06/2021, 20:03:06 - ERROR - while finding board undefined | {} (sid: RI9M15y-PXcLOqfU7Rk9_WeHaVOWrGq_)
 03/06/2021, 20:03:06 - ERROR - Failed to get board | {} (sid: RI9M15y-PXcLOqfU7Rk9_WeHaVOWrGq_)
 03/06/2021, 22:03:02 - INFO - Server is running on port: 3030 
@@ -246,4 +160,24 @@
 03/06/2021, 23:09:16 - INFO - Server is running on port: 3030 
 03/06/2021, 23:14:41 - INFO - Server is running on port: 3030 
 03/06/2021, 23:35:05 - INFO - Server is running on port: 3030 
->>>>>>> 505599f1529de53a59645b1f892155e26cdd5494
+4.6.2021, 2:07:06 - INFO - Server is running on port: 3030 
+4.6.2021, 11:17:44 - INFO - Server is running on port: 3030 
+4.6.2021, 11:29:38 - INFO - Server is running on port: 3030 
+4.6.2021, 11:46:47 - DEBUG - auth.service - login with username/email: Gali (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 11:46:47 - ERROR - Failed to Login Invalid username/email or password (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 11:47:04 - DEBUG - auth.service - login with username/email: Gali (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 11:47:04 - ERROR - Failed to Login Invalid username/email or password (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 11:47:16 - DEBUG - auth.service - login with username/email: jojo (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 11:47:16 - ERROR - Failed to Login Invalid username/email or password (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 11:48:10 - DEBUG - auth.service - signup with username: puki, fullname: Puki Ben David,email: puki@chipi.miki, imgUrl:  (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 11:48:10 - DEBUG - auth.route - new account created: {"fullname":"Puki Ben David","username":"puki","email":"puki@chipi.miki","imgUrl":"","password":"$2b$10$Cd9aSp6MglXLiE1JSB8J.eA47Vu.2VCfsieP1qJ9vpjIo00cRcKLm","_id":"60b9e8ca7edacd20d4dce2c2"} (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 11:48:10 - DEBUG - auth.service - login with username/email: puki (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 12:23:00 - DEBUG - auth.service - login with username/email: puki (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 12:23:00 - ERROR - Failed to Login Invalid username/email or password (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 12:23:06 - DEBUG - auth.service - login with username/email: Gali (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 12:23:06 - ERROR - Failed to Login Invalid username/email or password (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 12:23:58 - DEBUG - auth.service - login with username/email: Gali (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 12:35:07 - DEBUG - auth.service - login with username/email: Gali (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 12:40:16 - DEBUG - auth.service - login with username/email: Gali (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 12:50:18 - DEBUG - auth.service - login with username/email: Gali (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
+4.6.2021, 17:14:35 - DEBUG - auth.service - login with username/email: Gali (sid: Uw58o-tEifYDyRryyxg2UpEbZzTESsLW)
