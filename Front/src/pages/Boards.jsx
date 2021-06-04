@@ -108,7 +108,7 @@ class _Boards extends Component {
         return (
             <section className="boardApp-main">
                 <span className="boardApp-header">
-                    <SectionTitle Icon={HiOutlineViewBoards}> Boards</SectionTitle>
+                    <SectionTitle className="boards-page" Icon={HiOutlineViewBoards}> Boards</SectionTitle>
                 </span>
                 <div className="boards-container">
                     <div className="boardAdd" onClick={this.newBoardModal}><BsPlus /> Add a new board</div>

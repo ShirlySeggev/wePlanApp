@@ -22,7 +22,7 @@ export class BoardHeader extends Component {
         this.setState({ board });
     }
 
-    componentDidUpdate(prevProps){
+    componentDidUpdate(prevProps) {
         if (prevProps.board !== this.props.board) {
             const { title } = this.props.board;
             const board = { title };
@@ -60,13 +60,15 @@ export class BoardHeader extends Component {
         if (!board) return <Loading />
         const { groups, style, members } = this.props.board;
         return (
-            <section className="wePlanApp-header" >
-                <form onSubmit={this.onChangeBoardHeader}>
-                    <input className="board-header" type="text" name="title" value={title} autoComplete="off" spellCheck="false" onChange={this.handleChange} />
-                </form>
-                <div className="board-members">
-                    {members.map(member => <MemberAvatar member={member} key={member._id} />)}
-                    <div onClick={this.toggleMembers}><MemberAvatar member={{ fullname: '+' }} key={Date.now()} /></div>
+            <section className="board-header" >
+                <div className="board-heder-titleAndMembers">
+                    <form onSubmit={this.onChangeBoardHeader}>
+                        <input className="board-header-title" type="text" name="title" value={title} autoComplete="off" spellCheck="false" onChange={this.handleChange} />
+                    </form>
+                    <div className="board-members">
+                        {members.map(member => <MemberAvatar member={member} key={member._id} />)}
+                        <div onClick={this.toggleMembers}><MemberAvatar member={{ fullname: '+' }} key={Date.now()} /></div>
+                    </div>
                 </div>
                 <div className="board-menu-btn btn" onClick={this.toggleBoardMenu}>
                     <BsThreeDots />

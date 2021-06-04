@@ -1,4 +1,3 @@
-
 const dbService = require('../../services/db.service')
 const logger = require('../../services/logger.service')
 const ObjectId = require('mongodb').ObjectId
@@ -7,6 +6,7 @@ module.exports = {
     query,
     getById,
     getByUsername,
+    getByUserEmail,
     remove,
     update,
     add
@@ -21,6 +21,7 @@ async function query(filterBy = {}) {
             delete user.password
             return user
         })
+        // console.log('query - user in back is:', users);
         return users
     } catch (err) {
         logger.error('cannot find users', err)
@@ -33,7 +34,7 @@ async function getById(userId) {
         const collection = await dbService.getCollection('user')
         const user = await collection.findOne({ '_id': ObjectId(userId) })
         delete user.password
-
+        // console.log('getById - user in back is:', user);
         return user
     } catch (err) {
         logger.error(`while finding user ${userId}`, err)
@@ -44,13 +45,26 @@ async function getByUsername(username) {
     try {
         const collection = await dbService.getCollection('user')
         const user = await collection.findOne({ username })
-        console.log('user in back is:', user);
+        // console.log('getByUsername - user in back is:', user);
         return user
     } catch (err) {
         logger.error(`while finding user ${username}`, err)
         throw err
     }
 }
+
+async function getByUserEmail(email) {
+    try {
+        const collection = await dbService.getCollection('user')
+        const user = await collection.findOne({ email })
+        // console.log('getByUserEmail - user in back is:', user);
+        return user
+    } catch (err) {
+        logger.error(`while finding user ${email}`, err)
+        throw err
+    }
+}
+
 
 async function remove(userId) {
     try {
@@ -83,10 +97,11 @@ async function add(user) {
     try {
         // peek only updatable fields!
         const userToAdd = {
-            username: user.username,
-            password: user.password,
             fullname: user.fullname,
-            score: user.score || 0
+            username: user.username,
+            email: user.email,
+            imgUrl: user.imgUrl,
+            password: user.password,
         }
         const collection = await dbService.getCollection('user')
         await collection.insertOne(userToAdd)
@@ -115,5 +130,3 @@ function _buildCriteria(filterBy) {
     }
     return criteria
 }
-
-

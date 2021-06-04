@@ -73,12 +73,12 @@ export class GroupHeader extends Component {
         const { toggleActions, toggleBgc } = this.state;
 
         return (
-            <section className="GroupHeader group-layout" style={{ backgroundColor: style.bgc }}>
-                <form onSubmit={this.editGroupName}>
-                    <input className="board-header" type="text" name="title" value={title} autoComplete="off" spellCheck="false" onChange={this.handleChange} />
+            <section className="GroupHeader" style={{ backgroundColor: style.bgc }}>
+                <form className="group-header" onSubmit={this.editGroupName}>
+                    <input type="text" name="title" value={title} autoComplete="off" spellCheck="false" onChange={this.handleChange} />
+                    <BsThreeDots className="icon" onClick={this.toggleActions} />
                 </form>
                 <div className="group-actions">
-                    <BsThreeDots className="icon" onClick={this.toggleActions} />
                     {toggleActions && <div className="group-menu" >
                         <ModalHeader title='List actions' closeModal={this.toggleActions} />
                         <ul style={{ ...modalPos }} className="menu-options">

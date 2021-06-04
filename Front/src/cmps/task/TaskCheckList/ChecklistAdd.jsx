@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { utilService } from '../../../services/util.service';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { ModalHeader } from "../../shared/ModalHeader";
 
 export class ChecklistAdd extends Component {
@@ -10,9 +10,7 @@ export class ChecklistAdd extends Component {
     }
 
 
-    onAddChecklist = (ev) => {
-        ev.preventDefault();
-        // ev.stoppropagation()
+    onAddChecklist = () => {
         const { task, updateTask } = this.props
         const { title } = this.state
         if (!title) return
@@ -27,8 +25,8 @@ export class ChecklistAdd extends Component {
         if (ev.key === "Enter" && ev.shiftKey === false) {
             ev.preventDefault();
             // ev.stoppropagation()
+            this.onAddChecklist()
         }
-        this.onAddChecklist()
     }
 
 
@@ -58,9 +56,8 @@ export class ChecklistAdd extends Component {
                     onChange={this.handleChange}
                     onKeyDown={this.onEnter}
                     spellCheck="false">
-                        
                 </input>
-                <button className="secondary-btn" onClick={(ev)=>{this.onAddChecklist(ev)}}>Add</button>
+                <button className="secondary-btn" onClick={this.onAddChecklist}>Add</button>
             </div>
         )
     }

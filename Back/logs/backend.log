@@ -160,3 +160,42 @@
 03/06/2021, 23:09:16 - INFO - Server is running on port: 3030 
 03/06/2021, 23:14:41 - INFO - Server is running on port: 3030 
 03/06/2021, 23:35:05 - INFO - Server is running on port: 3030 
+04/06/2021, 14:06:29 - INFO - Server is running on port: 3030 
+04/06/2021, 14:06:54 - INFO - Server is running on port: 3030 
+04/06/2021, 14:08:16 - INFO - Server is running on port: 3030 
+04/06/2021, 14:08:51 - INFO - Server is running on port: 3030 
+04/06/2021, 14:09:39 - INFO - Server is running on port: 3030 
+04/06/2021, 14:11:03 - INFO - Server is running on port: 3030 
+04/06/2021, 14:11:43 - INFO - Server is running on port: 3030 
+04/06/2021, 14:19:04 - DEBUG - auth.service - signup with username: shirlys, fullname: Shirly Seggev,email: 12345@gmail.com, imgUrl:  (sid: _S4dH36kIC71nH4CvYpKPbvHIafuzd9Q)
+04/06/2021, 14:19:04 - DEBUG - auth.route - new account created: {"fullname":"Shirly Seggev","username":"shirlys","email":"12345@gmail.com","imgUrl":"","password":"$2b$10$26xpDXEIE/cIuRLA64A7QOnH8YBlhhy5vwEnbAWxkWXfoIWeOppEG","_id":"60ba0c28bd410d30e8aae3c8"} (sid: _S4dH36kIC71nH4CvYpKPbvHIafuzd9Q)
+04/06/2021, 14:19:04 - DEBUG - auth.service - login with username/email: shirlys (sid: _S4dH36kIC71nH4CvYpKPbvHIafuzd9Q)
+04/06/2021, 14:20:21 - DEBUG - auth.service - login with username/email: shirlys (sid: IshmaxLIvCfcma9PfyfntuKgVPrrQPuY)
+04/06/2021, 14:25:18 - DEBUG - auth.service - login with username/email: zipi123 (sid: 58Gio4sqpuuXbDtgDLGOCaZC_kBk0wH5)
+04/06/2021, 14:25:18 - ERROR - Failed to Login Invalid username/email or password (sid: 58Gio4sqpuuXbDtgDLGOCaZC_kBk0wH5)
+04/06/2021, 14:25:54 - DEBUG - auth.service - login with username/email: zipi123 (sid: 58Gio4sqpuuXbDtgDLGOCaZC_kBk0wH5)
+04/06/2021, 14:25:54 - ERROR - Failed to Login Invalid username/email or password (sid: 58Gio4sqpuuXbDtgDLGOCaZC_kBk0wH5)
+04/06/2021, 14:27:56 - DEBUG - auth.service - signup with username: neils, fullname: Neil Seggev,email: neils@gmail.com, imgUrl:  (sid: 58Gio4sqpuuXbDtgDLGOCaZC_kBk0wH5)
+04/06/2021, 14:27:56 - DEBUG - auth.route - new account created: {"fullname":"Neil Seggev","username":"neils","email":"neils@gmail.com","imgUrl":"","password":"$2b$10$tzWQSlCKvRtapnrhXd6WKeZ7mLCueaxeUPZUvm46xF3rY8CIUApNq","_id":"60ba0e3cbd410d30e8aae3c9"} (sid: 58Gio4sqpuuXbDtgDLGOCaZC_kBk0wH5)
+04/06/2021, 14:27:56 - DEBUG - auth.service - login with username/email: neils (sid: 58Gio4sqpuuXbDtgDLGOCaZC_kBk0wH5)
+04/06/2021, 14:29:27 - DEBUG - auth.service - login with username/email: neils (sid: jSNGvAGHTYH7J3ZAVZN-BSYMN3XLXBcI)
+04/06/2021, 14:29:43 - DEBUG - auth.service - login with username/email: neils (sid: JWAQ7ODE-tqKLpkH7ZdIlUizu2DKLBGG)
+04/06/2021, 14:37:52 - DEBUG - auth.service - login with username/email: shirlys (sid: l28I-BGW9Qy6s7kI9oJfYejvdCXWHTCJ)
+04/06/2021, 14:37:53 - ERROR - Failed to Login Invalid username/email or password (sid: l28I-BGW9Qy6s7kI9oJfYejvdCXWHTCJ)
+04/06/2021, 14:38:40 - DEBUG - auth.service - login with username/email: shirlys (sid: l28I-BGW9Qy6s7kI9oJfYejvdCXWHTCJ)
+04/06/2021, 14:41:52 - DEBUG - auth.service - login with username/email: neils (sid: 1b88PDir1ZclZm2iNhnuJEldAYPLS9g-)
+04/06/2021, 14:41:52 - ERROR - Failed to Login Invalid username/email or password (sid: 1b88PDir1ZclZm2iNhnuJEldAYPLS9g-)
+04/06/2021, 14:49:09 - DEBUG - auth.service - login with username/email: shirlys (sid: 1b88PDir1ZclZm2iNhnuJEldAYPLS9g-)
+04/06/2021, 14:51:07 - DEBUG - auth.service - login with username/email: puki (sid: G1XzT4F2FRsLQ1f-vAtPHisUzisuEOBk)
+04/06/2021, 14:51:07 - ERROR - Failed to Login Invalid username/email or password (sid: G1XzT4F2FRsLQ1f-vAtPHisUzisuEOBk)
+04/06/2021, 14:51:53 - DEBUG - auth.service - signup with username: puki, fullname: puki,email: puki@gmail.com, imgUrl:  (sid: G1XzT4F2FRsLQ1f-vAtPHisUzisuEOBk)
+04/06/2021, 14:51:53 - DEBUG - auth.route - new account created: {"fullname":"puki","username":"puki","email":"puki@gmail.com","imgUrl":"","password":"$2b$10$/vaVKpJ08Bo1erOKlEwfvOsdiMepkmg2B8CLlwx9lx7LwzvKP0nuK","_id":"60ba13d9bd410d30e8aae3ca"} (sid: G1XzT4F2FRsLQ1f-vAtPHisUzisuEOBk)
+04/06/2021, 14:51:53 - DEBUG - auth.service - login with username/email: puki (sid: G1XzT4F2FRsLQ1f-vAtPHisUzisuEOBk)
+04/06/2021, 14:56:16 - DEBUG - auth.service - login with username/email: neils (sid: v-yVO3bpMIEuvDLKha4SxTfJCJjAYo_n)
+04/06/2021, 14:56:40 - DEBUG - auth.service - login with username/email: shirlys (sid: LYce3PuJI5ewtxCuzN-MBFgPyudsI00S)
+04/06/2021, 14:56:40 - ERROR - Failed to Login Invalid username/email or password (sid: LYce3PuJI5ewtxCuzN-MBFgPyudsI00S)
+04/06/2021, 14:57:32 - DEBUG - auth.service - login with username/email: shirlys (sid: LYce3PuJI5ewtxCuzN-MBFgPyudsI00S)
+04/06/2021, 14:58:17 - DEBUG - auth.service - signup with username: reem, fullname: reem,email: reem@gmail.com, imgUrl:  (sid: YOCZ38Cz5CEvo2yGXY_hNYIOrs8Vh-it)
+04/06/2021, 14:58:17 - DEBUG - auth.route - new account created: {"fullname":"reem","username":"reem","email":"reem@gmail.com","imgUrl":"","password":"$2b$10$NuXoKJp/JxqZn0hFEOKEteDZ9jRTYvTQ553nSVQDKD.ufCvB.Eu1S","_id":"60ba1559bd410d30e8aae3cb"} (sid: YOCZ38Cz5CEvo2yGXY_hNYIOrs8Vh-it)
+04/06/2021, 14:58:17 - DEBUG - auth.service - login with username/email: reem (sid: YOCZ38Cz5CEvo2yGXY_hNYIOrs8Vh-it)
+04/06/2021, 15:02:28 - DEBUG - auth.service - login with username/email: shirlys (sid: 2ZEyCHR1xPOXqzeCSDUX682RQAK8ZbB0)

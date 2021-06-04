@@ -12,6 +12,11 @@
     }
     .section-title{
         font-size: 1.5rem;
+        display: flex;
+            align-items: center;
+            .icon {
+                margin-inline-end: 3px;
+            }
     }
 
     .boards-container {
@@ -40,6 +45,7 @@
         background-size: cover;
         color: #fff;
         font-weight: unset;
+        transition: box-shadow .2s;
         // font-family: Poppings-bold, "Segoe UI", sans-serif;
         .boardAdd-input {
             width: 100%;
@@ -49,8 +55,9 @@
             background: transparent;
         }
         &:hover {
+            
             transform: scale(1.025);
-            box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 15px #000033;
+            box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 15px #0303388f;
         }
     }
     .boardAdd-modal {

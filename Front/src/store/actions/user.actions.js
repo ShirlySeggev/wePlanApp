@@ -23,7 +23,7 @@ export function setUser(user, isNewUser) {
       if (isNewUser) loggedUser = await userService.signup(user);
       else loggedUser = await userService.login(user);
       delete loggedUser.password
-       const action = {
+      const action = {
         type: "SET_USER",
         loggedUser,
       };

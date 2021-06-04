@@ -20,6 +20,7 @@ import { Loading } from '../../shared/Loading';
 import { TaskMembersPreview } from './TaskMembersPreview';
 import { CgClose } from 'react-icons/cg';
 import { SectionTitle } from '../../shared/SectionTitle';
+import { utilService } from '../../../services/util.service';
 
 let modalPos;
 
@@ -27,15 +28,13 @@ class _TaskDetails extends Component {
     state = {
         task: null,
         group: null,
-        toggleTaskLabel: false,
         isDate: false,
-        toggleImg: false,
-        toggleChecklist: false,
+        toggleTaskLabel: false,
+        toggleImgUpload: false,
+        toggleAddCheckList: false,
         toggleMembers: false,
-        toggleDueDate: false
+        toggleDueDate: false,
     }
-
-
 
     componentDidMount() {
         this.loadTask();
@@ -128,41 +127,19 @@ class _TaskDetails extends Component {
         const { clientX, clientY } = ev;
         modalPos = { left: clientX - left + 'px', top: (clientY - top) + 'px' };
     }
-
-    toggleTaskLabel = (ev) => {
-        this.modalPos(ev);
-        this.setState({ toggleTaskLabel: !this.state.toggleTaskLabel });
+    toggle = (ev, key) => {
+        const computed = {
+            key
+        }
+        computed.key = 'toggle' + utilService.capitalize(key);
+        console.log(computed.key);
+        !this.state[computed.key] && this.modalPos(ev);
+        this.setState({ [computed.key]: !this.state[computed.key] });
     }
-
-    toggleDate = (ev) => {
-        this.modalPos(ev);
-        this.setState({ isDate: !this.state.isDate });
-    }
-
-    toggleAddCheckList = (ev) => {
-        this.modalPos(ev);
-        this.setState({ toggleChecklist: !this.state.toggleChecklist })
-    }
-
-    toggleMembers = (ev) => {
-        this.modalPos(ev);
-        this.setState({ toggleMembers: !this.state.toggleMembers })
-    }
-
-    toggleImgUpload = (ev) => {
-        this.modalPos(ev);
-        this.setState({ toggleImg: !this.state.toggleImg })
-    }
-
-    toggleDueDate = (ev) => {
-        this.modalPos(ev);
-        this.setState({ toggleDueDate: !this.state.toggleDueDate })
-    }
-
 
     render() {
         const { board } = this.props;
-        const { task, group, toggleTaskLabel, isDate, toggleChecklist, toggleMembers, toggleImg, toggleDueDate } = this.state;
+        const { task, group, toggleTaskLabel, isDate, toggleAddCheckList, toggleMembers, toggleImgUpload, toggleDueDate } = this.state;
         if (!task) return <Loading />
         const { checklists, labelIds, comments, members, img, dueDate } = this.state.task;
         const isImg = task.img?.url;
@@ -225,15 +202,15 @@ class _TaskDetails extends Component {
                         {/* POPUPS BUTTONS */}
                         <ul className="task-actions">
                             {/* ADD MEMBERS */}
-                            <li className="detail-act-btn" onClick={this.toggleMembers}><BsPerson /><span className="txt">Memebrs</span></li>
+                            <li className="detail-act-btn" onClick={ev => this.toggle(ev, 'members')}><BsPerson /><span className="txt">Memebrs</span></li>
                             {/* ADD LABELS */}
-                            <li className="detail-act-btn" onClick={this.toggleTaskLabel}><MdLabelOutline /><span className="txt">Labels</span></li>
+                            <li className="detail-act-btn" onClick={ev => this.toggle(ev, 'taskLabel')}><MdLabelOutline /><span className="txt">Labels</span></li>
                             {/* ADD DATES */}
-                            <li className="detail-act-btn" onClick={this.toggleDueDate}><BiTimeFive /><span className="txt">Due Date</span></li>
+                            <li className="detail-act-btn" onClick={ev => this.toggle(ev, 'dueDate')}><BiTimeFive /><span className="txt">Due Date</span></li>
                             {/* ADD CHECLIST */}
-                            <li className="detail-act-btn" onClick={this.toggleAddCheckList}><BsCheckBox /><span className="txt">Checklist</span></li>
+                            <li className="detail-act-btn" onClick={ev=>this.toggle(ev,'addCheckList')}><BsCheckBox /><span className="txt">Checklist</span></li>
                             {/* ADD IMAGE */}
-                            <li className="detail-act-btn" onClick={this.toggleImgUpload}><BsImage /><span className="txt">Image</span></li>
+                            <li className="detail-act-btn" onClick={ev=>this.toggle(ev,'imgUpload')}><BsImage /><span className="txt">Image</span></li>
                             {/* MOVE TASK */}
                             <li className="detail-act-btn"><BsArrowRightShort /><span className="txt">Move</span></li>
                             {/* COPY TASK */}
@@ -243,11 +220,11 @@ class _TaskDetails extends Component {
                         </ul>
 
                         {/* POPUPS */}
-                        {toggleMembers && <TaskMembers modalPos={modalPos} members={board.members} task={task} toggleMembers={this.toggleMembers} updateTask={this.updateTask} />}
-                        {toggleTaskLabel && <TaskLabel modalPos={modalPos} task={task} updateTask={this.updateTask} toggleTaskLabel={this.toggleTaskLabel} />}
-                        {toggleChecklist && <ChecklistAdd modalPos={modalPos} task={task} toggleAddCheckList={this.toggleAddCheckList} updateTask={this.updateTask} />}
-                        {toggleImg && <TaskImg modalPos={modalPos} toggleImgUpload={this.toggleImgUpload} updateImg={this.updateImg} />}
-                        {toggleDueDate && <TaskDueDate modalPos={modalPos} task={task} updateTask={this.updateTask} toggleDueDate={this.toggleDueDate} />}
+                        {toggleMembers && <TaskMembers modalPos={modalPos} members={board.members} task={task} toggleMembers={ev => this.toggle(ev, 'members')} updateTask={this.updateTask} />}
+                        {toggleTaskLabel && <TaskLabel modalPos={modalPos} task={task} updateTask={this.updateTask} toggleTaskLabel={ev => this.toggle(ev, 'taskLabel')} />}
+                        {toggleAddCheckList && <ChecklistAdd modalPos={modalPos} task={task} toggleAddCheckList={ev=>this.toggle(ev,'addCheckList')} updateTask={this.updateTask} />}
+                        {toggleImgUpload && <TaskImg modalPos={modalPos} updateImg={this.updateImg} toggleImgUpload={ev=>this.toggle(ev,'imgUpload')}/>}
+                        {toggleDueDate && <TaskDueDate modalPos={modalPos} task={task} updateTask={this.updateTask} toggleDueDate={ev => this.toggle(ev, 'dueDate')} />}
                     </div>
                 </section>
             </section >

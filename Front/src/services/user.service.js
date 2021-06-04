@@ -19,13 +19,13 @@ const BASE_URL = process.env.NODE_ENV === 'production' ? '/api/user' : 'http://l
 
 
 function getUsers() {
-    // return httpService.get(`user`)
-    return asyncUserStorage.query(STORAGE_KEY)
+    return httpService.get(`user`)
+    // return asyncUserStorage.query(STORAGE_KEY)
 }
 
 function getById(userId) {
-    // return httpService.get(`user/${userId}`)
-    return asyncUserStorage.get(STORAGE_KEY, userId);
+    return httpService.get(`user/${userId}`)
+    // return asyncUserStorage.get(STORAGE_KEY, userId);
 
 }
 
@@ -48,8 +48,8 @@ async function update(user) {
 
 
 async function login(userCred) {
-    const user = await asyncUserStorage.get(STORAGE_KEY, userCred)
-    // const user = await httpService.post('auth/login', userCred)
+    // const user = await asyncUserStorage.get(STORAGE_KEY, userCred)
+    const user = await httpService.post('auth/login', userCred)
     try {
         if (user) return _saveLocalUser(user)
     } catch (err) {
@@ -60,8 +60,8 @@ async function login(userCred) {
 
 async function signup(userCred) {
     console.log('user service signup', userCred);
-    const user = await asyncUserStorage.post(STORAGE_KEY, userCred)
-    // const user = await httpService.post('auth/signup', userCred)
+    // const user = await asyncUserStorage.post(STORAGE_KEY, userCred)
+    const user = await httpService.post('auth/signup', userCred)
     try {
         if (user) {
             return  _saveLocalUser(user)
@@ -72,8 +72,8 @@ async function signup(userCred) {
 }
 
 async function logout() {
-    return _clearLocalUser()
-    // return await httpService.post('auth/logout')
+    // return _clearLocalUser()
+    return await httpService.post('auth/logout')
 }
 
 function _saveLocalUser(user) {

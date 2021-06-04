@@ -2,7 +2,8 @@ export const utilService = {
     makeId,
     makeLorem,
     getRandomIntInclusive,
-    getRandomColor
+    getRandomColor,
+    capitalize
 }
 
 function makeId(length = 6) {
@@ -36,4 +37,8 @@ function getRandomColor() {
     var colors = ['#eca1a6', '#b1cbbb', '#92a8d1', '#f7786b', '#ADD8E6'];
     var num = getRandomIntInclusive(0, 4);
     return colors[num];
+}
+
+function capitalize(word){
+    return word[0].toUpperCase() + word.substring(1)
 }
