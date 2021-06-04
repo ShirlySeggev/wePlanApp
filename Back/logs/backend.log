@@ -227,3 +227,4 @@
 4.6.2021, 17:46:51 - DEBUG - auth.service - login with username/email: Gali (sid: evP4UiaYQ3XmLbH73kwme_Cbjq1FQUBz)
 4.6.2021, 17:50:25 - DEBUG - auth.service - login with username/email: Gali (sid: elojoc2fE782hYddJThie5d98Kb3ie0u)
 4.6.2021, 17:51:31 - DEBUG - auth.service - login with username/email: Gali (sid: elojoc2fE782hYddJThie5d98Kb3ie0u)
+4.6.2021, 18:02:33 - INFO - Server is running on port: 3030 
