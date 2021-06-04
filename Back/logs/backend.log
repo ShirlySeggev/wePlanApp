@@ -199,3 +199,4 @@
 04/06/2021, 14:58:17 - DEBUG - auth.route - new account created: {"fullname":"reem","username":"reem","email":"reem@gmail.com","imgUrl":"","password":"$2b$10$NuXoKJp/JxqZn0hFEOKEteDZ9jRTYvTQ553nSVQDKD.ufCvB.Eu1S","_id":"60ba1559bd410d30e8aae3cb"} (sid: YOCZ38Cz5CEvo2yGXY_hNYIOrs8Vh-it)
 04/06/2021, 14:58:17 - DEBUG - auth.service - login with username/email: reem (sid: YOCZ38Cz5CEvo2yGXY_hNYIOrs8Vh-it)
 04/06/2021, 15:02:28 - DEBUG - auth.service - login with username/email: shirlys (sid: 2ZEyCHR1xPOXqzeCSDUX682RQAK8ZbB0)
+04/06/2021, 17:11:25 - DEBUG - auth.service - login with username/email: shirlys (sid: ZNGurzxEK2iYoutnTNyJq9MN8Ju51ilW)

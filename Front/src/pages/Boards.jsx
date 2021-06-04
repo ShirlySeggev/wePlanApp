@@ -5,13 +5,13 @@ import { SectionTitle } from '../cmps/shared/SectionTitle';
 import { HiOutlineViewBoards } from 'react-icons/hi';
 import { BoardList } from '../cmps/board/BoardList';
 import { utilService } from '../services/util.service.js';
+import { userService } from '../services/user.service.js';
 import { BsPlus } from 'react-icons/bs';
 import { BoardBackground } from '../cmps/board/BoardBackground.jsx';
 import { ModalHeader } from '../cmps/shared/ModalHeader.jsx';
 import { Loading } from '../cmps/shared/Loading.jsx';
 import { BoardBackgroundImg } from '../cmps/board/BoardBackgroundImg.jsx';
 import { socketService } from '../services/socket.service';
-import { MdSpeakerGroup } from 'react-icons/md';
 
 class _Boards extends Component {
     state = {
@@ -29,12 +29,12 @@ class _Boards extends Component {
         this.loadBoards();
         socketService.setup();
         socketService.on('board added', msg => {
-           this.loadBoards();
+            this.loadBoards();
         })
         socketService.on('board removed', msg => {
             console.log(msg);
             this.loadBoards();
-         })
+        })
     }
 
     async loadBoards() {
@@ -87,16 +87,18 @@ class _Boards extends Component {
             // _id: utilService.makeId(),
             title,
             createdAt: Date.now(),
-            createdBy: { _id: "u105", fullname: "Poki King", imgUrl: "http://some-img" },
+            createdBy: userService.getLoggedinUser() || utilService.getGuestUser(), 
             style: {
                 bgc,
                 img
             },
             labels: [],
-            members: [{ _id: "u105", fullname: "Poki King", imgUrl: "http://some-img" }],
+            // members: [{ _id: "u105", fullname: "Poki King", imgUrl: "http://some-img" }],
+            members: [userService.getLoggedinUser() || utilService.getGuestUser()],
             groups: [],
             activities: [],
         }
+        console.log(board);
         return board;
     }
 

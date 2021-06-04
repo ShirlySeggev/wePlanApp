@@ -72,7 +72,7 @@ async function signup(userCred) {
 }
 
 async function logout() {
-    // return _clearLocalUser()
+    _clearLocalUser();
     return await httpService.post('auth/logout')
 }
 
