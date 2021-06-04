@@ -12,7 +12,6 @@ export class GroupAdd extends Component {
     }
 
     toggleUpdate = () => {
-        console.log('here');
         this.setState({ toggleUpdate: !this.state.toggleUpdate })
     }
 
