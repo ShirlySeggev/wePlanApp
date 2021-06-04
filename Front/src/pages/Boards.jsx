@@ -10,8 +10,7 @@ import { ModalHeader } from '../cmps/shared/ModalHeader.jsx';
 import { Loading } from '../cmps/shared/Loading.jsx';
 import { BoardBackgroundImg } from '../cmps/board/BoardBackgroundImg.jsx';
 import { socketService } from '../services/socket.service';
-import { utilService } from '../services/util.service.js';
-import { MdSpeakerGroup } from 'react-icons/md';
+
 
 class _Boards extends Component {
     state = {
