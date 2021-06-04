@@ -11,6 +11,7 @@ export class BoardMenu extends Component {
         toggleBoardBcg: false,
         toggleRemoveBoard: false,
         toggleActivity: false,
+        isMember: false
     }
 
     componentDidMount() {
@@ -33,7 +34,8 @@ export class BoardMenu extends Component {
 
 
     onRemove = () => {
-        console.log('here');
+// const {createdBy} = this.props.board
+// console.log(createdBy);
         const { board, onRemoveBoard } = this.props;
         onRemoveBoard(board._id);
         // this.props.history.push('/board');
@@ -54,10 +56,13 @@ export class BoardMenu extends Component {
         onUpdateBoard(updatedBoard);
     }
 
+    toggleMembers = () => {
+        this.setState({ isMembers: !this.state.isMembers })
+    }
 
     render() {
-        const { toggleBoardBcg, toggleRemoveBoard, toggleActivity } = this.state;
-        const { toggleBoardMenu, toggleMembers, isMembers, board, onUpdateBoard } = this.props;
+        const { toggleBoardBcg, toggleRemoveBoard, toggleActivity, isMembers } = this.state;
+        const { toggleBoardMenu, board, onUpdateBoard } = this.props;
         const { activities } = this.props.board;
         return (
             <section className="wePlanApp-menu open" >
@@ -65,8 +70,7 @@ export class BoardMenu extends Component {
                 <ul className="menu-options">
                     <li onClick={this.toggleBoardBcg}>Change board background</li>
 
-                    <li onClick={toggleMembers} >Add a member</li>
-                    {isMembers && <BoardMembers toggleMembers={toggleMembers} onUpdateBoard={onUpdateBoard} members={board.members} board={board} />}
+                    <li onClick={this.toggleMembers} >Add a member</li>
 
                     <li onClick={this.toggleRemoveBoard}>Delete board</li>
                     <li onClick={this.toggleActivity}>Activity menu</li>
@@ -86,6 +90,7 @@ export class BoardMenu extends Component {
                             </div>
                         </div>
                     }
+                    {isMembers && <BoardMembers toggleMembers={this.toggleMembers} onUpdateBoard={onUpdateBoard} members={board.members} board={board} />}
                     {toggleActivity && <ActivityLog activities={activities} />}
                 </ul>
 

@@ -130,7 +130,7 @@ class _WePlanApp extends Component {
     render() {
         const { board } = this.props;
         if (!board) return <Loading />
-        const { title, groups, style } = this.props.board;
+        const { title, groups, style, loggedInUser } = this.props.board;
         const bg = style.img ? { backgroundImage: `url(${style.img})` } : { backgroundColor: style.bgc };
         return (
             <Fragment>
@@ -139,7 +139,7 @@ class _WePlanApp extends Component {
                     <Switch>
                         <Route path='/board/:boardId/group/:groupId/task/:taskId' component={TaskDetails} />
                     </Switch>
-                    <GroupList groups={groups} board={board} updateGroup={this.updateGroup} removeGroup={this.removeGroup} addGroup={this.addGroup} handleDragEnd={this.handleDragEnd} />
+                    <GroupList groups={groups} loggedInUser={loggedInUser} board={board} updateGroup={this.updateGroup} removeGroup={this.removeGroup} addGroup={this.addGroup} handleDragEnd={this.handleDragEnd} />
                 </section >
             </Fragment>
         )
@@ -149,6 +149,7 @@ class _WePlanApp extends Component {
 function mapStateToProps(state) {
     return {
         board: state.boardModule.board,
+        loggedInUser: state.userModule.loggedInUser,
     }
 }
 const mapDispatchToProps = {

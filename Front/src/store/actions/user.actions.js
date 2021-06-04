@@ -1,5 +1,4 @@
 import { userService } from '../../services/user.service.js';
-// import {sessionService} from '../../services/sessionStorageService'
 
 export function loadUsers() {
   return async dispatch => {
@@ -27,7 +26,6 @@ export function setUser(user, isNewUser) {
         type: "SET_USER",
         loggedUser,
       };
-      // sessionService.store('loggedUserDB', loggedUser)
       dispatch(action);
     } catch (err) {
       console.log("UserActions: err in seting the user", err);

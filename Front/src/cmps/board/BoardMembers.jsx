@@ -48,6 +48,7 @@ class _BoardMembers extends Component {
     async onClickMember(member) {
         const { users, board, onUpdateBoard } = this.props
         const { boardMembers } = this.state
+        if(board.createdBy._id === member._id) return
         if (!boardMembers) board.members = [member]
         else {
             let newBoard

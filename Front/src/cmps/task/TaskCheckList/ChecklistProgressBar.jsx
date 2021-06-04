@@ -17,11 +17,13 @@ export class ChecklistProgressBar extends Component {
         const { todos } = this.props
         const completed = { width: `${this.getCompletedRatio(todos)}%` }
         return (
-            <div className="checklist-progress-bar-main">
+            <section className="checklist-progress-bar-container">
                 <h4>{completed.width}</h4>
-                <div className="checklist-progress-bar-secondery" style={completed}>
+                <div className="checklist-progress-bar-main">
+                    <div className="checklist-progress-bar-secondery" style={completed}>
+                    </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

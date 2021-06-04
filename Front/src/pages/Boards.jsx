@@ -83,8 +83,8 @@ class _Boards extends Component {
 
 
     createBoard = (title, bgc, img) => {
+        const {user} = this.props
         const board = {
-            // _id: utilService.makeId(),
             title,
             createdAt: Date.now(),
             createdBy: userService.getLoggedinUser() || utilService.getGuestUser(), 
@@ -128,10 +128,10 @@ class _Boards extends Component {
         )
     }
 }
-
 function mapStateToProps(state) {
     return {
         boards: state.boardModule.boards,
+        user: state.userModule.loggedInUser,
     }
 }
 const mapDispatchToProps = {

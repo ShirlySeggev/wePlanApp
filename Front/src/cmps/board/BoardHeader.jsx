@@ -13,7 +13,8 @@ export class BoardHeader extends Component {
         toggleMenu: false,
         board: {
             title: '',
-        }
+        },
+        isMember: false
     }
 
     componentDidMount() {
@@ -74,7 +75,7 @@ export class BoardHeader extends Component {
                     <BsThreeDots />
                     <span>Show menu</span>
                 </div>
-                {toggleMenu && <BoardMenu board={board} toggleMembers={this.toggleMembers} isMembers={isMembers} toggleBoardMenu={this.toggleBoardMenu} onRemoveBoard={this.props.onRemoveBoard} onUpdateBoard={this.props.onUpdateBoard} />}
+                {toggleMenu && <BoardMenu board={board} toggleBoardMenu={this.toggleBoardMenu} onRemoveBoard={this.props.onRemoveBoard} onUpdateBoard={this.props.onUpdateBoard} />}
                 {isMembers && <BoardMembers toggleMembers={this.toggleMembers} onUpdateBoard={onUpdateBoard} members={board.members} board={board} />}
                 {/* {toggleMenu && <BoardMenu board={board} toggleBoardMenu={this.toggleBoardMenu} onRemoveBoard={this.props.onRemoveBoard} onUpdateBoard={this.props.onUpdateBoard} />} */}
             </section >

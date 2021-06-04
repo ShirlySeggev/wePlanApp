@@ -1,5 +1,4 @@
 import { httpService } from './http.service'
-import { asyncUserStorage } from './user-storage.service.js';
 
 
 const STORAGE_KEY = 'boardUsers'
@@ -12,7 +11,7 @@ export const userService = {
     getById,
     remove,
     update,
-    getLoggedinUser,
+    getLoggedinUser: _getLoggedinUser,
     // increaseScore
 }
 const BASE_URL = process.env.NODE_ENV === 'production' ? '/api/user' : 'http://localhost:3030/api/user';
@@ -35,18 +34,12 @@ function remove(userId) {
 
 async function update(user) {
     user = await httpService.put(`user/${user._id}`, user)
-    if (getLoggedinUser()._id === user._id) _saveLocalUser(user)
+    if (_getLoggedinUser()._id === user._id) _saveLocalUser(user)
 }
 
-// async function increaseScore(by = SCORE_FOR_REVIEW) {
-//     const user = getLoggedinUser()
-//     user.score = user.score + by || by
-//     await update(user)
-//     return user.score
-// }
 
 
-
+// AUTH
 async function login(userCred) {
     // const user = await asyncUserStorage.get(STORAGE_KEY, userCred)
     const user = await httpService.post('auth/login', userCred)
@@ -59,13 +52,12 @@ async function login(userCred) {
 }
 
 async function signup(userCred) {
-    console.log('user service signup', userCred);
     // const user = await asyncUserStorage.post(STORAGE_KEY, userCred)
+    console.log('user service signup', userCred);
     const user = await httpService.post('auth/signup', userCred)
     try {
-        if (user) {
-            return  _saveLocalUser(user)
-        }
+        if (user) return _saveLocalUser(user)
+        
     } catch (err) {
         console.log('error in user service signup', err)
     }
@@ -81,12 +73,12 @@ function _saveLocalUser(user) {
     return user
 }
 
-function _clearLocalUser() {
-    sessionStorage.clear();
+function _getLoggedinUser() {
+    return JSON.parse(sessionStorage.getItem('loggedinUser') || 'null')
 }
 
-function getLoggedinUser() {
-    return JSON.parse(sessionStorage.getItem('loggedinUser') || 'null')
+function _clearLocalUser() {
+    sessionStorage.clear();
 }
 
 

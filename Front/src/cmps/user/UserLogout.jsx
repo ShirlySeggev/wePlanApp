@@ -1,5 +1,6 @@
 import { Avatar } from "@material-ui/core";
 import { Component } from "react";
+import { CgClose } from 'react-icons/cg';
 
 
 export class UserLogout extends Component {
@@ -37,10 +38,12 @@ export class UserLogout extends Component {
 
                 {isLogout && <div className="user-logout-auth">
                     <h6>Are you sure you want to logout?</h6>
-                    <div>
-                    <button onClick={() => this.onUserLogoutRes(true)} >Yes, logout</button>
-                    <button onClick={() => this.onUserLogoutRes(false)} >No</button>
+
+                    <div className="yes-no-btns">
+                        <button className="primary-btn" onClick={() => this.onUserLogoutRes(true)}>Yes</button>
+                        <button onClick={() => this.onUserLogoutRes(false)} ><CgClose /></button>
                     </div>
+
                 </div>}
 
             </main>

@@ -11,8 +11,7 @@ class _LoginSignup extends Component {
         msg: '',
         isNewUser: false,
 
-        // googleCreds: {},
-        // isGoogle: false,
+
     }
 
     submitUser = async (user) => {

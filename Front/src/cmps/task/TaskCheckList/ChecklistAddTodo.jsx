@@ -1,8 +1,6 @@
 import { Component } from "react";
 import { utilService } from '../../../services/util.service';
-import { TextField } from '@material-ui/core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faTimes } from '@fortawesome/free-solid-svg-icons';
+import { CgClose } from 'react-icons/cg';
 
 
 
@@ -10,16 +8,16 @@ export class CheckListAddTodo extends Component {
     state = {
         title: ''
     }
-    
-    onEnter = (ev) => {
-        if (ev.key === "Enter" && ev.shiftKey === false) {
-            ev.preventDefault()
-            this.onAddTodo()
-        }
-    }
+
+    // onEnter = (ev) => {
+    //     if (ev.key === "Enter" && ev.shiftKey === false) {
+    //         ev.preventDefault()
+    //         this.onAddTodo()
+    //     }
+    // }
 
     onAddTodo = () => {
-        const {title} = this.state
+        const { title } = this.state
         if (!title) return
         const todo = this.createNewTodo(title)
         this.props.addNewTodo(todo)
@@ -39,21 +37,24 @@ export class CheckListAddTodo extends Component {
         const field = target.name;
         const value = target.value;
         this.setState({
-            [field]: value}
-            )
+            [field]: value
+        }
+        )
     }
 
     render() {
         const { title } = this.state
         return (
             <div className="checklist-add-todo-container">
-                <TextField name="title" value={title} placeholder="Write a comment..." 
-                onChange={this.handleChange} 
-                onKeyDown={this.onEnter}>
-                </TextField>
-                <div className="checklist-add-todo-actions">
-                <button onClick={this.onAddTodo}>Add</button>
-                <button onClick={this.props.toggleAddTodo}>{<FontAwesomeIcon icon={faTimes}/>}</button>
+                <textarea type="text" value={title} name="title"
+                    onBlur={this.onAddTodo}
+                    onChange={this.handleChange}
+                    autoFocus={true}
+                // onKeyDown={this.onEnter} 
+                ></textarea>
+                <div className="yes-no-btns">
+                    <button className="primary-btn" onClick={this.onAddTodo}>Add</button>
+                    <CgClose className="cancel-btn" onClick={this.props.toggleAddTodo} />
                 </div>
             </div>
         )

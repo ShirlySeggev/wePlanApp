@@ -12,7 +12,6 @@ export class GroupAdd extends Component {
     }
 
     toggleUpdate = () => {
-        console.log('here');
         this.setState({ toggleUpdate: !this.state.toggleUpdate })
     }
 
@@ -44,11 +43,12 @@ export class GroupAdd extends Component {
     createGroup = (title) => {
         const group = {
             id: utilService.makeId(),
+            createdBy: this.props.loggedInUser || utilService.getGuestUser(),
             title,
             tasks: [],
             style: {
                 bgc: utilService.getRandomColor()
-            }
+            },
         }
         return group;
     }
