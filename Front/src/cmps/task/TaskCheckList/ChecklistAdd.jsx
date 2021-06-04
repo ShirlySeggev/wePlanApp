@@ -9,8 +9,6 @@ export class ChecklistAdd extends Component {
 
 
     onAddChecklist = () => {
-        // ev.preventDefault();
-        // ev.stoppropagation()
         const { task, updateTask } = this.props
         const { title } = this.state
         if (!title) return
@@ -55,9 +53,8 @@ export class ChecklistAdd extends Component {
                     onChange={this.handleChange}
                     onKeyDown={this.onKeyDown}
                     spellCheck="false">
-                        
                 </input>
-                <button className="secondary-btn" onClick={(ev)=>{this.onAddChecklist(ev)}}>Add</button>
+                <button className="secondary-btn" onClick={this.onAddChecklist}>Add</button>
             </div>
         )
     }

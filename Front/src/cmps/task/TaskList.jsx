@@ -7,7 +7,7 @@ export function TaskList({ tasks, groupId, board, handleDragEnd }) {
             <Droppable droppableId={groupId} type="task">
                 {(provided, snapshot) => (
 
-                    <div className="tasks-container group-layout" {...provided.droppableProps} ref={provided.innerRef}>
+                    <div className="tasks-container" {...provided.droppableProps} ref={provided.innerRef}>
                         {tasks.map((task, index) => {
                             return (
                                 <Draggable key={task.id} draggableId={task.id} index={index}>

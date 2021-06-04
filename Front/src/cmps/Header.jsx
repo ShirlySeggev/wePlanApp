@@ -19,8 +19,8 @@ class _Header extends Component {
                     <div className="header-format"><NavLink to="/board" className="boards-btn"><HiOutlineViewBoards /><span className="board">Boards</span></NavLink></div>
                 </nav>
                 <div ><NavLink to="/"><h1>WePLAN</h1></NavLink></div>
-                {!user && <div><NavLink to="/login"><Avatar src="/broken-image.jpg" /></NavLink></div>}
-                {user && <div><NavLink to="/logout"><MemberAvatar member={user} key={user._id} /></NavLink></div>}
+                {!user && <div className="user-avatar"><NavLink to="/login"><Avatar src="/broken-image.jpg" /></NavLink></div>}
+                {user && <div className="user-avatar"><NavLink to="/logout"><MemberAvatar member={user} key={user._id} /></NavLink></div>}
             </header>
         )
     }

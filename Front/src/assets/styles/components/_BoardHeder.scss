@@ -1,13 +1,20 @@
-.wePlanApp-header {
+.board-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background-color: $clr4;
     height: auto;
-    padding: 10px;
     position: relative;
+    padding-block: 10px;
+    padding-inline: 10px;
+    background-color:#a7a3a477 ;
+    .board-heder-titleAndMembers{
+        display: flex;
+        .board-members{
+        margin-inline-start: 10px;
+        }
+    }
 
-    .board-header {
+    &-title {
         font-size: 18px;
         line-height: 32px;
         padding: 0 12px;
@@ -17,13 +24,12 @@
         font-size: 18px;
         font-family: Poppings-bold, "Segoe UI", sans-serif;
         color: #fff;
-        border-radius: 4px;
+        border-radius: 3px;
         cursor: default;
         font-size: 18px;
         line-height: 32px;
         padding: 0 12px;
         text-decoration: none;
-        // max-width: calc(100% - 24px);
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;

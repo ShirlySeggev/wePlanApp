@@ -14,11 +14,9 @@ class _WePlanApp extends Component {
     }
 
     componentDidMount() {
-        // const { boardId } = this.props.match.params;
         this.loadBoard();
         socketService.setup();
         socketService.on('board updated', boardId => {
-            console.log(boardId, this.props.match.params.boardId);
             if (boardId === this.props.match.params.boardId) {
                 this.loadBoard();
             }
@@ -39,7 +37,6 @@ class _WePlanApp extends Component {
         }
     }
 
-
     updateBoard = async (board) => {
         try {
             await this.props.updateBoard(board);
@@ -47,14 +44,6 @@ class _WePlanApp extends Component {
             console.log('Update Board:', err)
         }
     }
-
-    /* removeBoard = async (boardId) => {
-        try {
-            await this.props.removeBoard(boardId);
-        } catch (err) {
-            console.log('Delete Board:', err)
-        }
-    } */
 
     onUpdateBoard = (board) => {
         this.updateBoard(board);
@@ -145,7 +134,6 @@ class _WePlanApp extends Component {
         const bg = style.img ? { backgroundImage: `url(${style.img})` } : { backgroundColor: style.bgc };
         return (
             <Fragment>
-                <div className="glass">  </div>
                 <section className="wePlanApp-main-content" style={bg}>
                     <BoardHeader board={board} onUpdateBoard={this.onUpdateBoard} onRemoveBoard={this.onRemoveBoard} />
                     <Switch>

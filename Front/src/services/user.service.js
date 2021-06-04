@@ -44,7 +44,7 @@ async function login(userCred) {
     // const user = await asyncUserStorage.get(STORAGE_KEY, userCred)
     const user = await httpService.post('auth/login', userCred)
     try {
-        if (user) return user
+        if (user) return _saveLocalUser(user)
     } catch (err) {
         console.log('error in user service, problem in login', err)
         throw err
@@ -53,9 +53,10 @@ async function login(userCred) {
 
 async function signup(userCred) {
     // const user = await asyncUserStorage.post(STORAGE_KEY, userCred)
+    console.log('user service signup', userCred);
     const user = await httpService.post('auth/signup', userCred)
     try {
-        if (user) return user
+        if (user) return _saveLocalUser(user)
         
     } catch (err) {
         console.log('error in user service signup', err)
@@ -63,8 +64,13 @@ async function signup(userCred) {
 }
 
 async function logout() {
-    return await httpService.post('auth/logout')
-    // return _clearLocalUser()
+    await httpService.post('auth/logout')
+    try {
+        return _clearLocalUser()
+        
+    } catch (err) {
+        console.log('error in user service logout', err)
+    }
 }
 
 function _saveLocalUser(user) {
@@ -76,9 +82,9 @@ function _getLoggedinUser() {
     return JSON.parse(sessionStorage.getItem('loggedinUser') || 'null')
 }
 
-// function _clearLocalUser() {
-//     sessionStorage.clear();
-// }
+function _clearLocalUser() {
+    sessionStorage.clear();
+}
 
 
 

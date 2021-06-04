@@ -70,7 +70,7 @@ export class TaskAdd extends Component {
         const { toggleUpdate } = this.state;
         return (
             <Fragment>
-                <form className="task-add group-layout" onSubmit={this.onAddTask}>
+                <form className="taskAdd" onSubmit={this.onAddTask}>
                     <input type="text"
                         name="title"
                         value={title}
