@@ -1,13 +1,13 @@
 .boardApp-main {
     display: flex;
     flex-direction: column;
-    margin-inline: 10px;
+    margin-inline: 20px;
     box-shadow: 0 0px 3px 2px #7e7d7d78;
     margin-top: 20px;
     padding: 20px;
     border-radius: 5px;
+    background-color: #ebeef5dc;
     .boardApp-header {
-        margin-top: 20px;
         font-weight: bold;
     }
     .section-title{
@@ -23,12 +23,12 @@
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-        // justify-items: center;
-        padding: 15px 0px;
+        padding-top: 20px;
     }
 
     .boardAdd {
         background-color: $clr4;
+        background-color: #646464;
     }
     .single-board-preview,
     .boardAdd {
@@ -46,7 +46,12 @@
         color: #fff;
         font-weight: unset;
         transition: box-shadow .2s;
-        // font-family: Poppings-bold, "Segoe UI", sans-serif;
+        h4{
+            font-family: Poppings-bold, "Segoe UI", sans-serif;
+            background-color:#a7a3a477 ;
+            padding: 10px;
+            width: 100%
+        }
         .boardAdd-input {
             width: 100%;
             padding: 2px;
@@ -55,9 +60,8 @@
             background: transparent;
         }
         &:hover {
-            
-            transform: scale(1.025);
-            box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 15px #0303388f;
+            // transform: scale(1.025);
+            box-shadow: 0 0px 3px 2px #7e7d7d78;
         }
     }
     .boardAdd-modal {
@@ -66,7 +70,7 @@
         z-index: 2;
         width: 500px;
         height: 580px;
-        border-radius: 5px;
+        border-radius: 3px;
         box-shadow: 0 0px 3px 2px #7e7d7d78;
         background-color: #fff;
         .modalHeader {

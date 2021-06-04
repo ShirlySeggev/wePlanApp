@@ -4,12 +4,12 @@ import { Component } from 'react';
 export class GroupHeaderBgc extends Component {
     state = {
         colors: [
-            { id: 'l101', color: "#61bd4f", isPicked: false },
-            { id: 'l102', color: "#f2d602", isPicked: false },
-            { id: 'l103', color: "#f99f1b", isPicked: false },
-            { id: 'l104', color: "#eb5a46", isPicked: false },
-            { id: 'l105', color: "#c377e0", isPicked: false },
-            { id: 'l106', color: "#1f79bf", isPicked: false },
+            { id: 'l101', color: "#FFFCDD", isPicked: false },
+            { id: 'l102', color: "#FCC9A5", isPicked: false },
+            { id: 'l103', color: "#FFB1B8", isPicked: false },
+            { id: 'l104', color: "#C8BCD4", isPicked: false },
+            { id: 'l105', color: "#b1d3dd", isPicked: false },
+            { id: 'l106', color: "#ACCFBF", isPicked: false },
         ],
         color:null
         

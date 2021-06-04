@@ -8,6 +8,7 @@ import { TaskDetails } from '../cmps/task/TaskDetails/TaskDetails';
 import { Loading } from '../cmps/shared/Loading';
 import { Fragment } from 'react';
 import { socketService } from '../services/socket.service';
+import { utilService } from '../services/util.service.js';
 
 class _WePlanApp extends Component {
     state = {
@@ -45,7 +46,10 @@ class _WePlanApp extends Component {
         }
     }
 
-    onUpdateBoard = (board) => {
+    onUpdateBoard = (board, activity = null) => {
+        const { loggedInUser } = this.props;
+        const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
+        board.activities.unshift(utilService.addActivity(user, activity, null, null, null, 'this board'));
         this.updateBoard(board);
     }
 
@@ -58,26 +62,31 @@ class _WePlanApp extends Component {
         }
     }
 
-    updateGroup = (newGroup) => {
-        console.log('on we plan', newGroup)
-        const { board } = this.props;
+    updateGroup = (newGroup, activity = null) => {
+        const { board, loggedInUser } = this.props;
         const groupIdx = board.groups.findIndex(group => group.id === newGroup.id);
         const updatedBoard = { ...board };
+        const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
+        updatedBoard.activities.unshift(utilService.addActivity(user, activity, null, newGroup, null, null));
         updatedBoard.groups[groupIdx] = newGroup;
         this.updateBoard(updatedBoard);
     }
 
     removeGroup = (groupId) => {
-        const { board } = this.props;
+        const { board, loggedInUser } = this.props;
         const groupIdx = board.groups.findIndex(group => group.id === groupId)
         const updatedBoard = { ...board };
+        const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
+        updatedBoard.activities.unshift(utilService.addActivity(user, `deleted list`, null, null, board, null));
         updatedBoard.groups.splice(groupIdx, 1)
         this.updateBoard(updatedBoard);
     }
 
     addGroup = (group) => {
-        const { board } = this.props;
+        const { board, loggedInUser } = this.props;
         const updatedBoard = { ...board };
+        const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
+        updatedBoard.activities.unshift(utilService.addActivity(user, `added ${group.title}`, null, null, board, null));
         updatedBoard.groups.push(group);
         this.updateBoard(updatedBoard);
     }

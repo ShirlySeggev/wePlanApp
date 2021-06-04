@@ -19,7 +19,7 @@ class _Boards extends Component {
         board: {
             title: '',
             style: {
-                bgc: '#00AECC',
+                bgc: '#B1D3DD',
                 bgcImg: ''
             }
         }
@@ -74,7 +74,10 @@ class _Boards extends Component {
         const boardBgc = this.state.board.style.bgc;
         const boardBgcImg = this.state.board.style.bgcImg;
         const board = this.createBoard(boardTitle, boardBgc, boardBgcImg);
+        console.log(board);
         const { addBoard } = this.props;
+        const user = (this.props.user) ? this.props.user : utilService.getGuestUser();
+        board.activities.push(utilService.addActivity(user, `added ${boardTitle}`, null, null, null, ' WePlan'));
         addBoard(board);
         this.loadBoards();
         this.newBoardModal()
@@ -83,22 +86,20 @@ class _Boards extends Component {
 
 
     createBoard = (title, bgc, img) => {
-        const {user} = this.props
+        const { user } = this.props
         const board = {
             title,
             createdAt: Date.now(),
-            createdBy: userService.getLoggedinUser() || utilService.getGuestUser(), 
+            createdBy: user || utilService.getGuestUser(),
             style: {
                 bgc,
                 img
             },
             labels: [],
-            // members: [{ _id: "u105", fullname: "Poki King", imgUrl: "http://some-img" }],
-            members: [userService.getLoggedinUser() || utilService.getGuestUser()],
+            members: [user || utilService.getGuestUser()],
             groups: [],
             activities: [],
         }
-        console.log(board);
         return board;
     }
 

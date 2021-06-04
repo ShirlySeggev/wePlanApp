@@ -18,7 +18,7 @@ export class TaskDueDate extends Component {
     const { task, updateTask } = this.props;
     const updatedTask = { ...task };
     updatedTask.dueDate = this.state.dueDate;
-    updateTask(updatedTask);
+    updateTask(updatedTask, `edited due date`);
   }
 
 
@@ -27,12 +27,14 @@ export class TaskDueDate extends Component {
     return (
       <div className="TaskDueDate-modal" style={{ ...modalPos }}>
         <ModalHeader title='Due date' closeModal={toggleDueDate} />
-        <input
-          name="dueDate"
-          type="date"
-          value={this.props.task.dueDate}
-          onChange={this.handleDateChange} />
-        <button className="primary-btn" onClick={this.onSaveDueDate}>Save</button>
+        <div className="dueDate">
+          <input
+            name="dueDate"
+            type="date"
+            value={this.props.task.dueDate}
+            onChange={this.handleDateChange} />
+          <button className="primary-btn" onClick={this.onSaveDueDate}>Save</button>
+        </div>
       </div>
     )
   }

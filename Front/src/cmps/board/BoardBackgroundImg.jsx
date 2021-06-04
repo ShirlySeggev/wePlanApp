@@ -4,16 +4,18 @@ import { Component } from 'react';
 export class BoardBackgroundImg extends Component {
     state = {
         imgs: [
-            "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585210331/bgc/1.jpg",
-            "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585210935/bgc/2.jpg",
-            "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585210885/bgc/3.webp",
-            "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585210885/bgc/4.webp",
-            "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585210885/bgc/5.webp",
-            "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585211744/bgc/6.jpg",
-            "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585211748/bgc/7.jpg",
+            "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622840656/faxybtxpe586a2lc5nsh.jpg",
+            "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622842304/tkbrkv8xdk3k3f2swa25.jpg",
             "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585211764/bgc/9.jpg",
             "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585211772/bgc/10.jpg",
-            "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585211804/bgc/12.jpg",
+            "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585211748/bgc/7.jpg",
+            "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585210885/bgc/4.webp",
+            // "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585210935/bgc/2.jpg",
+            // "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585211744/bgc/6.jpg",
+            // "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585210331/bgc/1.jpg",
+            // "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585210885/bgc/3.webp",
+            // "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585210885/bgc/5.webp",
+            // "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585211804/bgc/12.jpg",
         ]
 
     }
@@ -37,7 +39,7 @@ export class BoardBackgroundImg extends Component {
         const { imgs } = this.state;
         return (
             <section className="TaskGroupBgc-modal">
-                <div className="board-colors-container">
+                <div className="board-img-container">
                     {imgs.map((img, idx) => {
                         return (
                             <img className="bgImg" key={img.id}

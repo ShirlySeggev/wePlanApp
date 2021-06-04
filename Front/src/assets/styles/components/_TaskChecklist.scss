@@ -120,35 +120,43 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    border-radius: 5px;
+    border-radius: 3px;
     padding-inline-start: 13px;
-    textarea{
-margin-block-end: 16px  
-}
+    textarea {
+        margin-block-end: 16px;
+    }
 }
 
 // --- NEW CHECKLIST MODAL --- \\
 .checklist-new-container {
-    padding: 0 15px;
+    padding: 0 10px;
     position: absolute;
     z-index: 2;
     width: 250px;
-    height: 140px;
-    border-radius: 5px;
+    // height: 140px;
+    border-radius: 3px;
     box-shadow: 0 0px 3px 2px #7e7d7d78;
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
     .modalHeader {
         @include modalHeader;
     }
+
+    .add-checklist {
+        display: flex;
+        // flex-direction: column;
+    }
     input {
         border: none;
+        width: 100%;
         border-radius: 2px;
         height: 25px;
         cursor: pointer;
         padding-left: 8px;
-        margin-block-end: 10px;
+        margin-block: 10px;
+        background-color: rgba(9, 30, 66, 0.04);
+    }
+    button{
+        margin-bottom: 10px;
     }
 }
 

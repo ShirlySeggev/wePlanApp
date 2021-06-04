@@ -29,7 +29,7 @@ export class TaskAdd extends Component {
         const { group, updateGroup } = this.props;
         const updatedGroup = { ...group };
         updatedGroup.tasks.push(task);
-        updateGroup(updatedGroup);
+        updateGroup(updatedGroup, `added ${taskTitle}`);
         this.clearTask();
     }
 

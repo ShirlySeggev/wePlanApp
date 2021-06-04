@@ -45,21 +45,20 @@ function capitalize(word) {
     return word[0].toUpperCase() + word.substring(1)
 }
 
-function addActivity({ user, txt, task = null }) {
-    console.log(user);
-
+function addActivity(user, txt, task, group, board, app) {
     return {
         id: makeId(),
         txt,
         createdAt: Date.now(),
-        // byMember: {
-        //     _id: user._id,
-        //     imgUrl: user?.imgUrl,
-        //     email: user.email,
-        //     fullname: user?.fullname
-        //         || 'Guest'
-        // },
-        task: task ? { id: task.id, title: task.title } : null
+        byMember: {
+            _id: user._id,
+            imgUrl: user.imgUrl,
+            fullname: user.fullname,
+        },
+        task: task ? { id: task.id, title: task.title } : null,
+        group: group ? { id: group.id, title: group.title } : null,
+        board: board ? { _id: board._id, title: board.title } : null,
+        app: app ? { _id: Date.now(), app } : null,
     }
 }
 

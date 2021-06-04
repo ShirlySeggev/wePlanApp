@@ -29,7 +29,7 @@ export class TaskDetailsDescription extends Component {
     updateTaskDescription = () => {
         const { description } = this.state;
         const newTask = { ...this.props.task, description }
-        this.props.updateTask(newTask);
+        this.props.updateTask(newTask, `edited description`);
         this.toggleUpdate();
     }
 

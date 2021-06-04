@@ -44,7 +44,7 @@ export class TaskComment extends Component {
             newTask.comments = [];
             newTask.comments.unshift(comment);
         }
-        updateTask(newTask);
+        updateTask(newTask, 'addea a new comment');
         this.clearComment();
         console.log('newTask', newTask);
     }

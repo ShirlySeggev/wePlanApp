@@ -28,7 +28,7 @@ export class TaskDetailsHeader extends Component {
         const { task, updateTask } = this.props
         const newTask = { ...task };
         newTask.title = this.state.task.title;
-        updateTask(newTask)
+        updateTask(newTask, `edited ${newTask.title} title`)
     }
 
     render() {
