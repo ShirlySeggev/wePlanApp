@@ -4,10 +4,11 @@ const logger = require('../../services/logger.service')
 
 
 async function login(txt, password) {
+    // console.log('got txt in login ', txt);
     logger.debug(`auth.service - login with username/email: ${txt}`)
     const userByUser = await userService.getByUsername(txt)
     const userByEmail = await userService.getByUserEmail(txt)
-    console.log('userByEmail', userByEmail);
+    // console.log('userByEmail', userByEmail);
     let match
     if (userByEmail){
         match = await bcrypt.compare(password, userByEmail.password)
@@ -21,7 +22,7 @@ async function login(txt, password) {
         delete userByUser.password
         return userByUser
     } 
-    else return Promise.reject('Invalid username/email or password')
+    else return userByUser
 }
 
 
