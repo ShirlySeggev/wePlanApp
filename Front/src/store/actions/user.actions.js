@@ -15,11 +15,11 @@ export function loadUsers() {
 }
 
 
-export function setUser(user, isNewUser) {
+export function setUser(user, isNewUser, isGoogle) {
   return async (dispatch) => {
     var loggedUser;
     try {
-      if (isNewUser) loggedUser = await userService.signup(user);
+      if (isNewUser || isGoogle) loggedUser = await userService.signup(user, isGoogle);
       else loggedUser = await userService.login(user);
       delete loggedUser.password
       const action = {
@@ -28,7 +28,8 @@ export function setUser(user, isNewUser) {
       };
       dispatch(action);
     } catch (err) {
-      console.log("UserActions: err in seting the user", err);
+      console.log("UserActions: err in seting the user:", err);
+      return ('no match')
     }
   };
 }

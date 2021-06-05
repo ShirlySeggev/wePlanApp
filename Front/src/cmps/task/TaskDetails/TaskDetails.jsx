@@ -34,6 +34,7 @@ class _TaskDetails extends Component {
         toggleAddCheckList: false,
         toggleMembers: false,
         toggleDueDate: false,
+        toggleTaskCopy: false,
     }
 
     componentDidMount() {
@@ -81,6 +82,22 @@ class _TaskDetails extends Component {
         updatedBoard.groups[groupIdx].tasks.splice(taskIdx, 1)
         this.updateBoard(updatedBoard);
         this.props.history.push(`/board/${boardId}`)
+    }
+
+    copyTask = () => {
+        const { board } = this.props;
+        const { task, group } = this.state;
+        const copiedTask = {...task}
+        copiedTask.id = utilService.makeId()
+        console.log('copiedTask', copiedTask);
+        const groupIdx = board.groups.findIndex(currGroup => currGroup.id === group.id);
+        const updatedGroup = { ...group };
+        updatedGroup.tasks.push(copiedTask);
+        console.log('updatedGroup', updatedGroup);
+        const updatedBoard = { ...board };
+        updatedBoard.groups.splice(groupIdx, 1, updatedGroup)
+        console.log('updatedBoard', updatedBoard);
+        this.updateBoard(updatedBoard);
     }
 
     handleChange = ({ target }) => {
@@ -139,7 +156,7 @@ class _TaskDetails extends Component {
 
     render() {
         const { board } = this.props;
-        const { task, group, toggleTaskLabel, isDate, toggleAddCheckList, toggleMembers, toggleImgUpload, toggleDueDate } = this.state;
+        const { task, group, toggleTaskLabel, isDate, toggleTaskCopy, toggleAddCheckList, toggleMembers, toggleImgUpload, toggleDueDate } = this.state;
         if (!task) return <Loading />
         const { checklists, labelIds, comments, members, img, dueDate } = this.state.task;
         const isImg = task.img?.url;
@@ -214,7 +231,7 @@ class _TaskDetails extends Component {
                             {/* MOVE TASK */}
                             <li className="detail-act-btn"><BsArrowRightShort /><span className="txt">Move</span></li>
                             {/* COPY TASK */}
-                            <li className="detail-act-btn"><MdContentCopy /><span className="txt">Copy</span></li>
+                            <li className="detail-act-btn" onClick={this.copyTask}><MdContentCopy /><span className="txt">Copy</span></li>
                             {/* DELETE TASK */}
                             <li className="detail-act-btn" onClick={this.removeTask}><BsTrash /><span className="txt">Delete</span></li>
                         </ul>

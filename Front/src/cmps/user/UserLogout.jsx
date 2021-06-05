@@ -1,27 +1,28 @@
 import { Avatar } from "@material-ui/core";
-import { Component } from "react";
+import { Component, Fragment } from "react";
 import { CgClose } from 'react-icons/cg';
-
+import { LogoutGoogle } from './GoogleLogout';
 
 export class UserLogout extends Component {
     state = {
-        isLogout: false
+        isCheckLogout: false
     }
 
     onUserLogout = () => {
-        this.setState({ isLogout: true })
+        this.setState({ isCheckLogout: true })
     }
 
     onUserLogoutRes = (res) => {
         if (res) {
             this.props.userLogout()
         }
-        else this.setState({ isLogout: false })
+        else this.setState({ isCheckLogout: false })
     }
 
     render() {
-        const { isLogout } = this.state
-        const { fullname, email } = this.props.loggedInUser
+        const { isCheckLogout } = this.state
+        const { setMsg, loggedInUser } = this.props
+        const { fullname, email } = loggedInUser
         return (
             <main>
                 <h3>Log out of your WePlan account</h3>
@@ -34,14 +35,14 @@ export class UserLogout extends Component {
                     </div>
                 </div>
 
-                {!isLogout && <button onClick={this.onUserLogout}>Log out</button>}
+                {!isCheckLogout && <button onClick={this.onUserLogout}>Log out</button>}
 
-                {isLogout && <div className="user-logout-auth">
+                {isCheckLogout && <div className="user-logout-auth">
                     <h6>Are you sure you want to logout?</h6>
 
                     <div className="yes-no-btns">
-                        <button className="primary-btn" onClick={() => this.onUserLogoutRes(true)}>Yes</button>
-                        <button onClick={() => this.onUserLogoutRes(false)} ><CgClose /></button>
+                      <div onClick={this.onUserLogoutRes}><LogoutGoogle /></div>
+                        <button onClick={() => this.onUserLogoutRes(false)}><CgClose /></button>
                     </div>
 
                 </div>}

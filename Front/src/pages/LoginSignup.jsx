@@ -10,17 +10,16 @@ class _LoginSignup extends Component {
     state = {
         msg: '',
         isNewUser: false,
-
-
     }
 
-    submitUser = async (user) => {
+    submitUser = async (user, isGoogle) => {
+        console.log(isGoogle);
         const { isNewUser } = this.state
-        const { setUser, loggedInUser } = this.props
-        await setUser(user, isNewUser)
+        const { setUser } = this.props
         try {
+            await setUser(user, isNewUser, isGoogle)
             this.setState({ msg: '' })
-            if (loggedInUser) this.props.history.push(`/board`)
+            if (this.props.loggedInUser) this.props.history.push(`/board`)
             else {
                 this.props.history.push(`/login`)
                 this.setState({ msg: 'user name or password not matching' })
@@ -47,6 +46,9 @@ class _LoginSignup extends Component {
     toggleNewUser = () => {
         this.setState({ isNewUser: !this.state.isNewUser });
     }
+    // toggleGoogle = () => {
+    //     this.setState({ isGoogle: !this.state.isGoogle });
+    // }
 
     setMsg = (msg) => {
         this.setState({ ...this.state, msg })
@@ -88,6 +90,8 @@ class _LoginSignup extends Component {
                     userLogout={this.userLogout}
                     loggedInUser={loggedInUser}
                 />}
+
+
 
             </section>
         )

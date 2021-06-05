@@ -1,6 +1,6 @@
-import { Component } from "react";
+import { Component, Fragment } from "react";
 import { NavLink } from 'react-router-dom';
-
+import {LoginGoogle} from './GoogleLogin';
 
 export class UserLogin extends Component {
     state = {
@@ -23,26 +23,33 @@ export class UserLogin extends Component {
         if (password.length < 7) return setMsg('Password must include 7 letters or numbers')
         if (txt.length < 4) return setMsg('User name / email must include 4 letters or numbers')
         if (!password || !txt) return setMsg('Please fill all fields')
-        submitUser(this.state)
-        this.setState({
-            txt: '',
-            password: ''
-        })
+        submitUser(this.state, false)
     }
 
     render() {
-        const {toggleNewUser} = this.props
-
+        const { toggleNewUser, submitUser, setMsg } = this.props
         return (
-            <main className="user-login-container">
-                <h3>Log in to WePlan</h3>
-                <form className="inputs-container">
-                    <input type="text" name="txt" placeholder="Enter username or email" autofocus="autofocus" onChange={this.handleChange} />
-                    <input type="password" name="password" placeholder="Password" onChange={this.handleChange} />
-                    <button onClick={this.onSubmitUser}>Log In</button>
-                </form>
-                <NavLink to="/signup" onClick={toggleNewUser}>Dont have account yet? Sign up for free!</NavLink>
-            </main>
+            <Fragment>
+
+                <main className="user-login-container">
+                    <h3>Log in to WePlan</h3>
+                    <form className="inputs-container">
+                        <input type="text" name="txt" placeholder="Enter username or email" autoFocus="autofocus" onChange={this.handleChange} spellCheck="false" />
+                        <input type="password" name="password" placeholder="Password" onChange={this.handleChange} spellCheck="false" />
+                        <button onClick={this.onSubmitUser}>Log In</button>
+
+                    </form>
+                    <NavLink to="/signup" onClick={toggleNewUser}>Dont have account yet? Sign up for free!</NavLink>
+
+                <h5 className="social-login">or</h5>
+               
+                    {/* GOOGLE LOGIN */}
+                    <LoginGoogle submitUser={submitUser} setMsg={setMsg} />
+                    
+                </main>
+          
+
+            </Fragment>
         )
     }
 }
