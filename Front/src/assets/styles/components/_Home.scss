@@ -1,86 +1,167 @@
 .home-page {
-    background-color: #ebeef5dc;
+    background-color: #ebeef582;
     font-size: 16px;
     @media (max-width: 980px) {
-        font-size: 12px;
+      font-size: 12px;
     }
     .homepage {
-        padding: 30px;
-        height: calc(100vh - 113px);
-        background-image: linear-gradient(to bottom right, #ebdffe, #daeaf7, #e0e9f6, #e0e9f4);
-        display: flex;
-        flex-direction: column;
+      height: calc(100vh - 120px);
+      background-image: linear-gradient(
+        to bottom right,
+        #d1beec,
+        #daeaf7,
+        #e0e9f6,
+        #e0e9f4,
+        #f3f2f7,
 
+      );
+      margin-bottom: 0.5625rem;
+      display: flex;
+      flex-direction: column;
+  
+      @media (min-width: 980px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "homepage-header homepage-header homepage-imge homepage-imge homepage-imge"
+          "homepage-header homepage-header homepage-imge homepage-imge homepage-imge"
+          "homepage-header homepage-header homepage-imge homepage-imge homepage-imge";
+      }
+  
+      .homepage-img {
+          margin-top: 1%;
+        height: 100%;
+        background-image: url("../../img/homepage3.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+  
         @media (min-width: 980px) {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas: "homepage-header homepage-header homepage-img homepage-img homepage-img";
+          grid-area: homepage-imge;
         }
-
-        .homepage-img {
+      }
+  
+      .homepage-header {
+        // margin-top: 22%;
+        @media (min-width: 980px) {
+          grid-area: homepage-header;
+        }
+        h1 {
+            font-family: Permanent Marker, "Poppings-bold";
+          font-size: 6em;
+          margin-bottom: rem(60px);
+          margin-top: rem(25px);
+          @media (min-width: 800px) {
+            margin-top: 0;
+          }
+          user-select: none;
+        }
+  
+        h2.sec-header {
+          letter-spacing: 0.5px;
+            font-family:  Poppings-medium;
+          font-size: 2em;
+          line-height: 35px;
+          @media (min-width: 800px) {
+            font-size: 2.5em;
+            line-height: 50px;
+          }
+  
+          span.smart {
+            color: #0b1427;
+            
+          }
+  
+          &:last-of-type {
+            margin-bottom: rem(25px);
+          }
+        }
+  
+        .home-link {
+          font-size: 1.875em;
+          color: whitesmoke;
+          padding: 15px 30px;
+          letter-spacing: 1px;
+          text-decoration: none;
+          line-height: initial;
+          position: relative;
+          overflow: hidden;
+          margin-top: 10px;
+  
+          transition: all 0.2s ease;
+  
+          @media (min-width: 980px) {
+            margin-top: 0;
+          }
+  
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -200%;
+            width: 200%;
             height: 100%;
-            background-image: url("../../img/homepage3.svg");
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-top: 8px;
-
-            @media (min-width: 980px) {
-                grid-area: homepage-img;
-            }
+            transform: skewX(-20deg);
+            background-image: linear-gradient(
+              to right,
+              transparent,
+              rgba(255, 255, 255, 0.3),
+              transparent
+            );
+          }
+  
+          &:hover:after {
+            animation: shine 1.6s ease;
+          }
+  
+          &:active {
+            transform: translateY(1px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+          }
         }
-
-        .homepage-header {
-            margin-top: 22%;
-            @media (min-width: 980px) {
-                grid-area: homepage-header;
-            }
-            h1 {
-                font-family: Permanent Marker, "Poppings-bold";
-                font-size: 6em;
-                margin-bottom: rem(60px);
-                margin-top: rem(15px);
-                @media (min-width: 800px) {
-                    margin-top: 0;
-                }
-            }
-
-            h2 {
-                letter-spacing: 0.3px;
-                font-family: Poppings-medium;
-                font-size: 2em;
-                line-height: 25px;
-                @media (min-width: 800px) {
-                    font-size: 2.5em;
-                    line-height: 35px;
-                }
-            }
-            .st-header {
-                padding-bottom: 17px;
-            }
-        }
+      }
     }
-
+  
+    .bottom-cta {
+      margin-bottom: rem(20px);
+      a {
+        position: relative;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        overflow: hidden;
+        background-color: #220d81;
+  
+        transition: background-color 0.2s;
+        &:hover {
+          background-color: darken(#080764, 5%);
+        }
+      }
+    }
+  
     footer {
-        background-color: #333;
-        color: #eee;
-        padding: 20px 0;
-        p {
-            margin: 0;
-            padding: 0 5px;
-
-            @media (max-width: 480px) {
-                font-size: 10px;
-            }
+      background-color: #333;
+      color: #eee;
+      padding: 20px 0;
+      p {
+        margin: 0;
+        padding: 0 5px;
+  
+        @media (max-width: 480px) {
+          font-size: 10px;
         }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+      }
+  
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
-    .home-link {
-        margin-top: 20px;
-    }
-}
+  }
+  
+  

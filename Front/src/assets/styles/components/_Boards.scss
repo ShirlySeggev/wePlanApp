@@ -1,22 +1,24 @@
 .boardApp-main {
     display: flex;
     flex-direction: column;
-    margin-inline: 20px;
+    margin-inline: 100px;
+    margin-block: 100px;
     box-shadow: 0 0px 3px 2px #7e7d7d78;
-    margin-top: 20px;
+    // margin-top: 20px;
     padding: 20px;
     border-radius: 5px;
     background-color: #ebeef5dc;
+
     .boardApp-header {
         font-weight: bold;
     }
-    .section-title{
+    .section-title {
         font-size: 1.5rem;
         display: flex;
-            align-items: center;
-            .icon {
-                margin-inline-end: 3px;
-            }
+        align-items: center;
+        .icon {
+            margin-inline-end: 3px;
+        }
     }
 
     .boards-container {
@@ -45,12 +47,12 @@
         background-size: cover;
         color: #fff;
         font-weight: unset;
-        transition: box-shadow .2s;
-        h4{
+        transition: box-shadow 0.2s;
+        h4 {
             font-family: Poppings-bold, "Segoe UI", sans-serif;
-            background-color:#a7a3a477 ;
+            background-color: #a7a3a477;
             padding: 10px;
-            width: 100%
+            width: 100%;
         }
         .boardAdd-input {
             width: 100%;
@@ -69,7 +71,7 @@
         position: absolute;
         z-index: 2;
         width: 500px;
-        height: 580px;
+        // height: 580px;
         border-radius: 3px;
         box-shadow: 0 0px 3px 2px #7e7d7d78;
         background-color: #fff;
@@ -87,36 +89,43 @@
             width: 100%;
             background-color: #f4f4f4;
             border: none;
+            outline: none;
             border-radius: 2px;
-            height: 30px;
+            height: 50px;
             cursor: pointer;
             padding-left: 8px;
-            margin-bottom: 10px;
+            margin: 10px 0 10px 0;
         }
-        .secondary-btn {
-            margin-top: 20px;
+        .primary-btn {
+            margin-block: 10px;
         }
 
-        .board-colors-container {
-            padding: 20px 10px;
+        .board-container {
+            padding: 10px 10px 10px 10px;
             border-radius: 2px;
             background-color: hsla(0, 0%, 60%, 0.10980392156862745);
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             width: 100%;
-            grid-gap: 5px;
-        }
+            grid-gap: 10px;
 
-        .bgImg,
-        .bgColor {
-            width: 80px;
-            height: 80px;
-            border-radius: 10px;
-            margin: 2px;
-            box-shadow: 0 0px 3px 2px #7e7d7d78;
-            flex-direction: column;
-            background-repeat: no-repeat;
-            background-size: cover;
+            &.color {
+                padding: 10px 10px 10px 10px;
+            }
+            &.img {
+                padding: 0 10px 10px 10px;
+            }
+
+            .bgImg,
+            .bgColor {
+                height: 80px;
+                border-radius: 10px;
+                margin: 2px;
+                box-shadow: 0 0px 3px 2px #7e7d7d78;
+                flex-direction: column;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
         }
     }
 }

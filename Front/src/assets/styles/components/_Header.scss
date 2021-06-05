@@ -40,6 +40,10 @@
     color: #fff;
     padding: 0.5rem;
 
+    &.first{
+        margin-inline-end: 5px;
+    }
+
     &:hover {
         background-color: hsla(0, 0%, 100%, 0.377);
         transition-duration: 0.15s;
@@ -47,6 +51,4 @@
     }
 }
 
-.header-format:first-of-type {
-    margin-inline-end: 5px;
-}
+

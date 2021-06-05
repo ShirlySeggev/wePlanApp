@@ -44,8 +44,6 @@ export class TaskDetailsDescription extends Component {
                         onBlur={this.updateTaskDescription} onFocus={this.toggleUpdate}
                     />
                 }
-                {/* {toggleUpdate && <button className="primary-btn" onClick={this.updateTaskDescription}>Save</button>} */}
-            
                 {toggleUpdate &&
                     <div className="yes-no-btns">
                         <button className="primary-btn" onClick={this.updateTaskDescription}>Save</button>

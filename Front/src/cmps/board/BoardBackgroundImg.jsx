@@ -39,7 +39,7 @@ export class BoardBackgroundImg extends Component {
         const { imgs } = this.state;
         return (
             <section className="TaskGroupBgc-modal">
-                <div className="board-img-container">
+                <div className="board-container img">
                     {imgs.map((img, idx) => {
                         return (
                             <img className="bgImg" key={img.id}

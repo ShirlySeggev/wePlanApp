@@ -25,7 +25,7 @@ export class BoardBackground extends Component {
         const { bgc } = this.state;
         return (
             <section className="TaskGroupBgc-modal">
-                <div className="board-colors-container">
+                <div className="board-container color">
                     {bgc.map((bgc, idx) => {
                         return (
                             <div className="bgColor" key={bgc.id}

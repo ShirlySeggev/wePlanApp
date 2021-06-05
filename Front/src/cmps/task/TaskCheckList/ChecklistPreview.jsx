@@ -89,12 +89,12 @@ export class ChecklistPreview extends Component {
                     <div className="checklist-title-container">
                         <div className="checklist-title">
                             <BsCheckBox className="detailsIcon"/>
-                            <input type="text" name="title"  value={title}
+                            <input className="checklist-title-input" type="text" name="title"  value={title}
                             onChange={this.handleChange}
                             onBlur={this.updateChecklistTitle}
                             value={title}
+                            spellCheck="false"
                             />
-                      
                         </div>
                         <button className="secondary-btn" onClick={this.removeChecklist}>Delete</button>
                     </div>

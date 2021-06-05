@@ -35,14 +35,12 @@ export class TaskDetailsHeader extends Component {
         const { title } = this.state.task;
         const { group } = this.props;
         return (
-            <header className="taskDetails-header">
-                <BiCreditCard className="detailsIcon"/>
-                <div className="header-icon">
-                    <form onSubmit={this.updateTaskTitle}>
-                        <input className="task-title" type="text" name="title" value={title} autoComplete="off" spellCheck="false" onChange={this.handleChange} />
-                    </form>
-                    <p className="taskDetails-header-subtext">in list <span>{group.title}</span></p>
-                </div>
+            <header className="details-main-header">
+                <form className="details-header" onSubmit={this.updateTaskTitle}>
+                    <BiCreditCard className="detailsIcon" />
+                    <input className="task-title" type="text" name="title" value={title} autoComplete="off" spellCheck="false" onChange={this.handleChange} />
+                </form>
+                <p className="taskDetails-header-subtext">in list <span>{group.title}</span></p>
             </header>
         )
     }

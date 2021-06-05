@@ -145,9 +145,9 @@ class _TaskDetails extends Component {
 
     render() {
         const { board } = this.props;
-        const { task, group, toggleTaskLabel, isDate, toggleAddCheckList, toggleMembers, toggleImgUpload, toggleDueDate } = this.state;
+        const { task, group, toggleTaskLabel, toggleAddCheckList, toggleMembers, toggleImgUpload, toggleDueDate } = this.state;
         if (!task) return <Loading />
-        const { checklists, labelIds, comments, members, img, dueDate } = this.state.task;
+        const { checklists, labelIds, comments, members, img, dueDate, isDone } = this.state.task;
         const isImg = task.img?.url;
         let dueDateToShow = new Intl.DateTimeFormat('he-IL', { day: '2-digit', month: '2-digit', }).format(dueDate)
         return (
@@ -187,13 +187,14 @@ class _TaskDetails extends Component {
                                     <div className="date-dueDate">
                                         <CheckBox task={task} handleChange={this.handleChange} isChecked={task.isDone} updateTask={this.updateTask} />
                                         <p>{dueDateToShow}</p>
+                                        {isDone && <p className="complete">COMPLETE</p>}
                                     </div>
                                 </div>}
                             </section>
 
                             <TaskDetailsDescription task={task} updateTask={this.updateTask} />
 
-                            {isImg && <div className="">
+                            {isImg && <div className="taskDetails-img">
                                 <SectionTitle className="img-title" Icon={BsImage}>Images</SectionTitle>
                                 <img className="uploaded-img" src={img.url} alt="content" />
                                 <button className="secondary-btn" onClick={this.deletImg}>Delete</button>

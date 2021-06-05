@@ -16,7 +16,7 @@ class _Header extends Component {
         return (
             <header className="app-header">
                 <nav>
-                    <div className="header-format"><NavLink to="/"><BiHomeAlt /></NavLink></div>
+                    <div className="header-format first"><NavLink to="/"><BiHomeAlt /></NavLink></div>
                     <div className="header-format"><NavLink to="/board" className="boards-btn"><HiOutlineViewBoards /><span className="board">Boards</span></NavLink></div>
                 </nav>
                 <div ><NavLink to="/"><h1>WePLAN</h1></NavLink></div>

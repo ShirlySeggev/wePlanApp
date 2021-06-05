@@ -77,7 +77,7 @@ class _Boards extends Component {
         console.log(board);
         const { addBoard } = this.props;
         const user = (this.props.user) ? this.props.user : utilService.getGuestUser();
-        board.activities.push(utilService.addActivity(user, `added ${boardTitle}`, null, null, null, ' WePlan'));
+        board.activities.unshift(utilService.addActivity(user, `added ${boardTitle}`, null, null, null, ' WePlan'));
         addBoard(board);
         this.loadBoards();
         this.newBoardModal()
@@ -119,10 +119,10 @@ class _Boards extends Component {
                 </div>
                 {isModalOpen && <div className="boardAdd-modal">
                     <ModalHeader title='New Board' closeModal={this.newBoardModal} />
-                    <input className="boardAdd-input" type="text" name="title" id="title" placeholder="Board title" autoComplete="off" spellCheck="false" required onChange={this.handleChange} />
+                    <input className="boardAdd-input" type="text" name="title" id="title" placeholder="Add board title" autoComplete="off" spellCheck="false" required onChange={this.handleChange} />
                     <BoardBackground onBoardsCompose={true} chooseBgc={this.chooseBgc} />
                     <BoardBackgroundImg chooseBgcImg={this.chooseBgcImg} />
-                    <button className="secondary-btn" onClick={this.onAddBoard}>Create Board</button>
+                    <button className="primary-btn" onClick={this.onAddBoard}>Create Board</button>
                 </div>
                 }
             </section >

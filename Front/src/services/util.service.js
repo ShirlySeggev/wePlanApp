@@ -66,6 +66,6 @@ function getGuestUser() {
     return {
         _id: "u100",
         fullname: "Guest User",
-        imgUrl: "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622818054/n5rb78ft88jykqgpnrzt.jpg"
+        imgUrl: "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png"
     }
 }
