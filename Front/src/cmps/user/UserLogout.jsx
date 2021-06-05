@@ -1,6 +1,6 @@
-import { Avatar } from "@material-ui/core";
 import { Component } from "react";
 import { CgClose } from 'react-icons/cg';
+import MemberAvatar from '../shared/MemberAvatar';
 
 
 export class UserLogout extends Component {
@@ -24,10 +24,10 @@ export class UserLogout extends Component {
         const { fullname, email } = this.props.loggedInUser
         return (
             <main>
-                <h3>Log out of your WePlan account</h3>
+                <h3>Logout of your WePlan account</h3>
 
                 <div className="user-logout-container">
-                    <Avatar src="/broken-image.jpg" />
+                    <MemberAvatar member={this.props.loggedInUser} />
                     <div>
                         <h5>{fullname}</h5>
                         <h6>{email}</h6>
@@ -40,8 +40,9 @@ export class UserLogout extends Component {
                     <h6>Are you sure you want to logout?</h6>
 
                     <div className="yes-no-btns">
-                        <button className="primary-btn" onClick={() => this.onUserLogoutRes(true)}>Yes</button>
-                        <button onClick={() => this.onUserLogoutRes(false)} ><CgClose /></button>
+                        <button className="primary-btn" onClick={() => this.onUserLogoutRes(true)}>Yes, logout </button>
+                        {/* <button onClick={() => this.onUserLogoutRes(false)} ><CgClose /></button> */}
+                        <CgClose className="cancel-btn" onClick={() => this.onUserLogoutRes(false)} />
                     </div>
 
                 </div>}

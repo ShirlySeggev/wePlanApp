@@ -233,3 +233,8 @@
 >>>>>>> cd6c349eb9448ebf5a40483643f752385f0c3307
 04/06/2021, 18:05:27 - INFO - Server is running on port: 3030 
 04/06/2021, 18:40:47 - DEBUG - auth.service - login with username/email: shirlys (sid: 5WgtliGhcEo3Tnz8K3TqDDSg-VZzz3DU)
+05/06/2021, 17:46:11 - DEBUG - auth.service - login with username/email: shirly (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
+05/06/2021, 17:46:11 - ERROR - Failed to Login Invalid username/email or password (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
+05/06/2021, 17:46:21 - DEBUG - auth.service - login with username/email: shirlys (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
+05/06/2021, 17:46:21 - ERROR - Failed to Login Invalid username/email or password (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
+05/06/2021, 17:46:37 - DEBUG - auth.service - login with username/email: shirlys (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)

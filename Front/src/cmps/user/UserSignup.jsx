@@ -52,23 +52,23 @@ export class UserSignup extends Component {
                 <form className="user-signup-container ">
 
                     <label htmlFor="fullname">Full name</label>
-                    <input type="text" name="fullname" placeholder="full name" id="fullname" onChange={this.handleChange} />
+                    <input type="text" name="fullname" placeholder="Full name" id="fullname" onChange={this.handleChange} />
 
                     <label htmlFor="username">User name</label>
-                    <input type="text" name="username" placeholder="user name" id="username" onChange={this.handleChange} />
+                    <input type="text" name="username" placeholder="User name" id="username" onChange={this.handleChange} />
 
                     <label htmlFor="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="example@mail.com" onChange={this.handleChange} />
 
                     <label htmlFor="password">Password</label>
-                    <input type="password" placeholder="enter password, must contain at least 7 letters or numbers" name="password" id="password" onChange={this.handleChange} />
+                    <input type="password" placeholder="Enter password (must contain at least 7 digits)" name="password" id="password" onChange={this.handleChange} />
 
                     <label htmlFor="passwordConfirm">Confirm password</label>
-                    <input type="password" placeholder="confirm password" name="passwordConfirm" id="passwordConfirm" onChange={this.handleChange} />
+                    <input type="password" placeholder="Confirm password" name="passwordConfirm" id="passwordConfirm" onChange={this.handleChange} />
 
                 </form>
                 <button className="user-signup-btn" onClick={this.onSubmit}>Submit!</button>
-                <NavLink to="/login" onClick={toggleNewUser}>Already have an account? Login!</NavLink>
+                <NavLink to="/login" onClick={toggleNewUser}>Already have an account? <span>Login!</span></NavLink>
             </main>
         )
     }
