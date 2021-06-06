@@ -2,6 +2,8 @@ import { Avatar } from "@material-ui/core";
 import { Component, Fragment } from "react";
 import { CgClose } from 'react-icons/cg';
 import { LogoutGoogle } from './GoogleLogout';
+import MemberAvatar from '../shared/MemberAvatar';
+
 
 export class UserLogout extends Component {
     state = {
@@ -25,10 +27,10 @@ export class UserLogout extends Component {
         const { fullname, email } = loggedInUser
         return (
             <main>
-                <h3>Log out of your WePlan account</h3>
+                <h3>Logout of your WePlan account</h3>
 
                 <div className="user-logout-container">
-                    <Avatar src="/broken-image.jpg" />
+                    <MemberAvatar member={this.props.loggedInUser} />
                     <div>
                         <h5>{fullname}</h5>
                         <h6>{email}</h6>

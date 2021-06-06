@@ -55,19 +55,20 @@ export class ChecklistTodoPreview extends Component {
 
             <li className="checklist-todo-container">
 
-                <input className="todo-checkbox" type="checkbox" onChange={this.toggleIsDone} checked={isDone} value={isDone} />
+                <input id="myCheck" type="checkbox" onChange={this.toggleIsDone} checked={isDone} value={isDone} />
 
                 <div style={isDone ? { textDecoration: 'line-through' } : {}}>
 
                     {!isTodoClick && <h6 onClick={this.toggleTodoClick} className="checklist-todo">{title}</h6>}
 
                     {isTodoClick && <div className="todo-edit">
-                        <textarea type="text" value={title} name="title"
+                        <input className="todo-edit-input" type="text" value={title} name="title"
                             onBlur={this.onUpdateTodo}
                             onChange={this.handleChange}
                             autoFocus={true}
+                            spellCheck="false"
                         // onKeyDown={this.onEnter} 
-                        ></textarea>
+                        ></input>
                         <div className="yes-no-btns">
                             <button className="primary-btn" onClick={this.onUpdateTodo}>Save</button>
                             <CgClose className="cancel-btn" onClick={this.toggleTodoClick} />

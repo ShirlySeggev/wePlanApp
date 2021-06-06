@@ -44,7 +44,7 @@ export class TaskComment extends Component {
             newTask.comments = [];
             newTask.comments.unshift(comment);
         }
-        updateTask(newTask);
+        updateTask(newTask, 'addea a new comment');
         this.clearComment();
         console.log('newTask', newTask);
     }
@@ -70,7 +70,7 @@ export class TaskComment extends Component {
         const { comment, toggleUpdate } = this.state;
 
         return (
-            <section>
+            <section className="comment-container">
                 <div className="taskDetails-coment">
                     <span className="avatar"><MemberAvatar member={userService.getLoggedinUser() || utilService.getGuestUser()} /></span>
                     <textarea className="text-area-comment"

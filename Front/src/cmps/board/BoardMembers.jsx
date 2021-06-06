@@ -56,7 +56,7 @@ class _BoardMembers extends Component {
             isBoardMember ?
                 newBoard = { ...board, members: board.members.filter(currMember => currMember._id !== member._id) }
                 : newBoard = { ...board, members: [...board.members, member] }
-                onUpdateBoard(newBoard);
+                onUpdateBoard(newBoard, `edited members`);
             this.setState({
                 boardMembers: this.loadBoardMembers(),
                 notBoardMembers: this.loadNotBoardMembers()

@@ -23,14 +23,14 @@ export class ChecklistPreview extends Component {
         const idx = this.findChecklistIdx()
         const newChecklist = { ...checklist, title }
         task.checklists.splice(idx, 1, newChecklist)
-        this.props.updateTask(task)
+        this.props.updateTask(task, `edited ${checklist.title}`)
     }
 
     removeChecklist = () => {
         const { task } = this.props
         const idx = this.findChecklistIdx()
         task.checklists.splice(idx, 1)
-        this.props.updateTask(task)
+        this.props.updateTask(task, `deleted checklist `)
     }
 
     findChecklistIdx = () => {
@@ -46,7 +46,7 @@ export class ChecklistPreview extends Component {
         const idx = this.findChecklistIdx()
         const newTodos = task.checklists[idx].todos.filter(todo => todo.id !== todoId)
         task.checklists[idx].todos = newTodos
-        this.props.updateTask(task)
+        this.props.updateTask(task, `deleted checklist `)
     }
 
     updateTodo = (todo) => {
@@ -54,7 +54,7 @@ export class ChecklistPreview extends Component {
         const listIdx = this.findChecklistIdx()
         const todoIdx = task.checklists[listIdx].todos.findIndex(currTodo => currTodo.id === todo.id)
         task.checklists[listIdx].todos.splice(todoIdx, 1, todo)
-        this.props.updateTask(task)
+        this.props.updateTask(task, `edited checklist `)
     }
 
     addNewTodo = (todo = null) => {
@@ -63,7 +63,7 @@ export class ChecklistPreview extends Component {
             const Idx = this.findChecklistIdx()
             if (task.checklists[Idx].todos) task.checklists[Idx].todos.push(todo)
             else task.checklists[Idx].todos = [todo]
-            this.props.updateTask(task)
+            this.props.updateTask(task, `added ${todo.title}'s checklist`)
         }
         this.toggleAddTodo()
     }
@@ -89,12 +89,12 @@ export class ChecklistPreview extends Component {
                     <div className="checklist-title-container">
                         <div className="checklist-title">
                             <BsCheckBox className="detailsIcon"/>
-                            <input type="text" name="title"  value={title}
+                            <input className="checklist-title-input" type="text" name="title"  value={title}
                             onChange={this.handleChange}
                             onBlur={this.updateChecklistTitle}
                             value={title}
+                            spellCheck="false"
                             />
-                      
                         </div>
                         <button className="secondary-btn" onClick={this.removeChecklist}>Delete</button>
                     </div>

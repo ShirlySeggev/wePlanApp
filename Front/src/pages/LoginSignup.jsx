@@ -13,7 +13,6 @@ class _LoginSignup extends Component {
     }
 
     submitUser = async (user, isGoogle) => {
-        console.log(isGoogle);
         const { isNewUser } = this.state
         const { setUser } = this.props
         try {

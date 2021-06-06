@@ -14,6 +14,7 @@
             color: #0079bf;
             font-family: Permanent Marker;
             margin: 0;
+            padding-inline-start: 5px;
         }
         img {
             width: 43px;
@@ -50,6 +51,8 @@
             height: 44px;
             margin-block-end: 1.2em;
             transition: ease-in 0.3s;
+            border: none;
+            outline: none;
             &:focus {
                 background-color: white;
                 border: 2px solid #4c9aff;
@@ -136,6 +139,8 @@
     text-align: start;
     input {
         grid-column: 3;
+        border: none;
+        outline: none;
     }
     label {
         grid-column: 1;
@@ -149,19 +154,22 @@
 .user-logout-container {
     display: flex;
     align-items: center;
-    margin-block-end: 20px;
+    margin-bottom: 20px;
+    
     div {
         display: flex;
         flex-direction: column;
+        margin-inline-start: 10px ;
         h5 {
-            margin-block-end: 15px;
+            margin-block-end: 10px;
             font-size: 16px;
         }
         h6 {
-            font-size: 14px;
-            margin-block-end: 15px;
+            font-size: 12px;
+            // margin-block-end: 10px;
         }
     }
+  
 }
 
 .user-logout-auth {

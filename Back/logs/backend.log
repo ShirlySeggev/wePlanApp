@@ -235,6 +235,7 @@
 =======
 >>>>>>> cd6c349eb9448ebf5a40483643f752385f0c3307
 04/06/2021, 18:05:27 - INFO - Server is running on port: 3030 
+<<<<<<< HEAD
 >>>>>>> 7376c56ba6c47b2dcb57c6988c6be070ab7b8636
 4.6.2021, 18:31:43 - DEBUG - auth.service - signup with username: gal123, fullname: גל מאיר נלקן,email: galnelkel@gmail.com, imgUrl:  (sid: cRG5dytD77fF8uGKH0dvg6W62ETD7MYp)
 4.6.2021, 18:31:44 - DEBUG - auth.route - new account created: {"fullname":"גל מאיר נלקן","username":"gal123","email":"galnelkel@gmail.com","imgUrl":"","password":"$2b$10$kLF2GPM7ayV.Jsg4byCiN.gPZ5UdrTyc/c24cEfMhuRJQh.hpTZQC","_id":"60ba476005419d19c4107523"} (sid: cRG5dytD77fF8uGKH0dvg6W62ETD7MYp)
@@ -433,3 +434,11 @@
 6.6.2021, 2:00:36 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: ZWt1fpJlz5tmZZTEj0HWcBt_P1wuTiQc)
 6.6.2021, 2:06:51 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: nEh5gBpZwP_2KjocadArczKHDU-cqspb)
 6.6.2021, 2:07:41 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: nEh5gBpZwP_2KjocadArczKHDU-cqspb)
+=======
+04/06/2021, 18:40:47 - DEBUG - auth.service - login with username/email: shirlys (sid: 5WgtliGhcEo3Tnz8K3TqDDSg-VZzz3DU)
+05/06/2021, 17:46:11 - DEBUG - auth.service - login with username/email: shirly (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
+05/06/2021, 17:46:11 - ERROR - Failed to Login Invalid username/email or password (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
+05/06/2021, 17:46:21 - DEBUG - auth.service - login with username/email: shirlys (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
+05/06/2021, 17:46:21 - ERROR - Failed to Login Invalid username/email or password (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
+05/06/2021, 17:46:37 - DEBUG - auth.service - login with username/email: shirlys (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
+>>>>>>> 1b5e5dfb237a0c073266faa2cf983ae38cd6c4ee

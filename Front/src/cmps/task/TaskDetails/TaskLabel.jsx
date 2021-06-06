@@ -52,7 +52,7 @@ export class TaskLabel extends Component {
         const { updateTask, task } = this.props;
         const newTask = { ...task };
         newTask.labelIds = this.state.labels;
-        updateTask(newTask);
+        updateTask(newTask, `edited labels`);
     }
 
     onUpdateLabel = () => {

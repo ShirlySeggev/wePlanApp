@@ -60,7 +60,7 @@ export class TaskDetailsActivity extends Component {
                         return <div key={comment.id} className="activity">
                             <span className="avatar"><MemberAvatar member={comment.byMember} /></span>
                             <div className="activity-description">
-                                <p><span>{comment.byMember.fullname}</span> {formatDistance(comment.createdAt, Date.now())} </p>
+                                <p><span>{comment.byMember.fullname}</span> {formatDistance(comment.createdAt, Date.now())} ago </p>
                                 <p className="comment-txt">{comment.txt}</p>
                             </div>
 
@@ -74,7 +74,7 @@ export class TaskDetailsActivity extends Component {
                                 <span className="avatar"><MemberAvatar member={activity.byMember} /></span>
                                 <div className="activity-description">
                                     <p ><span>{activity.byMember.fullname}</span> {activity.txt} to {activity.task.title}</p>
-                                    <p>{formatDistance(activity.createdAt, Date.now())} ago</p>
+                                    <p className="date">{formatDistance(activity.createdAt, Date.now())} ago</p>
                                 </div>
                             </div>
                         </div>

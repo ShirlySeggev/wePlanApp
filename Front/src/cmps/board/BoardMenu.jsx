@@ -45,7 +45,7 @@ export class BoardMenu extends Component {
         const { board, onUpdateBoard } = this.props;
         const updatedBoard = { ...board };
         updatedBoard.style = newStyle;
-        onUpdateBoard(updatedBoard);
+        onUpdateBoard(updatedBoard, `edited background color`);
     }
 
     onUpdateBgImg = (newStyle) => {
@@ -53,7 +53,7 @@ export class BoardMenu extends Component {
         const updatedBoard = { ...board };
         updatedBoard.style.img = newStyle;
         console.log(updatedBoard.style);
-        onUpdateBoard(updatedBoard);
+        onUpdateBoard(updatedBoard, `edited background image`);
     }
 
     toggleMembers = () => {

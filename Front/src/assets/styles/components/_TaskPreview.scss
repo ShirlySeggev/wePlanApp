@@ -29,6 +29,11 @@
         color: #172b4d;
         font-size: 14px;
     }
+    &-img{
+        max-width: 240px;
+        max-height: 250px;
+        object-fit: cover;
+    }
 
     &:hover {
         background-color: darken(#fff, 5);

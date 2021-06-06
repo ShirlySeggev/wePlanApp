@@ -12,7 +12,13 @@ export function ActivityLog({ activities }) {
                     <div className="activity">
                         <MemberAvatar member={activity.byMember} />
                         <div className="activity-description">
-                            <p ><span>{activity.byMember.fullname}</span> {activity.txt} to {activity.task.title}</p>
+                            <p ><span>{activity.byMember.fullname}</span> {activity.txt} to <span>
+                            {activity.task?.title} 
+                            {activity.group?.title} 
+                            {activity.board?.title}
+                            {activity.app?.app}
+                            </span>
+                            </p>
                             <p>{formatDistance(activity.createdAt, Date.now())} ago</p>
                         </div>
                     </div>

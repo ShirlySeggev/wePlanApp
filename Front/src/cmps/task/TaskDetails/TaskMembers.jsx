@@ -46,7 +46,7 @@ export class TaskMembers extends Component {
                 notTaskMembers: this.loadNotTaskMembers()
             }, console.log('1', this.state))
         }
-        this.props.updateTask(task)
+        this.props.updateTask(task, `edited members`)
     }
 
 
@@ -57,7 +57,6 @@ export class TaskMembers extends Component {
             <div className="task-add-members-container" style={{ ...modalPos }}>
                 <ModalHeader title='Members' closeModal={toggleMembers} />
                 <ul>
-                <h4 className="task-members-ul-title">Board members</h4>
                     {taskMembers && taskMembers.map(member =>
                         <li key={member._id} className="task-add-member-container" onClick={() => this.onClickMember(member)}>
                             <MemberAvatar member={member} />

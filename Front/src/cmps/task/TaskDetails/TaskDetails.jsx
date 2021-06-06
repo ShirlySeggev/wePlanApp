@@ -34,7 +34,6 @@ class _TaskDetails extends Component {
         toggleAddCheckList: false,
         toggleMembers: false,
         toggleDueDate: false,
-        toggleTaskCopy: false,
     }
 
     componentDidMount() {
@@ -58,14 +57,16 @@ class _TaskDetails extends Component {
         }
     }
 
-    updateTask = (task) => {
+    updateTask = (task, activity = null) => {
         this.setState({ task })
         const taskId = task.id;
         const { id } = this.state.group;
-        const { board } = this.props;
+        const { board, loggedInUser } = this.props;
         const groupIdx = board.groups.findIndex(group => group.id === id)
         const taskIdx = board.groups[groupIdx].tasks.findIndex(task => task.id === taskId)
         const updatedBoard = { ...board };
+        const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
+        updatedBoard.activities.unshift(utilService.addActivity(user, activity, this.state.task, null, null, null));
         updatedBoard.groups[groupIdx].tasks.splice(taskIdx, 1, task)
         this.setState({ task: { ...task } })
         this.updateBoard(updatedBoard);
@@ -74,14 +75,17 @@ class _TaskDetails extends Component {
     removeTask = () => {
         const taskId = this.state.task.id;
         const { id } = this.state.group;
-        const { board } = this.props;
+        const { board, loggedInUser } = this.props;
         const boardId = board._Id;
         const groupIdx = board.groups.findIndex(group => group.id === id);
         const taskIdx = board.groups[groupIdx].tasks.findIndex(task => task.id === taskId);
         const updatedBoard = { ...board };
+        const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
+        updatedBoard.activities.unshift(utilService.addActivity(user, `deleted task ${this.state.task.title}`, null, this.state.group, null, null));
         updatedBoard.groups[groupIdx].tasks.splice(taskIdx, 1)
         this.updateBoard(updatedBoard);
         this.props.history.push(`/board/${boardId}`)
+
     }
 
     copyTask = () => {
@@ -115,7 +119,7 @@ class _TaskDetails extends Component {
         this.setState(prevState => (
             { ...prevState, task: { ...prevState.task, img: imgUrl } }
         ), () => {
-            this.updateTask(this.state.task)
+            this.updateTask(this.state.task, 'added an image')
         })
     }
 
@@ -130,7 +134,7 @@ class _TaskDetails extends Component {
         this.setState(prevState => (
             { ...prevState, task: { ...prevState.task, img: '' } }
         ), () => {
-            this.updateTask(this.state.task)
+            this.updateTask(this.state.task, `removed image`)
         })
         this.updateBoard(updatedBoard);
     }
@@ -144,6 +148,7 @@ class _TaskDetails extends Component {
         const { clientX, clientY } = ev;
         modalPos = { left: clientX - left + 'px', top: (clientY - top) + 'px' };
     }
+
     toggle = (ev, key) => {
         const computed = {
             key
@@ -156,9 +161,9 @@ class _TaskDetails extends Component {
 
     render() {
         const { board } = this.props;
-        const { task, group, toggleTaskLabel, isDate, toggleTaskCopy, toggleAddCheckList, toggleMembers, toggleImgUpload, toggleDueDate } = this.state;
+        const { task, group, toggleTaskLabel, toggleAddCheckList, toggleMembers, toggleImgUpload, toggleDueDate } = this.state;
         if (!task) return <Loading />
-        const { checklists, labelIds, comments, members, img, dueDate } = this.state.task;
+        const { checklists, labelIds, comments, members, img, dueDate, isDone } = this.state.task;
         const isImg = task.img?.url;
         let dueDateToShow = new Intl.DateTimeFormat('he-IL', { day: '2-digit', month: '2-digit', }).format(dueDate)
         return (
@@ -198,13 +203,14 @@ class _TaskDetails extends Component {
                                     <div className="date-dueDate">
                                         <CheckBox task={task} handleChange={this.handleChange} isChecked={task.isDone} updateTask={this.updateTask} />
                                         <p>{dueDateToShow}</p>
+                                        {isDone && <p className="complete">COMPLETE</p>}
                                     </div>
                                 </div>}
                             </section>
 
                             <TaskDetailsDescription task={task} updateTask={this.updateTask} />
 
-                            {isImg && <div className="">
+                            {isImg && <div className="taskDetails-img">
                                 <SectionTitle className="img-title" Icon={BsImage}>Images</SectionTitle>
                                 <img className="uploaded-img" src={img.url} alt="content" />
                                 <button className="secondary-btn" onClick={this.deletImg}>Delete</button>
@@ -225,9 +231,9 @@ class _TaskDetails extends Component {
                             {/* ADD DATES */}
                             <li className="detail-act-btn" onClick={ev => this.toggle(ev, 'dueDate')}><BiTimeFive /><span className="txt">Due Date</span></li>
                             {/* ADD CHECLIST */}
-                            <li className="detail-act-btn" onClick={ev=>this.toggle(ev,'addCheckList')}><BsCheckBox /><span className="txt">Checklist</span></li>
+                            <li className="detail-act-btn" onClick={ev => this.toggle(ev, 'addCheckList')}><BsCheckBox /><span className="txt">Checklist</span></li>
                             {/* ADD IMAGE */}
-                            <li className="detail-act-btn" onClick={ev=>this.toggle(ev,'imgUpload')}><BsImage /><span className="txt">Image</span></li>
+                            <li className="detail-act-btn" onClick={ev => this.toggle(ev, 'imgUpload')}><BsImage /><span className="txt">Image</span></li>
                             {/* MOVE TASK */}
                             <li className="detail-act-btn"><BsArrowRightShort /><span className="txt">Move</span></li>
                             {/* COPY TASK */}
@@ -239,8 +245,8 @@ class _TaskDetails extends Component {
                         {/* POPUPS */}
                         {toggleMembers && <TaskMembers modalPos={modalPos} members={board.members} task={task} toggleMembers={ev => this.toggle(ev, 'members')} updateTask={this.updateTask} />}
                         {toggleTaskLabel && <TaskLabel modalPos={modalPos} task={task} updateTask={this.updateTask} toggleTaskLabel={ev => this.toggle(ev, 'taskLabel')} />}
-                        {toggleAddCheckList && <ChecklistAdd modalPos={modalPos} task={task} toggleAddCheckList={ev=>this.toggle(ev,'addCheckList')} updateTask={this.updateTask} />}
-                        {toggleImgUpload && <TaskImg modalPos={modalPos} updateImg={this.updateImg} toggleImgUpload={ev=>this.toggle(ev,'imgUpload')}/>}
+                        {toggleAddCheckList && <ChecklistAdd modalPos={modalPos} task={task} toggleAddCheckList={ev => this.toggle(ev, 'addCheckList')} updateTask={this.updateTask} />}
+                        {toggleImgUpload && <TaskImg modalPos={modalPos} updateImg={this.updateImg} toggleImgUpload={ev => this.toggle(ev, 'imgUpload')} />}
                         {toggleDueDate && <TaskDueDate modalPos={modalPos} task={task} updateTask={this.updateTask} toggleDueDate={ev => this.toggle(ev, 'dueDate')} />}
                     </div>
                 </section>
@@ -254,6 +260,7 @@ class _TaskDetails extends Component {
 function mapStateToProps(state) {
     return {
         board: state.boardModule.board,
+        loggedInUser: state.userModule.loggedInUser,
     }
 }
 

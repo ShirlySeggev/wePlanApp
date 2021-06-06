@@ -15,7 +15,7 @@ export class ChecklistAdd extends Component {
         const newChecklist = this.createNewChecklist(title)
         if (task.checklists) task.checklists.push(newChecklist)
         else task.checklists = [newChecklist]
-        updateTask(task)
+        updateTask(task, `added ${title}`)
         this.props.toggleAddCheckList()
     }
 
@@ -49,12 +49,14 @@ export class ChecklistAdd extends Component {
         return (
             <div className="checklist-new-container" style={{ ...modalPos }}>
                 <ModalHeader title='Add checklist' closeModal={toggleAddCheckList} />
-                <input name="title" label="Title" placeholder="Checklist Header..."
-                    onChange={this.handleChange}
-                    onKeyDown={this.onKeyDown}
-                    spellCheck="false">
-                </input>
-                <button className="secondary-btn" onClick={this.onAddChecklist}>Add</button>
+                <div className="">
+                    <input name="title" label="Title" placeholder="Checklist Title..."
+                        onChange={this.handleChange}
+                        onKeyDown={this.onKeyDown}
+                        spellCheck="false">
+                    </input>
+                    <button className="primary-btn" onClick={this.onAddChecklist}>Add</button>
+                </div>
             </div>
         )
     }

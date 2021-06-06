@@ -33,7 +33,7 @@ export class GroupHeader extends Component {
         const { group, updateGroup } = this.props;
         const copyGroup = { ...group };
         copyGroup.title = this.state.group.title;
-        updateGroup(copyGroup);
+        updateGroup(copyGroup, `edited list name ${copyGroup.title}`);
     }
 
     changeGroupBgc = (bgcColor) => {
@@ -41,7 +41,7 @@ export class GroupHeader extends Component {
         const { group, updateGroup } = this.props;
         const copyGroup = { ...group };
         copyGroup.style.bgc = bgcColor;
-        updateGroup(copyGroup);
+        updateGroup(copyGroup, `edited ${copyGroup.title}'s color`);
     }
     sortGroupList = () => {
         const { group, updateGroup } = this.props;

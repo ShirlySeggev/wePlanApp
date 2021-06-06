@@ -46,13 +46,14 @@ export class CheckListAddTodo extends Component {
         const { title } = this.state
         return (
             <div className="checklist-add-todo-container">
-                <textarea type="text" value={title} name="title"
+                <input className="add-item" type="text" value={title} name="title"
                     onBlur={this.onAddTodo}
                     onChange={this.handleChange}
                     autoFocus={true}
                     spellCheck="false"
+                    placeholder="Add an item"
                 // onKeyDown={this.onEnter} 
-                ></textarea>
+                ></input>
                 <div className="yes-no-btns">
                     <button className="primary-btn" onClick={this.onAddTodo}>Add</button>
                     <CgClose className="cancel-btn" onClick={this.props.toggleAddTodo} />

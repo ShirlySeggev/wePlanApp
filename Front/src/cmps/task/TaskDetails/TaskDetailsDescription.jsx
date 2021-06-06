@@ -29,7 +29,7 @@ export class TaskDetailsDescription extends Component {
     updateTaskDescription = () => {
         const { description } = this.state;
         const newTask = { ...this.props.task, description }
-        this.props.updateTask(newTask);
+        this.props.updateTask(newTask, `edited description`);
         this.toggleUpdate();
     }
 
@@ -44,8 +44,6 @@ export class TaskDetailsDescription extends Component {
                         onBlur={this.updateTaskDescription} onFocus={this.toggleUpdate}
                     />
                 }
-                {/* {toggleUpdate && <button className="primary-btn" onClick={this.updateTaskDescription}>Save</button>} */}
-            
                 {toggleUpdate &&
                     <div className="yes-no-btns">
                         <button className="primary-btn" onClick={this.updateTaskDescription}>Save</button>

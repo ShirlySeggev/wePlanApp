@@ -43,7 +43,7 @@ export class BoardHeader extends Component {
         const { board, onUpdateBoard } = this.props;
         const updatedBoard = { ...board };
         updatedBoard.title = this.state.board.title;
-        onUpdateBoard(updatedBoard);
+        onUpdateBoard(updatedBoard, `edited ${updatedBoard.title} title`);
     }
 
     toggleBoardMenu = () => {

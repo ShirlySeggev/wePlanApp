@@ -12,7 +12,7 @@ class _App extends Component {
     render() {
 
         return (
-            <div>
+            // <div>
                 <Router>
                     <Header>
                     </Header>
@@ -22,7 +22,7 @@ class _App extends Component {
                     </Switch>
                     </main>
                 </Router>
-            </div>
+            // </div>
         );
     }
 }
