@@ -10,7 +10,6 @@ class _LoginSignup extends Component {
     state = {
         msg: '',
         isNewUser: false,
-
     }
 
     submitUser = async (user, isGoogle) => {
@@ -46,6 +45,9 @@ class _LoginSignup extends Component {
     toggleNewUser = () => {
         this.setState({ isNewUser: !this.state.isNewUser });
     }
+    // toggleGoogle = () => {
+    //     this.setState({ isGoogle: !this.state.isGoogle });
+    // }
 
     setMsg = (msg) => {
         this.setState({ ...this.state, msg })
@@ -87,6 +89,8 @@ class _LoginSignup extends Component {
                     userLogout={this.userLogout}
                     loggedInUser={loggedInUser}
                 />}
+
+
 
             </section>
         )

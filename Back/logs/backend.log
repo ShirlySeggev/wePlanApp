@@ -294,3 +294,25 @@
 06/06/2021, 16:34:34 - INFO - Server is running on port: 3030 
 06/06/2021, 16:37:37 - INFO - Server is running on port: 3030 
 06/06/2021, 17:02:24 - INFO - Server is running on port: 3030 
+06/06/2021, 17:34:52 - INFO - Server is running on port: 3030 
+06/06/2021, 17:35:25 - INFO - Server is running on port: 3030 
+06/06/2021, 17:45:56 - ERROR - Failed to signup TypeError: Cannot destructure property 'fullname' of 'userCred' as it is undefined. (sid: J04ojDdcY446_PGyrgODLY3pRszQTiOg)
+06/06/2021, 17:48:54 - INFO - Server is running on port: 3030 
+06/06/2021, 17:49:18 - ERROR - Failed to signup TypeError: Cannot destructure property 'fullname' of 'userCred' as it is undefined. (sid: 9gkN_CRiB6sUu5Yam4dEKxaMRKybu3lq)
+06/06/2021, 17:51:05 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: 9gkN_CRiB6sUu5Yam4dEKxaMRKybu3lq)
+06/06/2021, 17:51:06 - DEBUG - auth.service - signup with username: shirlyarcusin@gmail.com, fullname: Shirly Arcusin,email: shirlyarcusin@gmail.com, imgUrl: https://lh3.googleusercontent.com/a-/AOh14GicfwAuh8HYURa3EShwfl1Xz6oxShs0Z4BDHC61psw=s96-c (sid: 9gkN_CRiB6sUu5Yam4dEKxaMRKybu3lq)
+06/06/2021, 17:51:06 - DEBUG - auth.route - new account created: {"fullname":"Shirly Arcusin","username":"shirlyarcusin@gmail.com","email":"shirlyarcusin@gmail.com","imgUrl":"https://lh3.googleusercontent.com/a-/AOh14GicfwAuh8HYURa3EShwfl1Xz6oxShs0Z4BDHC61psw=s96-c","password":"$2b$10$kmjT7FUPZS71e3lJhqu1AOtTHm1nrWc/27EAad.kk9TmNU30AwjLG","_id":"60bce0daec64a33b68bf6a08"} (sid: 9gkN_CRiB6sUu5Yam4dEKxaMRKybu3lq)
+06/06/2021, 17:51:06 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: 9gkN_CRiB6sUu5Yam4dEKxaMRKybu3lq)
+06/06/2021, 17:52:51 - DEBUG - auth.service - login with username/email: shirlys (sid: chfGV-s09pTyiIZ12h8mUBRVN85OZMAU)
+06/06/2021, 17:53:48 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: amZuPLXEUgqXZnLeuhi8HryfKgwR1UFT)
+06/06/2021, 17:53:54 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: Uw16Xf73zxlSRv7s5C-tA8jyF0GEQHNt)
+06/06/2021, 17:54:08 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: sh86Uzy5WU5cw6mFP2qbXO2xAYlZECCM)
+06/06/2021, 17:54:14 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: BVXY2MDDmSHT_HK_2HBGoEaQDz1BUl-D)
+06/06/2021, 17:54:20 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: N64hdlXIB726s6aIKowfypGOmU2EZkn2)
+06/06/2021, 17:54:31 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: rFn-2w5DkwpuluTr2IHdxq4G2s5HZ0UD)
+06/06/2021, 17:54:43 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: 7xYM8AYDF1xp8tPiJuBCec1bFRmw5rD9)
+06/06/2021, 17:55:04 - INFO - Server is running on port: 3030 
+06/06/2021, 17:55:38 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: LoaKzYGG6W2qP_sJ46B7IJqwPkfdjcOX)
+06/06/2021, 18:34:16 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: jJYLvuvoefInOgdgqihhw0YbaqiW0nyi)
+06/06/2021, 18:34:29 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: _KyYx4hzFiffmJC_VHdF1vG3kpuuEa5W)
+06/06/2021, 18:39:41 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: vsnlN0O6IHAHwXSFs3DG7uMJhM4NAhNe)

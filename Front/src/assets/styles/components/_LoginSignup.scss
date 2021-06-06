@@ -23,7 +23,7 @@
     }
     span {
         text-align: center;
-        margin-block-end: 10px;
+        // margin-block-end: 10px;
         font-size: 16px;
         color: rgb(230, 99, 99);
     }
@@ -33,15 +33,14 @@
         box-shadow: rgb(224, 225, 226) 0 0 10px;
         background-color: #ffffff;
         border-radius: 3px;
-        padding: 25px 40px;
+        padding: 20px 20px;
         h3 {
             text-align: center;
             color: #5e6c84;
             font-size: 20px;
             letter-spacing: -0.01em;
             line-height: 28px;
-            margin-top: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         input {
             border-radius: 5px;
@@ -76,8 +75,43 @@
         }
     }
     a {
-        margin-block-start: 15px;
+        margin-block: 15px 15px;
         align-self: center;
+    }
+    .social-login {
+        margin-block-end: 15px;
+        align-self: center;
+    }
+    .google-login-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        background: #fff;
+        color: rgba(0, 0, 0, 0.54);
+        border-color: transparent;
+        border-radius: 3px;
+        width: 99%;
+        height: 39px;
+        padding-top: 0;
+        margin-bottom: 12px;
+        -webkit-transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+        transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+        button {
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            // text-align: center;
+            span {
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+                font-family: inherit;
+                color: #505f79;
+                font-weight: bold !important;
+            }
+        }
     }
 }
 
@@ -94,11 +128,9 @@
 
 .user-signup-container {
     display: grid;
-    grid-template-columns: 200px 100px 350px;
-    margin-inline: 20px;
+    grid-template-columns: 3fr 0.1fr 6fr;
     text-align: center;
     align-items: center;
-
     gap: 10px 0;
     justify-content: start;
     text-align: start;
@@ -106,6 +138,7 @@
         grid-column: 3;
         border: none;
         outline: none;
+        padding: 5px 5px;
     }
     label {
         grid-column: 1;
