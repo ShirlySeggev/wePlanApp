@@ -31,9 +31,9 @@ async function remove(boardId) {
     await httpService.delete(BASE_URL + '/' + boardId)
 }
 
-async function update(board) {
+async function update(board, activity) {
     // return asyncBoardService.put(STORAGE_KEY, board)
-    await httpService.put(BASE_URL + '/' + board._id, board)
+    await httpService.put(BASE_URL + '/' + board._id, { board, activity })
 }
 
 async function save(board) {

@@ -8,6 +8,7 @@
     z-index: 2;
     transition: right 0.5s;
     padding: 0 15px;
+    padding-bottom: 10px;
     box-shadow: 0 0px 3px 2px #7e7d7d78;
     &.open {
         right: 0px;
@@ -43,6 +44,8 @@
     }
     .ActivityLog {
         overflow-y: scroll;
+        height: calc(100vh - 305px);
+      
     }
     .activity {
         display: flex;

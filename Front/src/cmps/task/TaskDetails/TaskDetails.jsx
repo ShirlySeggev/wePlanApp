@@ -48,16 +48,16 @@ class _TaskDetails extends Component {
         this.setState({ task, group: board.groups[groupIdx] })
     }
 
-    async updateBoard(board) {
+    async updateBoard(board, activity) {
         try {
-            await this.props.updateBoard(board);
+            await this.props.updateBoard(board, activity);
             await this.props.loadBoard(board._id);
         } catch (err) {
             console.log('On Task details, Update Board:', err)
         }
     }
 
-    updateTask = (task, activity = null) => {
+    updateTask = (task, txt = null) => {
         this.setState({ task })
         const taskId = task.id;
         const { id } = this.state.group;
@@ -66,10 +66,11 @@ class _TaskDetails extends Component {
         const taskIdx = board.groups[groupIdx].tasks.findIndex(task => task.id === taskId)
         const updatedBoard = { ...board };
         const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
-        updatedBoard.activities.unshift(utilService.addActivity(user, activity, this.state.task, null, null, null));
+        // updatedBoard.activities.unshift(utilService.addActivity(user, activity, this.state.task, null, null, null));
+        const activity = utilService.addActivity(user, txt, this.state.task, null, null, null);
         updatedBoard.groups[groupIdx].tasks.splice(taskIdx, 1, task)
         this.setState({ task: { ...task } })
-        this.updateBoard(updatedBoard);
+        this.updateBoard(updatedBoard, activity);
     }
 
     removeTask = () => {
@@ -81,11 +82,26 @@ class _TaskDetails extends Component {
         const taskIdx = board.groups[groupIdx].tasks.findIndex(task => task.id === taskId);
         const updatedBoard = { ...board };
         const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
-        updatedBoard.activities.unshift(utilService.addActivity(user, `deleted task ${this.state.task.title}`, null, this.state.group, null, null));
-        updatedBoard.groups[groupIdx].tasks.splice(taskIdx, 1)
-        this.updateBoard(updatedBoard);
+        // updatedBoard.activities.unshift(utilService.addActivity(user, `deleted task ${this.state.task.title}`, null, this.state.group, null, null));        updatedBoard.groups[groupIdx].tasks.splice(taskIdx, 1)
+        const activity = utilService.addActivity(user, `deleted task ${this.state.task.title}`, null, this.state.group, null, null)
+        this.updateBoard(updatedBoard, activity);
         this.props.history.push(`/board/${boardId}`)
 
+    }
+
+    copyTask = () => {
+        const { board, loggedInUser } = this.props;
+        const { task, group } = this.state;
+        const copiedTask = { ...task }
+        copiedTask.id = utilService.makeId()
+        const groupIdx = board.groups.findIndex(currGroup => currGroup.id === group.id);
+        const updatedGroup = { ...group };
+        updatedGroup.tasks.push(copiedTask);
+        const updatedBoard = { ...board };
+        const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
+        const activity = utilService.addActivity(user, `copied task ${this.state.task.title}`, null, this.state.group, null, null)
+        updatedBoard.groups.splice(groupIdx, 1, updatedGroup)
+        this.updateBoard(updatedBoard, activity);
     }
 
     handleChange = ({ target }) => {
@@ -221,7 +237,7 @@ class _TaskDetails extends Component {
                             {/* MOVE TASK */}
                             <li className="detail-act-btn"><BsArrowRightShort /><span className="txt">Move</span></li>
                             {/* COPY TASK */}
-                            <li className="detail-act-btn"><MdContentCopy /><span className="txt">Copy</span></li>
+                            <li className="detail-act-btn" onClick={this.copyTask}><MdContentCopy /><span className="txt">Copy</span></li>
                             {/* DELETE TASK */}
                             <li className="detail-act-btn" onClick={this.removeTask}><BsTrash /><span className="txt">Delete</span></li>
                         </ul>

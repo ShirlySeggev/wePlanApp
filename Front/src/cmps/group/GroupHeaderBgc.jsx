@@ -4,7 +4,7 @@ import { Component } from 'react';
 export class GroupHeaderBgc extends Component {
     state = {
         colors: [
-            { id: 'l101', color: "#FFFCDD", isPicked: false },
+            { id: 'l101', color: "#FADA5E", isPicked: false },
             { id: 'l102', color: "#FCC9A5", isPicked: false },
             { id: 'l103', color: "#FFB1B8", isPicked: false },
             { id: 'l104', color: "#C8BCD4", isPicked: false },

@@ -36,6 +36,8 @@ export class TaskComment extends Component {
     }
 
     saveComment = () => {
+        const { txt } = this.state.comment;
+        if (!txt) return;
         const comment = this.addComment();
         const { task, updateTask } = this.props;
         const newTask = { ...task };
@@ -46,10 +48,11 @@ export class TaskComment extends Component {
         }
         updateTask(newTask, 'addea a new comment');
         this.clearComment();
-        console.log('newTask', newTask);
     }
 
     addComment = () => {
+        const { txt } = this.state.comment;
+        if (!txt) return;
         const newComment = {
             id: utilService.makeId(),
             createdAt: Date.now(),
@@ -80,6 +83,7 @@ export class TaskComment extends Component {
                         spellCheck="false"
                         onChange={this.handleChange}
                         onFocus={this.toggleUpdate}
+                        onBlur={this.toggleUpdate}
                     />
                 </div>
                 {toggleUpdate && <button className="primary-btn" onClick={this.saveComment}>Save</button>}

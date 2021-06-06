@@ -12,18 +12,19 @@ export class ChecklistPreview extends Component {
         title: ''
     }
 
-    componentDidMount(){
-        this.setState({title: this.props.checklist.title})
+    componentDidMount() {
+        this.setState({ title: this.props.checklist.title })
     }
 
-
-    // --- CHECKLIST FUNCTIONS --- \\
-    updateChecklistTitle = (title) => {
-        const { checklist, task } = this.props
+    updateChecklistTitle = (/* title */) => {
+        const { checklist, task } = this.props;
+        const { title } = this.state;
         const idx = this.findChecklistIdx()
         const newChecklist = { ...checklist, title }
-        task.checklists.splice(idx, 1, newChecklist)
-        this.props.updateTask(task, `edited ${checklist.title}`)
+        const updatedTask = { ...task }
+        updatedTask.checklists.splice(idx, 1, newChecklist)
+        console.log(updatedTask);
+        this.props.updateTask(updatedTask, `edited ${checklist.title}`)
     }
 
     removeChecklist = () => {
@@ -88,12 +89,12 @@ export class ChecklistPreview extends Component {
                 <header className="checklist-header">
                     <div className="checklist-title-container">
                         <div className="checklist-title">
-                            <BsCheckBox className="detailsIcon"/>
-                            <input className="checklist-title-input" type="text" name="title"  value={title}
-                            onChange={this.handleChange}
-                            onBlur={this.updateChecklistTitle}
-                            value={title}
-                            spellCheck="false"
+                            <BsCheckBox className="detailsIcon" />
+                            <input className="checklist-title-input" type="text" name="title" value={title}
+                                onChange={this.handleChange}
+                                onBlur={this.updateChecklistTitle}
+                                value={title}
+                                spellCheck="false"
                             />
                         </div>
                         <button className="secondary-btn" onClick={this.removeChecklist}>Delete</button>
@@ -108,8 +109,8 @@ export class ChecklistPreview extends Component {
                             todo={todo}
                             updateTodo={this.updateTodo}
                             removeTodo={this.removeTodo}
-                            />)}
-                            {!isAddTodo && <button className="checklist-todo-add-btn secondary-btn" onClick={this.toggleAddTodo}>Add an item</button>}
+                        />)}
+                    {!isAddTodo && <button className="checklist-todo-add-btn secondary-btn" onClick={this.toggleAddTodo}>Add an item</button>}
                     {isAddTodo && <CheckListAddTodo
                         toggleAddTodo={this.toggleAddTodo}
                         addNewTodo={this.addNewTodo} />}

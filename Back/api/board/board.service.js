@@ -68,14 +68,22 @@ async function remove(boardId) {
     }
 }
 
-async function update(board) {
+async function update(board, activity) {
     try {
         const boardToSave = {
             ...board,
             _id: ObjectId(board._id)
         }
         const collection = await dbService.getCollection('board')
-        await collection.updateOne({ '_id': boardToSave._id }, { $set: boardToSave })
+        await collection.updateOne({ '_id': boardToSave._id },
+            {
+                $push: {
+                    'activities': {$each: [activity], $position: 0}
+                },
+                $set: boardToSave
+            },
+         
+        )
         return boardToSave;
     } catch (err) {
         logger.error(`cannot update board ${board._id}`, err)

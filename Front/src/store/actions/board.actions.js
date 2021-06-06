@@ -13,7 +13,7 @@ export function loadBoards() {
         }
     }
 }
-  
+
 export function loadBoard(boardId) {
     return async dispatch => {
         try {
@@ -37,11 +37,13 @@ export function addBoard(board) {
     }
 }
 
-export function updateBoard(board) {
+export function updateBoard(board, activity) {
     return async dispatch => {
         try {
-            dispatch({ type: 'SET_BOARD', board })
-            await boardService.update(board)
+            const boardCopy = JSON.parse(JSON.stringify(board));
+            dispatch({ type: 'SET_BOARD', board: boardCopy })
+            delete board.activities
+            await boardService.update(board, activity)
             socketService.emit('board updated', board._id)
         } catch (err) {
             console.log('BoardActions: err in updateBoard', err)

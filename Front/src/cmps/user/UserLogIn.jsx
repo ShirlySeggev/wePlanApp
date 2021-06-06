@@ -24,10 +24,6 @@ export class UserLogin extends Component {
         if (txt.length < 4) return setMsg('User name / email must include 4 letters or numbers')
         if (!password || !txt) return setMsg('Please fill all fields')
         submitUser(this.state)
-        this.setState({
-            txt: '',
-            password: ''
-        })
     }
 
     render() {

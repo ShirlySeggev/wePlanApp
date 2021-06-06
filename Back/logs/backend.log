@@ -238,3 +238,59 @@
 05/06/2021, 17:46:21 - DEBUG - auth.service - login with username/email: shirlys (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
 05/06/2021, 17:46:21 - ERROR - Failed to Login Invalid username/email or password (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
 05/06/2021, 17:46:37 - DEBUG - auth.service - login with username/email: shirlys (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
+05/06/2021, 18:02:07 - INFO - Server is running on port: 3030 
+05/06/2021, 18:02:39 - INFO - Server is running on port: 3030 
+05/06/2021, 18:27:47 - DEBUG - auth.service - login with username/email: shirlys (sid: 29lYQM36G9D_MgSRqC53OR41RN3DwOrF)
+05/06/2021, 18:31:38 - ERROR - while finding board undefined | {} (sid: 29lYQM36G9D_MgSRqC53OR41RN3DwOrF)
+05/06/2021, 18:31:38 - ERROR - Failed to get board | {} (sid: 29lYQM36G9D_MgSRqC53OR41RN3DwOrF)
+05/06/2021, 18:31:42 - ERROR - while finding board undefined | {} (sid: 29lYQM36G9D_MgSRqC53OR41RN3DwOrF)
+05/06/2021, 18:31:42 - ERROR - Failed to get board | {} (sid: 29lYQM36G9D_MgSRqC53OR41RN3DwOrF)
+05/06/2021, 18:32:18 - ERROR - while finding board undefined | {} (sid: 29lYQM36G9D_MgSRqC53OR41RN3DwOrF)
+05/06/2021, 18:32:18 - ERROR - Failed to get board | {} (sid: 29lYQM36G9D_MgSRqC53OR41RN3DwOrF)
+05/06/2021, 22:18:11 - DEBUG - auth.service - login with username/email: shirys (sid: -REQEdCcQrtCa0bPAzoV_DrgQollr-RL)
+05/06/2021, 22:18:11 - ERROR - Failed to Login Invalid username/email or password (sid: -REQEdCcQrtCa0bPAzoV_DrgQollr-RL)
+05/06/2021, 22:18:26 - DEBUG - auth.service - login with username/email: shirlys (sid: -REQEdCcQrtCa0bPAzoV_DrgQollr-RL)
+06/06/2021, 10:11:38 - DEBUG - auth.service - login with username/email: shirlys (sid: ZFVscEg4Pqcku817FfHqlKa0CKDsWO6T)
+06/06/2021, 11:19:25 - DEBUG - auth.service - signup with username: linoyf, fullname: Linoy Fakiro,email: linoy123@gmail.com, imgUrl:  (sid: Rv8aMozpTtT1tn2FNqFXJEJ7paAQ-QHS)
+06/06/2021, 11:19:25 - DEBUG - auth.route - new account created: {"fullname":"Linoy Fakiro","username":"linoyf","email":"linoy123@gmail.com","imgUrl":"","password":"$2b$10$ewYXNNlNrI2b7TBylZsZK.YEM0qXRQh2zKK7f1euEHlgAix7D4XUO","_id":"60bc850d68492738e8d39f84"} (sid: Rv8aMozpTtT1tn2FNqFXJEJ7paAQ-QHS)
+06/06/2021, 11:19:25 - DEBUG - auth.service - login with username/email: linoyf (sid: Rv8aMozpTtT1tn2FNqFXJEJ7paAQ-QHS)
+06/06/2021, 11:21:12 - DEBUG - auth.service - signup with username: galn, fullname: Gal Nelken,email: gal123@gmail.com, imgUrl:  (sid: drlWNkU-haUwvCP_SdkDhja1nCxfMCaY)
+06/06/2021, 11:21:12 - DEBUG - auth.route - new account created: {"fullname":"Gal Nelken","username":"galn","email":"gal123@gmail.com","imgUrl":"","password":"$2b$10$GTov5PotnivVV9.4pqJyHOBlPcw9KmotgguFFvzXxkx0O1hMrRHQ.","_id":"60bc857868492738e8d39f85"} (sid: drlWNkU-haUwvCP_SdkDhja1nCxfMCaY)
+06/06/2021, 11:21:12 - DEBUG - auth.service - login with username/email: galn (sid: drlWNkU-haUwvCP_SdkDhja1nCxfMCaY)
+06/06/2021, 11:21:27 - DEBUG - auth.service - login with username/email: shirlys (sid: xcsm7eKa50-uMUDCRIBoyNPB3WhotIiu)
+06/06/2021, 11:28:08 - DEBUG - auth.service - login with username/email: neils (sid: 2ZVBkrUPXiTRpnufOFNfxjWrPrOzSjYi)
+06/06/2021, 11:28:08 - ERROR - Failed to Login Invalid username/email or password (sid: 2ZVBkrUPXiTRpnufOFNfxjWrPrOzSjYi)
+06/06/2021, 11:28:21 - DEBUG - auth.service - login with username/email: neils (sid: 2ZVBkrUPXiTRpnufOFNfxjWrPrOzSjYi)
+06/06/2021, 11:28:21 - ERROR - Failed to Login Invalid username/email or password (sid: 2ZVBkrUPXiTRpnufOFNfxjWrPrOzSjYi)
+06/06/2021, 11:29:05 - DEBUG - auth.service - signup with username: puki, fullname: puki,email: puki@gmail.com, imgUrl:  (sid: 2ZVBkrUPXiTRpnufOFNfxjWrPrOzSjYi)
+06/06/2021, 11:29:05 - DEBUG - auth.route - new account created: {"fullname":"puki","username":"puki","email":"puki@gmail.com","imgUrl":"","password":"$2b$10$39IF32hpyG7Lo3gIvdIpZOwFCFYiLN1rlV4Ll/Vzu3QE23lTjU2.O","_id":"60bc875168492738e8d39f86"} (sid: 2ZVBkrUPXiTRpnufOFNfxjWrPrOzSjYi)
+06/06/2021, 11:29:05 - DEBUG - auth.service - login with username/email: puki (sid: 2ZVBkrUPXiTRpnufOFNfxjWrPrOzSjYi)
+06/06/2021, 11:29:06 - ERROR - Failed to signup Invalid username/email or password (sid: 2ZVBkrUPXiTRpnufOFNfxjWrPrOzSjYi)
+06/06/2021, 11:29:15 - DEBUG - auth.service - login with username/email: puki (sid: 2ZVBkrUPXiTRpnufOFNfxjWrPrOzSjYi)
+06/06/2021, 11:29:15 - ERROR - Failed to Login Invalid username/email or password (sid: 2ZVBkrUPXiTRpnufOFNfxjWrPrOzSjYi)
+06/06/2021, 11:29:48 - DEBUG - auth.service - signup with username: pukip, fullname: puki,email: 12345@gmail.com, imgUrl:  (sid: 2ZVBkrUPXiTRpnufOFNfxjWrPrOzSjYi)
+06/06/2021, 11:29:48 - DEBUG - auth.route - new account created: {"fullname":"puki","username":"pukip","email":"12345@gmail.com","imgUrl":"","password":"$2b$10$QpLkpn3EkwJmBbueg/xzX.nnt7ordeKNYGqXvh.MvGHBN/bQGd7Yq","_id":"60bc877c68492738e8d39f87"} (sid: 2ZVBkrUPXiTRpnufOFNfxjWrPrOzSjYi)
+06/06/2021, 11:29:48 - DEBUG - auth.service - login with username/email: pukip (sid: 2ZVBkrUPXiTRpnufOFNfxjWrPrOzSjYi)
+06/06/2021, 11:37:14 - DEBUG - auth.service - login with username/email: shirlys (sid: jVHM_Ajb-qHzDjsabEvbx1KViTBqQTeY)
+06/06/2021, 12:27:41 - ERROR - while finding board undefined | {} (sid: jVHM_Ajb-qHzDjsabEvbx1KViTBqQTeY)
+06/06/2021, 12:27:41 - ERROR - Failed to get board | {} (sid: jVHM_Ajb-qHzDjsabEvbx1KViTBqQTeY)
+06/06/2021, 13:24:30 - INFO - Server is running on port: 3030 
+06/06/2021, 13:26:37 - INFO - Server is running on port: 3030 
+06/06/2021, 13:42:58 - INFO - Server is running on port: 3030 
+06/06/2021, 13:51:59 - INFO - Server is running on port: 3030 
+06/06/2021, 13:52:09 - INFO - Server is running on port: 3030 
+06/06/2021, 13:54:44 - INFO - Server is running on port: 3030 
+06/06/2021, 14:58:44 - INFO - Server is running on port: 3030 
+06/06/2021, 15:01:20 - INFO - Server is running on port: 3030 
+06/06/2021, 15:02:26 - INFO - Server is running on port: 3030 
+06/06/2021, 15:14:05 - INFO - Server is running on port: 3030 
+06/06/2021, 16:04:16 - DEBUG - auth.service - login with username/email: shirlys (sid: wPmnl4ucan-dodzeI7I_6nHm7TdtJQTv)
+06/06/2021, 16:04:45 - DEBUG - auth.service - login with username/email: neils (sid: I_Tv2loAssJC0NUL67I4JyvrADYqxtD1)
+06/06/2021, 16:04:45 - ERROR - Failed to Login Invalid username/email or password (sid: I_Tv2loAssJC0NUL67I4JyvrADYqxtD1)
+06/06/2021, 16:05:08 - DEBUG - auth.service - login with username/email: neils (sid: I_Tv2loAssJC0NUL67I4JyvrADYqxtD1)
+06/06/2021, 16:05:08 - ERROR - Failed to Login Invalid username/email or password (sid: I_Tv2loAssJC0NUL67I4JyvrADYqxtD1)
+06/06/2021, 16:06:43 - DEBUG - auth.service - login with username/email: shirlys (sid: I_Tv2loAssJC0NUL67I4JyvrADYqxtD1)
+06/06/2021, 16:06:59 - DEBUG - auth.service - login with username/email: shirlys (sid: hCe0qNieIVclVgDJY26qZpmbkcouUJrZ)
+06/06/2021, 16:34:34 - INFO - Server is running on port: 3030 
+06/06/2021, 16:37:37 - INFO - Server is running on port: 3030 
+06/06/2021, 17:02:24 - INFO - Server is running on port: 3030 

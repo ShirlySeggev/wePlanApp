@@ -79,6 +79,7 @@ export class TaskAdd extends Component {
                         spellCheck="false"
                         onChange={this.handleChange}
                         onFocus={this.toggleUpdate}
+                        onBlur={this.onAddTask}
                     />
                 </form>
                 {toggleUpdate &&

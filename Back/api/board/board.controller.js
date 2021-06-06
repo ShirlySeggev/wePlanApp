@@ -43,9 +43,11 @@ async function addBoard(req, res) {
 
 async function updateBoard(req, res) {
     try {
-        const board = req.body
-        const savedBoard = await boardService.update(board)
-        console.log(savedBoard);
+        const { board, activity } = req.body
+        // console.log('activity', activity);
+        // console.log('board groups', board.groups);
+        const savedBoard = await boardService.update(board, activity)
+        // console.log('savedBoard', savedBoard);
         res.send(savedBoard)
     } catch (err) {
         logger.error('Failed to update board', err)

@@ -11,16 +11,15 @@ class _LoginSignup extends Component {
         msg: '',
         isNewUser: false,
 
-
     }
 
-    submitUser = async (user) => {
+    submitUser = async (user, isGoogle) => {
         const { isNewUser } = this.state
-        const { setUser, loggedInUser } = this.props
-        await setUser(user, isNewUser)
+        const { setUser } = this.props
         try {
+            await setUser(user, isNewUser, isGoogle)
             this.setState({ msg: '' })
-            if (loggedInUser) this.props.history.push(`/board`)
+            if (this.props.loggedInUser) this.props.history.push(`/board`)
             else {
                 this.props.history.push(`/login`)
                 this.setState({ msg: 'user name or password not matching' })

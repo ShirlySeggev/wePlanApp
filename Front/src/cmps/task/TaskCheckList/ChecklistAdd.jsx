@@ -53,6 +53,7 @@ export class ChecklistAdd extends Component {
                     <input name="title" label="Title" placeholder="Checklist Title..."
                         onChange={this.handleChange}
                         onKeyDown={this.onKeyDown}
+                        onBlur={this.onAddChecklist}
                         spellCheck="false">
                     </input>
                     <button className="primary-btn" onClick={this.onAddChecklist}>Add</button>

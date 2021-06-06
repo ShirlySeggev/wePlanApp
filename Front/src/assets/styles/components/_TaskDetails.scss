@@ -22,9 +22,11 @@
         font-size: 0.875rem;
         color: $font;
         z-index: 999;
+    
 
         .taskDetails-body {
             display: flex;
+            // flex-direction: column;
             min-height: 24px;
             .task-details {
                 flex-basis: 80%;
@@ -32,7 +34,19 @@
             .task-details > * {
                 margin-bottom: 10px;
             }
+
+            .task-actions{
+                padding-inline-start: 20px;
+            }
+       
         }
+
+
+        // .task-actions{
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     justify-content:space-between;
+        // }
 
         .taskDetails-task-status {
             display: flex;

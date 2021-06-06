@@ -35,7 +35,8 @@
 
 @mixin for-normal-layout {
     @media (max-width: $narrow-breakpoint) {
-        @content;
+        flex-direction: row;
+        // @content;
     }
 }
 
