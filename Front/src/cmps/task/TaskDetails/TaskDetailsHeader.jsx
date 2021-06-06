@@ -38,7 +38,16 @@ export class TaskDetailsHeader extends Component {
             <header className="details-main-header">
                 <form className="details-header" onSubmit={this.updateTaskTitle}>
                     <BiCreditCard className="detailsIcon" />
-                    <input className="task-title" type="text" name="title" value={title} autoComplete="off" spellCheck="false" onChange={this.handleChange} onBlur={this.updateTaskTitle}/>
+                    <input 
+                    className="task-title" 
+                    type="text" 
+                    name="title" 
+                    value={title} 
+                    autoComplete="off" 
+                    spellCheck="false" 
+                    onChange={this.handleChange}
+                    onBlur={this.updateTaskTitle}
+                    />
                 </form>
                 <p className="taskDetails-header-subtext">in list <span>{group.title}</span></p>
             </header>

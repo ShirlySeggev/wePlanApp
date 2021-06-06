@@ -61,20 +61,22 @@ export class GroupAdd extends Component {
         return (
             <div className="groupAdd">
                 <form onSubmit={this.onAddGroup}>
-                    <input type="text" 
-                    name="title" 
-                    value={title} 
-                    placeholder="+ Add another list" 
-                    autoComplete="off" 
-                    spellCheck="false"
-                    onChange={this.handleChange} 
-                    onFocus={this.toggleUpdate}
+                    <input type="text"
+                        className="placeholder"
+                        name="title"
+                        value={title}
+                        placeholder="+ Add another list"
+                        autoComplete="off"
+                        spellCheck="false"
+                        onChange={this.handleChange}
+                        onFocus={this.toggleUpdate}
+                        onBlur={this.onAddGroup}
                     />
                 </form>
                 {toggleUpdate &&
                     <div className="yes-no-btns">
                         <button className="primary-btn" onClick={this.onAddGroup}>Add list</button>
-                        <CgClose className="cancel-btn" onClick={this.toggleUpdate}/> 
+                        <CgClose className="cancel-btn" onClick={this.toggleUpdate} />
                     </div>}
             </div>
         )

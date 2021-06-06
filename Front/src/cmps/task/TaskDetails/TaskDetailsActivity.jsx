@@ -15,8 +15,10 @@ export class TaskDetailsActivity extends Component {
     componentDidMount() {
         const { board } = this.props;
         const { id } = this.props.task;
+        if (board.activities.length <= 0) return;
         const activities = board.activities.filter(activity => {
             if (activity.task) {
+                if (!activity.task) return;
                 return activity.task.id === id;
             }
         })

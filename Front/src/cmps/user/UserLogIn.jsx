@@ -39,7 +39,7 @@ export class UserLogin extends Component {
                         <button onClick={this.onSubmitUser}>Log In</button>
 
                     </form>
-                    <NavLink to="/signup" onClick={toggleNewUser}>Dont have account yet? Sign up for free!</NavLink>
+                    <NavLink to="/signup" onClick={toggleNewUser}>Dont have account yet?<span> Sign up for free!</span> </NavLink>
 
                 <h5 className="social-login">or</h5>
                

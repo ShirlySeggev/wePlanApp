@@ -43,8 +43,8 @@ export class UserLogout extends Component {
                     <h6>Are you sure you want to logout?</h6>
 
                     <div className="yes-no-btns">
-                      <div onClick={this.onUserLogoutRes}><LogoutGoogle /></div>
-                        <button onClick={() => this.onUserLogoutRes(false)}><CgClose /></button>
+                        <div onClick={this.onUserLogoutRes}><LogoutGoogle /></div>
+                        <CgClose className="cancel-btn" onClick={() => this.onUserLogoutRes(false)} />
                     </div>
 
                 </div>}

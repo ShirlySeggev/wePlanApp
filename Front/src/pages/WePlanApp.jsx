@@ -22,12 +22,7 @@ class _WePlanApp extends Component {
                 this.loadBoard();
             }
         })
-
-
     }
-    // componentDidUpdate(prevProps,prevState) {
-    //     console.log('this.props.match.params.boardId: ', this.props.match.params)
-    // }
 
     loadBoard = async () => {
         const { boardId } = this.props.match.params;
@@ -38,19 +33,20 @@ class _WePlanApp extends Component {
         }
     }
 
-    updateBoard = async (board) => {
+    updateBoard = async (board, activity) => {
         try {
-            await this.props.updateBoard(board);
+            await this.props.updateBoard(board, activity);
         } catch (err) {
             console.log('Update Board:', err)
         }
     }
 
-    onUpdateBoard = (board, activity = null) => {
+    onUpdateBoard = (board, txt = null) => {
         const { loggedInUser } = this.props;
         const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
-        board.activities.unshift(utilService.addActivity(user, activity, null, null, null, 'this board'));
-        this.updateBoard(board);
+        /*  board.activities.unshift(utilService.addActivity(user, txt, null, null, null, 'this board')); */
+        const activity = utilService.addActivity(user, txt, null, null, null, 'this board');
+        this.props.updateBoard(board, activity);
     }
 
     onRemoveBoard = async (boardId) => {
@@ -66,14 +62,15 @@ class _WePlanApp extends Component {
         }
     }
 
-    updateGroup = (newGroup, activity = null) => {
+    updateGroup = (newGroup, txt = null) => {
         const { board, loggedInUser } = this.props;
         const groupIdx = board.groups.findIndex(group => group.id === newGroup.id);
         const updatedBoard = { ...board };
         const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
-        updatedBoard.activities.unshift(utilService.addActivity(user, activity, null, newGroup, null, null));
+        /* updatedBoard.activities.unshift(utilService.addActivity(user, activity, null, newGroup, null, null));  */
+        const activity = utilService.addActivity(user, txt, null, newGroup, null, null);
         updatedBoard.groups[groupIdx] = newGroup;
-        this.updateBoard(updatedBoard);
+        this.updateBoard(updatedBoard, activity);
     }
 
     removeGroup = (groupId) => {
@@ -81,18 +78,22 @@ class _WePlanApp extends Component {
         const groupIdx = board.groups.findIndex(group => group.id === groupId)
         const updatedBoard = { ...board };
         const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
-        updatedBoard.activities.unshift(utilService.addActivity(user, `deleted list`, null, null, board, null));
+        const activity = utilService.addActivity(user, `deleted list`, null, null, board, null);
+        // updatedBoard.activities.unshift(utilService.addActivity(user, `deleted list`, null, null, board, null));
         updatedBoard.groups.splice(groupIdx, 1)
-        this.updateBoard(updatedBoard);
+        this.updateBoard(updatedBoard, activity);
     }
 
     addGroup = (group) => {
+        console.log(group);
         const { board, loggedInUser } = this.props;
         const updatedBoard = { ...board };
         const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
-        updatedBoard.activities.unshift(utilService.addActivity(user, `added ${group.title}`, null, null, board, null));
+        // updatedBoard.activities.unshift(utilService.addActivity(user, `added ${group.title}`, null, null, board, null));
+        const activity = utilService.addActivity(user, `added ${group.title}`, null, null, board, null);
         updatedBoard.groups.push(group);
-        this.updateBoard(updatedBoard);
+        console.log(updatedBoard);
+        this.updateBoard(updatedBoard, activity);
     }
 
     handleDragEnd = async (res) => {

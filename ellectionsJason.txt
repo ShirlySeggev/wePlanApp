@@ -1,0 +1,5219 @@
+{
+    "_id" : ObjectId("60bb4f6fde25e242a425cd20"),
+    "title" : "הקמת ממשלה",
+    "createdAt" : 1622888303643.0,
+    "createdBy" : {
+        "_id" : "u100",
+        "fullname" : "Guest User",
+        "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png"
+    },
+    "style" : {
+        "bgc" : "#b1d3dd",
+        "img" : "https://res.cloudinary.com/dgmwynlbw/image/upload/v1585211772/bgc/10.jpg"
+    },
+    "labels" : [],
+    "members" : [ 
+        {
+            "_id" : "u100",
+            "fullname" : "Guest User",
+            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png"
+        }, 
+        {
+            "_id" : "60ba0c28bd410d30e8aae3c8",
+            "fullname" : "Shirly Seggev",
+            "username" : "shirlys",
+            "email" : "12345@gmail.com",
+            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg"
+        }, 
+        {
+            "_id" : "60ba0e3cbd410d30e8aae3c9",
+            "fullname" : "Neil Seggev",
+            "username" : "neils",
+            "email" : "neils@gmail.com",
+            "imgUrl" : ""
+        }, 
+        {
+            "_id" : "60bc850d68492738e8d39f84",
+            "fullname" : "Linoy Fakiro",
+            "username" : "linoyf",
+            "email" : "linoy123@gmail.com",
+            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556417/yqb6yim8pkohbfdvhkyb.jpg"
+        }, 
+        {
+            "_id" : "60bc857868492738e8d39f85",
+            "fullname" : "Gal Nelken",
+            "username" : "galn",
+            "email" : "gal123@gmail.com",
+            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1622968433/p8dv0nvg8zwd01rrarzk.jpg"
+        }
+    ],
+    "groups" : [ 
+        {
+            "id" : "cNjImG",
+            "createdBy" : {
+                "_id" : "u100",
+                "fullname" : "Guest User",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png"
+            },
+            "title" : "Issues to handle",
+            "tasks" : [ 
+                {
+                    "id" : "dpjgDL",
+                    "title" : "בחירות",
+                    "isDone" : true,
+                    "description" : "",
+                    "comments" : [],
+                    "checklists" : [],
+                    "members" : [],
+                    "labelIds" : [],
+                    "createdAt" : 1622966044500.0,
+                    "dueDate" : 1622592000000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#92a8d1"
+                    },
+                    "img" : {
+                        "asset_id" : "f50e3af40f653309d58c49d12f1aa9db",
+                        "public_id" : "fwjaavno6en9wjqlu3fh",
+                        "version" : 1622968931,
+                        "version_id" : "6800fe4a450af52144075dd7791b352d",
+                        "signature" : "4840aec3c099e5bf5cc01a3ac40e66cf5a8c499a",
+                        "width" : 960,
+                        "height" : 897,
+                        "format" : "jpg",
+                        "resource_type" : "image",
+                        "created_at" : "2021-06-06T08:42:11Z",
+                        "tags" : [],
+                        "bytes" : 27001,
+                        "type" : "upload",
+                        "etag" : "167444b01dfa1d5bb1e48d43a13bd7cf",
+                        "placeholder" : false,
+                        "url" : "http://res.cloudinary.com/dcwibf9o5/image/upload/v1622968931/fwjaavno6en9wjqlu3fh.jpg",
+                        "secure_url" : "https://res.cloudinary.com/dcwibf9o5/image/upload/v1622968931/fwjaavno6en9wjqlu3fh.jpg",
+                        "original_filename" : "vote.jpg_fit=scale",
+                        "original_extension" : "jpeg"
+                    }
+                }, 
+                {
+                    "id" : "mdd28j",
+                    "title" : "תוצאות הבחירות",
+                    "isDone" : true,
+                    "description" : "",
+                    "comments" : [],
+                    "checklists" : [],
+                    "members" : [ 
+                        {
+                            "_id" : "60ba0e3cbd410d30e8aae3c9",
+                            "fullname" : "Neil Seggev",
+                            "username" : "neils",
+                            "email" : "neils@gmail.com",
+                            "imgUrl" : ""
+                        }, 
+                        {
+                            "_id" : "60ba0c28bd410d30e8aae3c8",
+                            "fullname" : "Shirly Seggev",
+                            "username" : "shirlys",
+                            "email" : "12345@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg"
+                        }, 
+                        {
+                            "_id" : "60bc850d68492738e8d39f84",
+                            "fullname" : "Linoy Fakiro",
+                            "username" : "linoyf",
+                            "email" : "linoy123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556417/yqb6yim8pkohbfdvhkyb.jpg"
+                        }, 
+                        {
+                            "_id" : "60bc857868492738e8d39f85",
+                            "fullname" : "Gal Nelken",
+                            "username" : "galn",
+                            "email" : "gal123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1622968433/p8dv0nvg8zwd01rrarzk.jpg"
+                        }
+                    ],
+                    "labelIds" : [ 
+                        {
+                            "id" : "l101",
+                            "color" : "#61bd4f",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l102",
+                            "color" : "#f2d602",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l103",
+                            "color" : "#f99f1b",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l104",
+                            "color" : "#eb5a46",
+                            "title" : "URGENT",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l105",
+                            "color" : "#c377e0",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l106",
+                            "color" : "#1f79bf",
+                            "title" : "",
+                            "isPicked" : false
+                        }
+                    ],
+                    "createdAt" : 1622966089829.0,
+                    "dueDate" : 1622937600000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#92a8d1"
+                    },
+                    "img" : {
+                        "asset_id" : "b3bd399b08d1352c624e4c94ebbb6556",
+                        "public_id" : "ajjdfnewfcoubnmrcb5s",
+                        "version" : 1622968587,
+                        "version_id" : "96d16c15085196cff8aefc6c6e26783a",
+                        "signature" : "d967a33bfa2c279f262b7e52112642fc55c1bd9c",
+                        "width" : 616,
+                        "height" : 98,
+                        "format" : "jpg",
+                        "resource_type" : "image",
+                        "created_at" : "2021-06-06T08:36:27Z",
+                        "tags" : [],
+                        "bytes" : 21363,
+                        "type" : "upload",
+                        "etag" : "6f28e0a993f5dca4333006354d7b088e",
+                        "placeholder" : false,
+                        "url" : "http://res.cloudinary.com/dcwibf9o5/image/upload/v1622968587/ajjdfnewfcoubnmrcb5s.jpg",
+                        "secure_url" : "https://res.cloudinary.com/dcwibf9o5/image/upload/v1622968587/ajjdfnewfcoubnmrcb5s.jpg",
+                        "original_filename" : "WhatsApp Image 2021-06-06 at 11.31.24",
+                        "original_extension" : "jpeg"
+                    }
+                }, 
+                {
+                    "id" : "IcRlTQ",
+                    "title" : "הטלת המנדט",
+                    "isDone" : false,
+                    "description" : "מתן מנדט ליו\"ר הסיעה עם כמות הקולות הגדולה ביותר",
+                    "comments" : [ 
+                        {
+                            "id" : "Od4s8T",
+                            "createdAt" : 1622969149756.0,
+                            "txt" : "גל בהצלחה בהכבת הממשלה!",
+                            "byMember" : {
+                                "_id" : "60ba0c28bd410d30e8aae3c8",
+                                "fullname" : "Shirly Seggev",
+                                "username" : "shirlys",
+                                "email" : "12345@gmail.com",
+                                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg"
+                            }
+                        }
+                    ],
+                    "checklists" : [],
+                    "members" : [ 
+                        {
+                            "_id" : "60ba0c28bd410d30e8aae3c8",
+                            "fullname" : "Shirly Seggev",
+                            "username" : "shirlys",
+                            "email" : "12345@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg"
+                        }
+                    ],
+                    "labelIds" : [ 
+                        {
+                            "id" : "l101",
+                            "color" : "#61bd4f",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l102",
+                            "color" : "#f2d602",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l103",
+                            "color" : "#f99f1b",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l104",
+                            "color" : "#eb5a46",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l105",
+                            "color" : "#c377e0",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l106",
+                            "color" : "#1f79bf",
+                            "title" : "",
+                            "isPicked" : false
+                        }
+                    ],
+                    "createdAt" : 1622888313516.0,
+                    "dueDate" : 1623196800000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#f7786b"
+                    }
+                }
+            ],
+            "style" : {
+                "bgc" : "#eca1a6"
+            }
+        }, 
+        {
+            "id" : "dujGdT",
+            "createdBy" : {
+                "_id" : "u100",
+                "fullname" : "Guest User",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png"
+            },
+            "title" : "Current Issues",
+            "tasks" : [ 
+                {
+                    "id" : "JzsEoy",
+                    "title" : "ניסיון להרכבת ממשלה",
+                    "isDone" : false,
+                    "description" : "",
+                    "comments" : [],
+                    "checklists" : [],
+                    "members" : [ 
+                        {
+                            "_id" : "60ba0c28bd410d30e8aae3c8",
+                            "fullname" : "Shirly Seggev",
+                            "username" : "shirlys",
+                            "email" : "12345@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg"
+                        }, 
+                        {
+                            "_id" : "60ba0e3cbd410d30e8aae3c9",
+                            "fullname" : "Neil Seggev",
+                            "username" : "neils",
+                            "email" : "neils@gmail.com",
+                            "imgUrl" : ""
+                        }, 
+                        {
+                            "_id" : "60bc850d68492738e8d39f84",
+                            "fullname" : "Linoy Fakiro",
+                            "username" : "linoyf",
+                            "email" : "linoy123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556417/yqb6yim8pkohbfdvhkyb.jpg"
+                        }, 
+                        {
+                            "_id" : "60bc857868492738e8d39f85",
+                            "fullname" : "Gal Nelken",
+                            "username" : "galn",
+                            "email" : "gal123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1622968433/p8dv0nvg8zwd01rrarzk.jpg"
+                        }
+                    ],
+                    "labelIds" : [ 
+                        {
+                            "id" : "l101",
+                            "color" : "#61bd4f",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l102",
+                            "color" : "#f2d602",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l103",
+                            "color" : "#f99f1b",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l104",
+                            "color" : "#eb5a46",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l105",
+                            "color" : "#c377e0",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l106",
+                            "color" : "#1f79bf",
+                            "title" : "",
+                            "isPicked" : false
+                        }
+                    ],
+                    "createdAt" : 1622971657605.0,
+                    "dueDate" : 1625011200000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#b1cbbb"
+                    }
+                }, 
+                {
+                    "id" : "svndZu",
+                    "title" : "משא ומתן קואליציאוניות",
+                    "isDone" : false,
+                    "description" : "",
+                    "comments" : [],
+                    "checklists" : [ 
+                        {
+                            "id" : "yR6MQC",
+                            "title" : "פגישות עם ראשי המפלגות",
+                            "todos" : [ 
+                                {
+                                    "id" : "xiZEyN",
+                                    "title" : "יו\"ר הסיעה השנייה בגדולה",
+                                    "isDone" : false
+                                }
+                            ]
+                        }
+                    ],
+                    "members" : [ 
+                        {
+                            "_id" : "60bc857868492738e8d39f85",
+                            "fullname" : "Gal Nelken",
+                            "username" : "galn",
+                            "email" : "gal123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1622968433/p8dv0nvg8zwd01rrarzk.jpg"
+                        }
+                    ],
+                    "labelIds" : [ 
+                        {
+                            "id" : "l101",
+                            "color" : "#61bd4f",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l102",
+                            "color" : "#f2d602",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l103",
+                            "color" : "#f99f1b",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l104",
+                            "color" : "#eb5a46",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l105",
+                            "color" : "#c377e0",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l106",
+                            "color" : "#1f79bf",
+                            "title" : "",
+                            "isPicked" : false
+                        }
+                    ],
+                    "createdAt" : 1622965818294.0,
+                    "dueDate" : 1625011200000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#b1cbbb"
+                    }
+                }, 
+                {
+                    "id" : "9yx3V2",
+                    "title" : "חתימה על הסכמים קואליציואניים",
+                    "isDone" : false,
+                    "description" : "להכניס סעיף של הגבלת כהונות",
+                    "comments" : [],
+                    "checklists" : [],
+                    "members" : [ 
+                        {
+                            "_id" : "60bc857868492738e8d39f85",
+                            "fullname" : "Gal Nelken",
+                            "username" : "galn",
+                            "email" : "gal123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1622968433/p8dv0nvg8zwd01rrarzk.jpg"
+                        }
+                    ],
+                    "labelIds" : [ 
+                        {
+                            "id" : "l101",
+                            "color" : "#61bd4f",
+                            "title" : "We can!",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l102",
+                            "color" : "#f2d602",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l103",
+                            "color" : "#f99f1b",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l104",
+                            "color" : "#eb5a46",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l105",
+                            "color" : "#c377e0",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l106",
+                            "color" : "#1f79bf",
+                            "title" : "",
+                            "isPicked" : true
+                        }
+                    ],
+                    "createdAt" : 1622966153412.0,
+                    "dueDate" : 1624838400000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#b1cbbb"
+                    },
+                    "img" : {
+                        "asset_id" : "aef10884976fc4c343c645967ff656b7",
+                        "public_id" : "bxunuq2lwkjspjr6lqsj",
+                        "version" : 1622969911,
+                        "version_id" : "095bac8d58051b12d08a2e45edc7f670",
+                        "signature" : "10670af9169d7ceeb4c3a2292d0f2f85e0c649cc",
+                        "width" : 1024,
+                        "height" : 682,
+                        "format" : "jpg",
+                        "resource_type" : "image",
+                        "created_at" : "2021-06-06T08:58:31Z",
+                        "tags" : [],
+                        "bytes" : 35022,
+                        "type" : "upload",
+                        "etag" : "64252145ede389240599abbbc8d5f925",
+                        "placeholder" : false,
+                        "url" : "http://res.cloudinary.com/dcwibf9o5/image/upload/v1622969911/bxunuq2lwkjspjr6lqsj.jpg",
+                        "secure_url" : "https://res.cloudinary.com/dcwibf9o5/image/upload/v1622969911/bxunuq2lwkjspjr6lqsj.jpg",
+                        "original_filename" : "laptop-3196481_1280-1024x682"
+                    }
+                }, 
+                {
+                    "id" : "kwtKkS",
+                    "title" : "הצגת הסכמים קואליציואנים",
+                    "isDone" : false,
+                    "description" : "",
+                    "comments" : [],
+                    "checklists" : [],
+                    "members" : [],
+                    "labelIds" : [],
+                    "createdAt" : 1622966772464.0,
+                    "dueDate" : "",
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#ADD8E6"
+                    }
+                }, 
+                {
+                    "id" : "xOfW0i",
+                    "title" : "הודעת עלה בידי",
+                    "isDone" : false,
+                    "description" : "יש להודיע לנשיא על השגת רוב קולות",
+                    "comments" : [],
+                    "checklists" : [ 
+                        {
+                            "id" : "IyXweQ",
+                            "title" : "הודעה לנשיא",
+                            "todos" : [ 
+                                {
+                                    "id" : "xR0WTa",
+                                    "title" : "שליחת תזכיר ליועץ הפרלמנטרי",
+                                    "isDone" : false
+                                }
+                            ]
+                        }
+                    ],
+                    "members" : [ 
+                        {
+                            "_id" : "60bc857868492738e8d39f85",
+                            "fullname" : "Gal Nelken",
+                            "username" : "galn",
+                            "email" : "gal123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1622968433/p8dv0nvg8zwd01rrarzk.jpg"
+                        }
+                    ],
+                    "labelIds" : [ 
+                        {
+                            "id" : "l101",
+                            "color" : "#61bd4f",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l102",
+                            "color" : "#f2d602",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l103",
+                            "color" : "#f99f1b",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l104",
+                            "color" : "#eb5a46",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l105",
+                            "color" : "#c377e0",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l106",
+                            "color" : "#1f79bf",
+                            "title" : "",
+                            "isPicked" : false
+                        }
+                    ],
+                    "createdAt" : 1622966535097.0,
+                    "dueDate" : 1625011200000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#b1cbbb"
+                    }
+                }
+            ],
+            "style" : {
+                "bgc" : "#92a8d1"
+            }
+        }, 
+        {
+            "id" : "PIWyeI",
+            "createdBy" : {
+                "_id" : "u100",
+                "fullname" : "Guest User",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png"
+            },
+            "title" : "Pending",
+            "tasks" : [ 
+                {
+                    "id" : "i3JAdY",
+                    "title" : "הצגת הממשלה",
+                    "isDone" : false,
+                    "description" : "",
+                    "comments" : [],
+                    "checklists" : [],
+                    "members" : [],
+                    "labelIds" : [],
+                    "createdAt" : 1622973139226.0,
+                    "dueDate" : "",
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#ADD8E6"
+                    }
+                }, 
+                {
+                    "id" : "Ez3Y8c",
+                    "title" : "הצבעת אמון בפרלמנט",
+                    "isDone" : false,
+                    "description" : "מיקום: רחבת הכנסת\nבשעה 9:00\nיש להגיע בלבוש הולם",
+                    "comments" : [],
+                    "checklists" : [],
+                    "members" : [ 
+                        {
+                            "_id" : "60ba0c28bd410d30e8aae3c8",
+                            "fullname" : "Shirly Seggev",
+                            "username" : "shirlys",
+                            "email" : "12345@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg"
+                        }, 
+                        {
+                            "_id" : "60ba0e3cbd410d30e8aae3c9",
+                            "fullname" : "Neil Seggev",
+                            "username" : "neils",
+                            "email" : "neils@gmail.com",
+                            "imgUrl" : ""
+                        }, 
+                        {
+                            "_id" : "u100",
+                            "fullname" : "Guest User",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png"
+                        }, 
+                        {
+                            "_id" : "60bc850d68492738e8d39f84",
+                            "fullname" : "Linoy Fakiro",
+                            "username" : "linoyf",
+                            "email" : "linoy123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556417/yqb6yim8pkohbfdvhkyb.jpg"
+                        }, 
+                        {
+                            "_id" : "60bc857868492738e8d39f85",
+                            "fullname" : "Gal Nelken",
+                            "username" : "galn",
+                            "email" : "gal123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1622968433/p8dv0nvg8zwd01rrarzk.jpg"
+                        }
+                    ],
+                    "labelIds" : [],
+                    "createdAt" : 1622966819144.0,
+                    "dueDate" : 1623801600000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#92a8d1"
+                    },
+                    "img" : {
+                        "asset_id" : "4a1291879c1fd2f3fc65a02ac2b16d81",
+                        "public_id" : "bfmo9flgxlm29ffgu9ae",
+                        "version" : 1622970722,
+                        "version_id" : "c91115520dcebd466bc88fafb9d46c43",
+                        "signature" : "0745b8d5d92ec42843b899d6ba31833a157ee0a8",
+                        "width" : 700,
+                        "height" : 437,
+                        "format" : "jpg",
+                        "resource_type" : "image",
+                        "created_at" : "2021-06-06T09:12:02Z",
+                        "tags" : [],
+                        "bytes" : 67016,
+                        "type" : "upload",
+                        "etag" : "892d3236842b5a62720a5d2f01365409",
+                        "placeholder" : false,
+                        "url" : "http://res.cloudinary.com/dcwibf9o5/image/upload/v1622970722/bfmo9flgxlm29ffgu9ae.jpg",
+                        "secure_url" : "https://res.cloudinary.com/dcwibf9o5/image/upload/v1622970722/bfmo9flgxlm29ffgu9ae.jpg",
+                        "original_filename" : "WhatsApp Image 2021-06-06 at 12.11.35",
+                        "original_extension" : "jpeg"
+                    }
+                }, 
+                {
+                    "id" : "npDLLv",
+                    "title" : "הגשת 61 חתימות",
+                    "isDone" : false,
+                    "description" : "",
+                    "comments" : [],
+                    "checklists" : [],
+                    "members" : [ 
+                        {
+                            "_id" : "60ba0c28bd410d30e8aae3c8",
+                            "fullname" : "Shirly Seggev",
+                            "username" : "shirlys",
+                            "email" : "12345@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg"
+                        }, 
+                        {
+                            "_id" : "60bc850d68492738e8d39f84",
+                            "fullname" : "Linoy Fakiro",
+                            "username" : "linoyf",
+                            "email" : "linoy123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556417/yqb6yim8pkohbfdvhkyb.jpg"
+                        }, 
+                        {
+                            "_id" : "60bc857868492738e8d39f85",
+                            "fullname" : "Gal Nelken",
+                            "username" : "galn",
+                            "email" : "gal123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1622968433/p8dv0nvg8zwd01rrarzk.jpg"
+                        }
+                    ],
+                    "labelIds" : [],
+                    "createdAt" : 1622965946718.0,
+                    "dueDate" : 1623801600000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#b1cbbb"
+                    }
+                }, 
+                {
+                    "id" : "9zd1CY",
+                    "title" : "חלוקת תפקידים",
+                    "isDone" : false,
+                    "description" : "",
+                    "comments" : [],
+                    "checklists" : [],
+                    "members" : [],
+                    "labelIds" : [ 
+                        {
+                            "id" : "l101",
+                            "color" : "#61bd4f",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l102",
+                            "color" : "#f2d602",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l103",
+                            "color" : "#f99f1b",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l104",
+                            "color" : "#eb5a46",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l105",
+                            "color" : "#c377e0",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l106",
+                            "color" : "#1f79bf",
+                            "title" : "",
+                            "isPicked" : true
+                        }
+                    ],
+                    "createdAt" : 1622966700521.0,
+                    "dueDate" : 1623801600000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#92a8d1"
+                    }
+                }
+            ],
+            "style" : {
+                "bgc" : "#f7786b"
+            }
+        }, 
+        {
+            "id" : "w762lb",
+            "createdBy" : {
+                "_id" : "u100",
+                "fullname" : "Guest User",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png"
+            },
+            "title" : "Blocked",
+            "tasks" : [ 
+                {
+                    "id" : "ovggtv",
+                    "title" : "הכנות לטקס ההשבעה",
+                    "isDone" : false,
+                    "description" : "",
+                    "comments" : [],
+                    "checklists" : [],
+                    "members" : [ 
+                        {
+                            "_id" : "60bc857868492738e8d39f85",
+                            "fullname" : "Gal Nelken",
+                            "username" : "galn",
+                            "email" : "gal123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1622968433/p8dv0nvg8zwd01rrarzk.jpg"
+                        }, 
+                        {
+                            "_id" : "60ba0e3cbd410d30e8aae3c9",
+                            "fullname" : "Neil Seggev",
+                            "username" : "neils",
+                            "email" : "neils@gmail.com",
+                            "imgUrl" : ""
+                        }, 
+                        {
+                            "_id" : "60bc850d68492738e8d39f84",
+                            "fullname" : "Linoy Fakiro",
+                            "username" : "linoyf",
+                            "email" : "linoy123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556417/yqb6yim8pkohbfdvhkyb.jpg"
+                        }
+                    ],
+                    "labelIds" : [ 
+                        {
+                            "id" : "l101",
+                            "color" : "#61bd4f",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l102",
+                            "color" : "#f2d602",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l103",
+                            "color" : "#f99f1b",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l104",
+                            "color" : "#eb5a46",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l105",
+                            "color" : "#c377e0",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l106",
+                            "color" : "#1f79bf",
+                            "title" : "",
+                            "isPicked" : true
+                        }
+                    ],
+                    "createdAt" : 1622966650056.0,
+                    "dueDate" : 1625616000000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#92a8d1"
+                    }
+                }, 
+                {
+                    "id" : "vZi3cL",
+                    "title" : "השבעת הממשלה",
+                    "isDone" : false,
+                    "description" : "",
+                    "comments" : [],
+                    "checklists" : [],
+                    "members" : [ 
+                        {
+                            "_id" : "60ba0c28bd410d30e8aae3c8",
+                            "fullname" : "Shirly Seggev",
+                            "username" : "shirlys",
+                            "email" : "12345@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg"
+                        }, 
+                        {
+                            "_id" : "60ba0e3cbd410d30e8aae3c9",
+                            "fullname" : "Neil Seggev",
+                            "username" : "neils",
+                            "email" : "neils@gmail.com",
+                            "imgUrl" : ""
+                        }, 
+                        {
+                            "_id" : "60bc850d68492738e8d39f84",
+                            "fullname" : "Linoy Fakiro",
+                            "username" : "linoyf",
+                            "email" : "linoy123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556417/yqb6yim8pkohbfdvhkyb.jpg"
+                        }, 
+                        {
+                            "_id" : "60bc857868492738e8d39f85",
+                            "fullname" : "Gal Nelken",
+                            "username" : "galn",
+                            "email" : "gal123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1622968433/p8dv0nvg8zwd01rrarzk.jpg"
+                        }
+                    ],
+                    "labelIds" : [ 
+                        {
+                            "id" : "l101",
+                            "color" : "#61bd4f",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l102",
+                            "color" : "#f2d602",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l103",
+                            "color" : "#f99f1b",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l104",
+                            "color" : "#eb5a46",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l105",
+                            "color" : "#c377e0",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l106",
+                            "color" : "#1f79bf",
+                            "title" : "",
+                            "isPicked" : false
+                        }
+                    ],
+                    "createdAt" : 1622971732165.0,
+                    "dueDate" : 1625788800000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#eca1a6"
+                    },
+                    "img" : {
+                        "asset_id" : "e79a98d7b3e84a19b3cad2a9691d55a5",
+                        "public_id" : "gwpytzmabebpabotuei4",
+                        "version" : 1622972290,
+                        "version_id" : "815dc4414e75af20917cb458308d7803",
+                        "signature" : "07502502a5c7dc60844f75a5e85e1a9e26a12ce2",
+                        "width" : 450,
+                        "height" : 287,
+                        "format" : "jpg",
+                        "resource_type" : "image",
+                        "created_at" : "2021-06-06T09:38:10Z",
+                        "tags" : [],
+                        "bytes" : 13108,
+                        "type" : "upload",
+                        "etag" : "f94706783e4d5b72e61ff5004257be5f",
+                        "placeholder" : false,
+                        "url" : "http://res.cloudinary.com/dcwibf9o5/image/upload/v1622972290/gwpytzmabebpabotuei4.jpg",
+                        "secure_url" : "https://res.cloudinary.com/dcwibf9o5/image/upload/v1622972290/gwpytzmabebpabotuei4.jpg",
+                        "original_filename" : "witness"
+                    }
+                }
+            ],
+            "style" : {
+                "bgc" : "#b1cbbb"
+            }
+        }, 
+        {
+            "id" : "zDS864",
+            "createdBy" : {
+                "_id" : "u100",
+                "fullname" : "Guest User",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png"
+            },
+            "title" : "Done",
+            "tasks" : [ 
+                {
+                    "id" : "urSPeh",
+                    "title" : "ניתוח סקרים",
+                    "isDone" : true,
+                    "description" : "",
+                    "comments" : [],
+                    "checklists" : [],
+                    "members" : [ 
+                        {
+                            "_id" : "60ba0c28bd410d30e8aae3c8",
+                            "fullname" : "Shirly Seggev",
+                            "username" : "shirlys",
+                            "email" : "12345@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg"
+                        }, 
+                        {
+                            "_id" : "u100",
+                            "fullname" : "Guest User",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png"
+                        }
+                    ],
+                    "labelIds" : [ 
+                        {
+                            "id" : "l101",
+                            "color" : "#61bd4f",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l102",
+                            "color" : "#f2d602",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l103",
+                            "color" : "#f99f1b",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l104",
+                            "color" : "#eb5a46",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l105",
+                            "color" : "#c377e0",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l106",
+                            "color" : "#1f79bf",
+                            "title" : "",
+                            "isPicked" : false
+                        }
+                    ],
+                    "createdAt" : 1622967256763.0,
+                    "dueDate" : 1622592000000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#b1cbbb"
+                    }
+                }, 
+                {
+                    "id" : "m3areS",
+                    "title" : "פגישה עם ראש הסיעה הגדולה",
+                    "isDone" : true,
+                    "description" : "",
+                    "comments" : [],
+                    "checklists" : [],
+                    "members" : [ 
+                        {
+                            "_id" : "60ba0c28bd410d30e8aae3c8",
+                            "fullname" : "Shirly Seggev",
+                            "username" : "shirlys",
+                            "email" : "12345@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg"
+                        }, 
+                        {
+                            "_id" : "60ba0e3cbd410d30e8aae3c9",
+                            "fullname" : "Neil Seggev",
+                            "username" : "neils",
+                            "email" : "neils@gmail.com",
+                            "imgUrl" : ""
+                        }, 
+                        {
+                            "_id" : "60bc850d68492738e8d39f84",
+                            "fullname" : "Linoy Fakiro",
+                            "username" : "linoyf",
+                            "email" : "linoy123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556417/yqb6yim8pkohbfdvhkyb.jpg"
+                        }, 
+                        {
+                            "_id" : "60bc857868492738e8d39f85",
+                            "fullname" : "Gal Nelken",
+                            "username" : "galn",
+                            "email" : "gal123@gmail.com",
+                            "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1622968433/p8dv0nvg8zwd01rrarzk.jpg"
+                        }
+                    ],
+                    "labelIds" : [ 
+                        {
+                            "id" : "l101",
+                            "color" : "#61bd4f",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l102",
+                            "color" : "#f2d602",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l103",
+                            "color" : "#f99f1b",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l104",
+                            "color" : "#eb5a46",
+                            "title" : "",
+                            "isPicked" : false
+                        }, 
+                        {
+                            "id" : "l105",
+                            "color" : "#c377e0",
+                            "title" : "",
+                            "isPicked" : true
+                        }, 
+                        {
+                            "id" : "l106",
+                            "color" : "#1f79bf",
+                            "title" : "",
+                            "isPicked" : true
+                        }
+                    ],
+                    "createdAt" : 1622967290803.0,
+                    "dueDate" : 1622332800000.0,
+                    "byMember" : {
+                        "_id" : "guest",
+                        "fullname" : "Guest",
+                        "username" : "Guest"
+                    },
+                    "style" : {
+                        "bgColor" : "#f7786b"
+                    }
+                }
+            ],
+            "style" : {
+                "bgc" : "#92a8d1"
+            }
+        }
+    ],
+    "activities" : [ 
+        {
+            "id" : "mcESip",
+            "txt" : "edited checklist ",
+            "createdAt" : 1622974231659.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "D827BC",
+            "txt" : "deleted checklist ",
+            "createdAt" : 1622974229645.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "EdCgPM",
+            "txt" : "deleted checklist ",
+            "createdAt" : 1622974228928.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "7lly9J",
+            "txt" : "added יו\"ר האופוזיציה's checklist",
+            "createdAt" : 1622974215192.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "eGwNic",
+            "txt" : "added יו\"ר סיעת המתנכנתים's checklist",
+            "createdAt" : 1622974105262.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "1FxhDJ",
+            "txt" : "edited checklist ",
+            "createdAt" : 1622974081403.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "EKK47o",
+            "txt" : "edited checklist ",
+            "createdAt" : 1622974065966.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "AFTOBq",
+            "txt" : "deleted checklist ",
+            "createdAt" : 1622974064544.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "XH3e3q",
+            "txt" : "edited checklist ",
+            "createdAt" : 1622974063362.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "0K6czm",
+            "txt" : "edited checklist ",
+            "createdAt" : 1622974056108.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "fFDAXh",
+            "txt" : "edited checklist ",
+            "createdAt" : 1622974055456.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "UfUd1H",
+            "txt" : "edited checklist ",
+            "createdAt" : 1622974054782.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "4f5vl0",
+            "txt" : "edited checklist ",
+            "createdAt" : 1622974050159.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "F2FvrM",
+            "txt" : "added יו\"ר סיעת המתכנתים's checklist",
+            "createdAt" : 1622974046446.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "BpuMvC",
+            "txt" : "added יו\"ר הסיעה השנייה בגדולה's checklist",
+            "createdAt" : 1622974018225.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "cJ0FS7",
+            "txt" : "added פגישות עם ראשי המפלגות",
+            "createdAt" : 1622973985691.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "CZrYHX",
+            "txt" : "deleted checklist ",
+            "createdAt" : 1622973964747.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "bcP9yp",
+            "txt" : "edited checklist ",
+            "createdAt" : 1622973956886.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "twM8JM",
+            "txt" : "edited due date",
+            "createdAt" : 1622973949248.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "s8rTBM",
+            "txt" : "edited members",
+            "createdAt" : 1622973938404.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ZHKv9o",
+            "txt" : "edited members",
+            "createdAt" : 1622973591605.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "vjq9jq",
+            "txt" : "edited הטלת המנדט title",
+            "createdAt" : 1622973527536.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "IcRlTQ",
+                "title" : "הטלת המנדט"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "DRFL5Z",
+            "txt" : "edited הטלת המנדט title",
+            "createdAt" : 1622973525712.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "IcRlTQ",
+                "title" : "הטלת תפקיד להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "gTObUp",
+            "txt" : null,
+            "createdAt" : 1622973427004.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ES2hk1",
+            "txt" : "edited list name Issues to handle",
+            "createdAt" : 1622973262769.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "Issues to handle"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "8DdmqT",
+            "txt" : "edited list name Current Issues",
+            "createdAt" : 1622973261737.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "dujGdT",
+                "title" : "Current Issues"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "wTXp8m",
+            "txt" : "edited list name Pending",
+            "createdAt" : 1622973260897.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "PIWyeI",
+                "title" : "Pending"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "t76RuP",
+            "txt" : "edited list name Blocked",
+            "createdAt" : 1622973259954.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "w762lb",
+                "title" : "Blocked"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "EDsUb9",
+            "txt" : "edited list name Pending",
+            "createdAt" : 1622973247241.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "PIWyeI",
+                "title" : "Pending"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "bA0znU",
+            "txt" : "edited list name Current Issues",
+            "createdAt" : 1622973238257.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "dujGdT",
+                "title" : "Current Issues"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "teOcPH",
+            "txt" : "edited list name Issues to handle",
+            "createdAt" : 1622973224041.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "Issues to handle"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "kNx2Eh",
+            "txt" : "edited list name Issues to handle",
+            "createdAt" : 1622973223946.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "Issues to handle"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ewToLb",
+            "txt" : "edited list name Issues to handle",
+            "createdAt" : 1622973223846.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "Issues to handle"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "OPzydZ",
+            "txt" : "edited list name Issues to handle",
+            "createdAt" : 1622973223321.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "Issues to handle"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "fNKlMD",
+            "txt" : "edited list name Issues to handle",
+            "createdAt" : 1622973222272.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "Issues to handle"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "GgWjzh",
+            "txt" : "edited list name Issues to handle",
+            "createdAt" : 1622973218506.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "Issues to handle"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Uo3bib",
+            "txt" : "edited list name Done",
+            "createdAt" : 1622973162010.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "zDS864",
+                "title" : "Done"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "YULIpI",
+            "txt" : "edited list name Done",
+            "createdAt" : 1622973159282.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "zDS864",
+                "title" : "Done"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "B7Yf1i",
+            "txt" : "added הצגת הממשלה",
+            "createdAt" : 1622973139227.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "PIWyeI",
+                "title" : "הצגת הממשלה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "tv8Wl0",
+            "txt" : "edited due date",
+            "createdAt" : 1622972528316.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "vZi3cL",
+                "title" : "השבעת הממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ItBVkT",
+            "txt" : "edited due date",
+            "createdAt" : 1622972494864.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9zd1CY",
+                "title" : "חלוקת תפקידים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "x3I7fH",
+            "txt" : "edited labels",
+            "createdAt" : 1622972482444.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9zd1CY",
+                "title" : "חלוקת תפקידים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "n8Vodf",
+            "txt" : "edited labels",
+            "createdAt" : 1622972481357.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9zd1CY",
+                "title" : "חלוקת תפקידים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "tdnoqr",
+            "txt" : "edited labels",
+            "createdAt" : 1622972480122.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9zd1CY",
+                "title" : "חלוקת תפקידים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ApfTXS",
+            "txt" : "edited members",
+            "createdAt" : 1622972460846.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "npDLLv",
+                "title" : "הגשת 61 חתימות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ByLeJc",
+            "txt" : "edited members",
+            "createdAt" : 1622972460347.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "npDLLv",
+                "title" : "הגשת 61 חתימות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "xqTIrf",
+            "txt" : "edited members",
+            "createdAt" : 1622972459891.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "npDLLv",
+                "title" : "הגשת 61 חתימות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "qwutuT",
+            "txt" : "edited members",
+            "createdAt" : 1622972458947.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "npDLLv",
+                "title" : "הגשת 61 חתימות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "q81ehw",
+            "txt" : "edited members",
+            "createdAt" : 1622972458378.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "npDLLv",
+                "title" : "הגשת 61 חתימות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "0OqbL5",
+            "txt" : "edited due date",
+            "createdAt" : 1622972453885.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "npDLLv",
+                "title" : "הגשת 61 חתימות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "7TG8ps",
+            "txt" : "edited members",
+            "createdAt" : 1622972432459.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "vZi3cL",
+                "title" : "השבעת הממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "59fgfY",
+            "txt" : "edited members",
+            "createdAt" : 1622972431247.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "vZi3cL",
+                "title" : "השבעת הממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "qAhNrO",
+            "txt" : "edited members",
+            "createdAt" : 1622972430728.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "vZi3cL",
+                "title" : "השבעת הממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "kfWc8y",
+            "txt" : "edited members",
+            "createdAt" : 1622972430200.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "vZi3cL",
+                "title" : "השבעת הממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Iv9K3A",
+            "txt" : "edited labels",
+            "createdAt" : 1622972426234.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "vZi3cL",
+                "title" : "השבעת הממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "GErJYa",
+            "txt" : "edited labels",
+            "createdAt" : 1622972425647.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "vZi3cL",
+                "title" : "השבעת הממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "7owYvW",
+            "txt" : "edited members",
+            "createdAt" : 1622972416519.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "ovggtv",
+                "title" : "הכנות לטקס ההשבעה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "2g73O4",
+            "txt" : "edited members",
+            "createdAt" : 1622972414497.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "ovggtv",
+                "title" : "הכנות לטקס ההשבעה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "KUt1Xo",
+            "txt" : "edited members",
+            "createdAt" : 1622972413737.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "ovggtv",
+                "title" : "הכנות לטקס ההשבעה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "WRoKoW",
+            "txt" : "edited due date",
+            "createdAt" : 1622972408963.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "ovggtv",
+                "title" : "הכנות לטקס ההשבעה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "lgC4FR",
+            "txt" : "edited due date",
+            "createdAt" : 1622972386315.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "ovggtv",
+                "title" : "הכנות לטקס ההשבעה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "URe3yS",
+            "txt" : "edited labels",
+            "createdAt" : 1622972369640.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "ovggtv",
+                "title" : "הכנות לטקס ההשבעה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Is9Wnn",
+            "txt" : "edited labels",
+            "createdAt" : 1622972368718.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "ovggtv",
+                "title" : "הכנות לטקס ההשבעה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "4Fk8KX",
+            "txt" : "edited labels",
+            "createdAt" : 1622972317985.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "ovggtv",
+                "title" : "הכנות לטקס ההשבעה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "H11E98",
+            "txt" : "edited labels",
+            "createdAt" : 1622972317366.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "ovggtv",
+                "title" : "הכנות לטקס ההשבעה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "hL25Mn",
+            "txt" : "edited labels",
+            "createdAt" : 1622972316644.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "ovggtv",
+                "title" : "הכנות לטקס ההשבעה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "8NvLIw",
+            "txt" : "edited labels",
+            "createdAt" : 1622972315333.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "ovggtv",
+                "title" : "הכנות לטקס ההשבעה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "kNOglp",
+            "txt" : "edited labels",
+            "createdAt" : 1622972314242.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "ovggtv",
+                "title" : "הכנות לטקס ההשבעה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "TpQlA0",
+            "txt" : "added an image",
+            "createdAt" : 1622972291463.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "vZi3cL",
+                "title" : "השבעת הממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "nNphrW",
+            "txt" : "added an image",
+            "createdAt" : 1622972285019.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "vZi3cL",
+                "title" : "השבעת הממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "uaWMxP",
+            "txt" : "added an image",
+            "createdAt" : 1622972281197.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "vZi3cL",
+                "title" : "השבעת הממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Q4UHzg",
+            "txt" : "edited labels",
+            "createdAt" : 1622972038936.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "urSPeh",
+                "title" : "ניתוח סקרים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "4nZaZd",
+            "txt" : "edited labels",
+            "createdAt" : 1622972033563.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "m3areS",
+                "title" : "פגישה עם ראש הסיעה הגדולה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "dwVzcP",
+            "txt" : "edited labels",
+            "createdAt" : 1622972033080.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "m3areS",
+                "title" : "פגישה עם ראש הסיעה הגדולה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "DfhxoI",
+            "txt" : "edited members",
+            "createdAt" : 1622972023778.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "m3areS",
+                "title" : "פגישה עם ראש הסיעה הגדולה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ibn7u6",
+            "txt" : "edited members",
+            "createdAt" : 1622972020791.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "m3areS",
+                "title" : "פגישה עם ראש הסיעה הגדולה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "2bLra2",
+            "txt" : "edited members",
+            "createdAt" : 1622972020307.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "m3areS",
+                "title" : "פגישה עם ראש הסיעה הגדולה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "HL5cBI",
+            "txt" : "edited members",
+            "createdAt" : 1622972019049.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "m3areS",
+                "title" : "פגישה עם ראש הסיעה הגדולה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "EvZT10",
+            "txt" : "edited members",
+            "createdAt" : 1622972018510.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "m3areS",
+                "title" : "פגישה עם ראש הסיעה הגדולה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "rCOJko",
+            "txt" : null,
+            "createdAt" : 1622972016661.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "m3areS",
+                "title" : "פגישה עם ראש הסיעה הגדולה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ATBwAF",
+            "txt" : "edited due date",
+            "createdAt" : 1622972012984.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "m3areS",
+                "title" : "פגישה עם ראש הסיעה הגדולה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "1vewXE",
+            "txt" : "edited members",
+            "createdAt" : 1622971999150.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "urSPeh",
+                "title" : "ניתוח סקרים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "LxDo1C",
+            "txt" : "edited members",
+            "createdAt" : 1622971997160.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "urSPeh",
+                "title" : "ניתוח סקרים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "cPBhnH",
+            "txt" : "edited members",
+            "createdAt" : 1622971996499.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "urSPeh",
+                "title" : "ניתוח סקרים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "sd36k7",
+            "txt" : "edited members",
+            "createdAt" : 1622971995290.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "urSPeh",
+                "title" : "ניתוח סקרים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "HX239P",
+            "txt" : null,
+            "createdAt" : 1622971991775.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "urSPeh",
+                "title" : "ניתוח סקרים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "jLUNVf",
+            "txt" : "edited due date",
+            "createdAt" : 1622971990406.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "urSPeh",
+                "title" : "ניתוח סקרים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "GVI9DE",
+            "txt" : "edited members",
+            "createdAt" : 1622971978701.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "JzsEoy",
+                "title" : "ניסיון להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ZiBRxe",
+            "txt" : null,
+            "createdAt" : 1622971975314.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "JzsEoy",
+                "title" : "ניסיון להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "MGsl8C",
+            "txt" : null,
+            "createdAt" : 1622971966418.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "JzsEoy",
+                "title" : "ניסיון להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "D9fCjs",
+            "txt" : "edited labels",
+            "createdAt" : 1622971932828.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "JzsEoy",
+                "title" : "ניסיון להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "5Y7oPX",
+            "txt" : "edited members",
+            "createdAt" : 1622971927726.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "JzsEoy",
+                "title" : "ניסיון להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "nLTgMO",
+            "txt" : "edited members",
+            "createdAt" : 1622971926616.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "JzsEoy",
+                "title" : "ניסיון להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "J73aL5",
+            "txt" : "edited members",
+            "createdAt" : 1622971925412.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "JzsEoy",
+                "title" : "ניסיון להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "eShV3n",
+            "txt" : "edited members",
+            "createdAt" : 1622971924975.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "JzsEoy",
+                "title" : "ניסיון להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Sa3jfA",
+            "txt" : "edited due date",
+            "createdAt" : 1622971919146.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "JzsEoy",
+                "title" : "ניסיון להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "JZfulE",
+            "txt" : "edited הכנות לטקס ההשבעה title",
+            "createdAt" : 1622971877058.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "ovggtv",
+                "title" : "רשימת מוזמנים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Mxlp0k",
+            "txt" : "edited פגישה עם ראש הסיעה הגדולה title",
+            "createdAt" : 1622971860635.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "m3areS",
+                "title" : "פגישה עם ראש המפלגה הגדולה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "cenCe0",
+            "txt" : "edited פגישה עם ראש המפלגה הגדולה title",
+            "createdAt" : 1622971848403.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "m3areS",
+                "title" : "ישבית קבינט ראשונה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "5yQx6p",
+            "txt" : "edited ניתוח סקרים title",
+            "createdAt" : 1622971810348.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "urSPeh",
+                "title" : "חקיקת חוקים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "F7Pvtb",
+            "txt" : "edited ישבית קבינט ראשונה title",
+            "createdAt" : 1622971777837.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "m3areS",
+                "title" : " ראשונה ישבית קבינט"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ctwKTm",
+            "txt" : "added השבעת הממשלה",
+            "createdAt" : 1622971732165.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "w762lb",
+                "title" : "טקס השבעה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "mBArKo",
+            "txt" : "added ניסיון להרכבת ממשלה",
+            "createdAt" : 1622971657605.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "dujGdT",
+                "title" : "ניסיון להרכבת ממשלה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "hYMhSa",
+            "txt" : "deleted task ך",
+            "createdAt" : 1622971140686.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "בחירות"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "pjm5mM",
+            "txt" : "deleted task מלןף",
+            "createdAt" : 1622971138968.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "בחירות"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "C0v6mj",
+            "txt" : "deleted task למצךימךל",
+            "createdAt" : 1622971136663.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "בחירות"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "tXj3bu",
+            "txt" : "deleted task מחלי",
+            "createdAt" : 1622971134242.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "בחירות"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "cRV3MP",
+            "txt" : "added מחלי",
+            "createdAt" : 1622971125129.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "בחירות"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "pm316E",
+            "txt" : "added למצךימךל",
+            "createdAt" : 1622971124080.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "בחירות"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "sE1Fh6",
+            "txt" : "added מלןף",
+            "createdAt" : 1622971122848.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "בחירות"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "tIFFKL",
+            "txt" : "added ך",
+            "createdAt" : 1622971121728.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "בחירות"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "WZ04Av",
+            "txt" : "edited description",
+            "createdAt" : 1622970852782.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "Ez3Y8c",
+                "title" : "הצבעת אמון בפרלמנט"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "qegpAB",
+            "txt" : "edited members",
+            "createdAt" : 1622970800295.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "Ez3Y8c",
+                "title" : "הצבעת אמון בפרלמנט"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "yvXyYz",
+            "txt" : "edited members",
+            "createdAt" : 1622970799351.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "Ez3Y8c",
+                "title" : "הצבעת אמון בפרלמנט"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "z03M78",
+            "txt" : "edited members",
+            "createdAt" : 1622970798336.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "Ez3Y8c",
+                "title" : "הצבעת אמון בפרלמנט"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Ykju5w",
+            "txt" : "edited members",
+            "createdAt" : 1622970797705.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "Ez3Y8c",
+                "title" : "הצבעת אמון בפרלמנט"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "XW05B9",
+            "txt" : "edited due date",
+            "createdAt" : 1622970793795.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "Ez3Y8c",
+                "title" : "הצבעת אמון בפרלמנט"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "RsqvMS",
+            "txt" : "edited due date",
+            "createdAt" : 1622970790351.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "Ez3Y8c",
+                "title" : "הצבעת אמון בפרלמנט"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "jIbFPW",
+            "txt" : "added an image",
+            "createdAt" : 1622970723168.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "Ez3Y8c",
+                "title" : "הצבעת אמון בפרלמנט"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "EFPRvR",
+            "txt" : "edited list name הצגת הממשלה",
+            "createdAt" : 1622970379789.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "PIWyeI",
+                "title" : "הצגת הממשלה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "2utqp2",
+            "txt" : "edited list name השצגת הממשלה",
+            "createdAt" : 1622970357046.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "PIWyeI",
+                "title" : "השצגת הממשלה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "zflhcQ",
+            "txt" : "edited labels",
+            "createdAt" : 1622970320850.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "xOfW0i",
+                "title" : "הודעת עלה בידי"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "sPUvFs",
+            "txt" : "edited labels",
+            "createdAt" : 1622970319868.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "xOfW0i",
+                "title" : "הודעת עלה בידי"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "FDmcYv",
+            "txt" : "added שליחת תזכיר ליועץ הפרלמנטרי's checklist",
+            "createdAt" : 1622970305930.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "xOfW0i",
+                "title" : "הודעת עלה בידי"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "dfb171",
+            "txt" : "added הודעה לנשיא",
+            "createdAt" : 1622970282590.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "xOfW0i",
+                "title" : "הודעת עלה בידי"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Baie5I",
+            "txt" : "edited description",
+            "createdAt" : 1622970246637.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "xOfW0i",
+                "title" : "הודעת עלה בידי"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "IQqoci",
+            "txt" : "edited description",
+            "createdAt" : 1622970237249.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "xOfW0i",
+                "title" : "הודעת עלה בידי"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "C28zhP",
+            "txt" : null,
+            "createdAt" : 1622970195899.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {},
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "SU3lPr",
+            "txt" : null,
+            "createdAt" : 1622970114521.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {},
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ZtyyzK",
+            "txt" : "edited members",
+            "createdAt" : 1622970092587.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "xOfW0i",
+                "title" : "הודעת עלה בידי"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "yBah74",
+            "txt" : "edited due date",
+            "createdAt" : 1622970065750.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9yx3V2",
+                "title" : "חתימה על הסכמים קואליציואניים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "x7TEhK",
+            "txt" : "edited due date",
+            "createdAt" : 1622970045808.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9yx3V2",
+                "title" : "חתימה על הסכמים קואליציואניים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "DQx1cK",
+            "txt" : "edited description",
+            "createdAt" : 1622970019419.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9yx3V2",
+                "title" : "חתימה על הסכמים קואליציואניים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "MZVxRP",
+            "txt" : "edited labels",
+            "createdAt" : 1622969989893.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9yx3V2",
+                "title" : "חתימה על הסכמים קואליציואניים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "WfJGG2",
+            "txt" : "edited labels",
+            "createdAt" : 1622969989339.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9yx3V2",
+                "title" : "חתימה על הסכמים קואליציואניים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "r1E8VI",
+            "txt" : "edited labels",
+            "createdAt" : 1622969975817.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9yx3V2",
+                "title" : "חתימה על הסכמים קואליציואניים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "d6mRCU",
+            "txt" : "edited labels",
+            "createdAt" : 1622969975108.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9yx3V2",
+                "title" : "חתימה על הסכמים קואליציואניים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "0Ooh3P",
+            "txt" : "edited labels",
+            "createdAt" : 1622969973282.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9yx3V2",
+                "title" : "חתימה על הסכמים קואליציואניים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "oBjphg",
+            "txt" : "edited labels",
+            "createdAt" : 1622969971334.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9yx3V2",
+                "title" : "חתימה על הסכמים קואליציואניים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "e7b8kd",
+            "txt" : "edited members",
+            "createdAt" : 1622969959350.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9yx3V2",
+                "title" : "חתימה על הסכמים קואליציואניים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "BPVZMO",
+            "txt" : "edited checklist ",
+            "createdAt" : 1622969948513.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "JIH6FL",
+            "txt" : "deleted task פגישות יו\"ר סיעות ",
+            "createdAt" : 1622969944837.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "dujGdT",
+                "title" : "ניסיון להרכבת ממשלה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "04tv02",
+            "txt" : "added an image",
+            "createdAt" : 1622969912751.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9yx3V2",
+                "title" : "חתימה על הסכמים קואליציואניים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "7XJzbU",
+            "txt" : "edited background image",
+            "createdAt" : 1622969790697.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622969790697.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "4YMKRZ",
+            "txt" : "edited background image",
+            "createdAt" : 1622969788917.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622969788917.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "630OTU",
+            "txt" : "edited labels",
+            "createdAt" : 1622969676074.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Sl1vr5",
+            "txt" : "added פגישה עם יו\"ר מפלגת המתכנתים's checklist",
+            "createdAt" : 1622969664128.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "geWqxk",
+            "txt" : "edited checklist ",
+            "createdAt" : 1622969460769.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "PqvqAC",
+            "txt" : "edited checklist ",
+            "createdAt" : 1622969457981.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "GZ1tH6",
+            "txt" : "edited checklist ",
+            "createdAt" : 1622969454397.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "7XPo7x",
+            "txt" : "added פגישה עם יו\"ר הפלגה השנייה בגודלה's checklist",
+            "createdAt" : 1622969427816.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "V0KlHY",
+            "txt" : "added פגישות עםראשי הסיעות",
+            "createdAt" : 1622969416396.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "svndZu",
+                "title" : "משא ומתן קואליציאוניות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "yb961G",
+            "txt" : "deleted checklist ",
+            "createdAt" : 1622969402777.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "YwUMK6",
+                "title" : "פגישות יו\"ר סיעות "
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "doZRzq",
+            "txt" : "added פגישה עם יו\"ר הסיעה השנייה בגודלה",
+            "createdAt" : 1622969394161.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "YwUMK6",
+                "title" : "פגישות יו\"ר סיעות "
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "DWWDWm",
+            "txt" : "edited due date",
+            "createdAt" : 1622969287881.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "xOfW0i",
+                "title" : "הודעת עלה בידי"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "eV9ZQr",
+            "txt" : "edited due date",
+            "createdAt" : 1622969284696.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "xOfW0i",
+                "title" : "הודעת עלה בידי"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "UDoNoS",
+            "txt" : "edited list name ניסיון להרכבת ממשלה",
+            "createdAt" : 1622969182278.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "dujGdT",
+                "title" : "ניסיון להרכבת ממשלה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "dQlSjl",
+            "txt" : "addea a new comment",
+            "createdAt" : 1622969149757.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "IcRlTQ",
+                "title" : "הטלת תפקיד להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "MLzioL",
+            "txt" : "edited labels",
+            "createdAt" : 1622969058198.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "IcRlTQ",
+                "title" : "הטלת תפקיד להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "oa0TLq",
+            "txt" : "edited labels",
+            "createdAt" : 1622969053733.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "IcRlTQ",
+                "title" : "הטלת תפקיד להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "QLPgfp",
+            "txt" : "edited labels",
+            "createdAt" : 1622969052919.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "IcRlTQ",
+                "title" : "הטלת תפקיד להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "uv6ZLc",
+            "txt" : "edited description",
+            "createdAt" : 1622969039066.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "IcRlTQ",
+                "title" : "הטלת תפקיד להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "SB04Fu",
+            "txt" : null,
+            "createdAt" : 1622969000434.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "IcRlTQ",
+                "title" : "הטלת תפקיד להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "mfJjDc",
+            "txt" : null,
+            "createdAt" : 1622968999871.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "IcRlTQ",
+                "title" : "הטלת תפקיד להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "tWiIe6",
+            "txt" : null,
+            "createdAt" : 1622968993729.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "URoFHb",
+            "txt" : null,
+            "createdAt" : 1622968990695.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "WEN5BN",
+            "txt" : "edited due date",
+            "createdAt" : 1622968982632.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "IcRlTQ",
+                "title" : "הטלת תפקיד להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "O2Tepf",
+            "txt" : "edited due date",
+            "createdAt" : 1622968973022.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "l7DsU0",
+            "txt" : "edited members",
+            "createdAt" : 1622968945277.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "IcRlTQ",
+                "title" : "הטלת תפקיד להרכבת ממשלה"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "642ysb",
+            "txt" : "added an image",
+            "createdAt" : 1622968932057.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "dpjgDL",
+                "title" : "בחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "0xSbbX",
+            "txt" : "edited labels",
+            "createdAt" : 1622968800405.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Yw0SQT",
+            "txt" : "edited labels",
+            "createdAt" : 1622968799845.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "um0PDQ",
+            "txt" : "edited members",
+            "createdAt" : 1622968696098.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "d6v9Zx",
+            "txt" : "edited members",
+            "createdAt" : 1622968695549.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "kchgOv",
+            "txt" : "edited members",
+            "createdAt" : 1622968695089.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "JR9QIZ",
+            "txt" : "edited members",
+            "createdAt" : 1622968684235.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "h2M8nG",
+            "txt" : "edited members",
+            "createdAt" : 1622968681560.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "UMRONL",
+            "txt" : "edited members",
+            "createdAt" : 1622968680707.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ckTBjS",
+            "txt" : "edited members",
+            "createdAt" : 1622968679942.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ScHlTu",
+            "txt" : "edited labels",
+            "createdAt" : 1622968670240.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ZPJf9C",
+            "txt" : "added an image",
+            "createdAt" : 1622968588398.0,
+            "byMember" : {
+                "_id" : "60bc877c68492738e8d39f87",
+                "imgUrl" : "",
+                "fullname" : "puki"
+            },
+            "task" : {
+                "id" : "mdd28j",
+                "title" : "תוצאות הבחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "kWH0In",
+            "txt" : "edited members",
+            "createdAt" : 1622968490370.0,
+            "byMember" : {
+                "_id" : "60bc877c68492738e8d39f87",
+                "imgUrl" : "",
+                "fullname" : "puki"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622968490370.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "vv9Ndy",
+            "txt" : "edited members",
+            "createdAt" : 1622967956402.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622967956402.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "JqvchM",
+            "txt" : "edited members",
+            "createdAt" : 1622967455310.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622967455310.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "XD87jb",
+            "txt" : null,
+            "createdAt" : 1622967433103.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "dpjgDL",
+                "title" : "בחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "qONRKD",
+            "txt" : "edited due date",
+            "createdAt" : 1622967427785.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "dpjgDL",
+                "title" : "בחירות"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "P7R3M7",
+            "txt" : "edited  ראשונה ישבית קבינט title",
+            "createdAt" : 1622967301451.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "m3areS",
+                "title" : "ישבית קבינט"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "61pirv",
+            "txt" : "added ישבית קבינט",
+            "createdAt" : 1622967290803.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "zDS864",
+                "title" : "תחילת כהונה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "zj4HhY",
+            "txt" : "edited חקיקת חוקים title",
+            "createdAt" : 1622967273821.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "urSPeh",
+                "title" : "חקיקת חוק להגבלת כהונות!!!"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "KFZOKZ",
+            "txt" : "added חקיקת חוק להגבלת כהונות!!!",
+            "createdAt" : 1622967256764.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "zDS864",
+                "title" : "תחילת כהונה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "BjGoL0",
+            "txt" : "added תחילת כהונה",
+            "createdAt" : 1622967097456.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : {
+                "_id" : "60bb4f6fde25e242a425cd20",
+                "title" : "הקמת ממשלה"
+            },
+            "app" : null
+        }, 
+        {
+            "id" : "vbGRvs",
+            "txt" : "edited הצבעת אמון בפרלמנט title",
+            "createdAt" : 1622966938286.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "Ez3Y8c",
+                "title" : "בקשת אמון הכנסת"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "sWc2Uo",
+            "txt" : "added בקשת אמון הכנסת",
+            "createdAt" : 1622966819145.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "PIWyeI",
+                "title" : "קיום ישיבת הכנסת לצורך הצגת משלה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "D3kNri",
+            "txt" : "edited חלוקת תפקידים title",
+            "createdAt" : 1622966802303.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "9zd1CY",
+                "title" : "חלוקת תיקים"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "SkIn5p",
+            "txt" : "added הצגת הסכמים קואליציואנים",
+            "createdAt" : 1622966772464.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "PIWyeI",
+                "title" : "קיום ישיבת הכנסת לצורך הצגת משלה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "JMHEx3",
+            "txt" : "added חלוקת תיקים",
+            "createdAt" : 1622966700524.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "PIWyeI",
+                "title" : "קיום ישיבת הכנסת לצורך הצגת משלה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "EaZCfs",
+            "txt" : "added רשימת מוזמנים",
+            "createdAt" : 1622966650056.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "w762lb",
+                "title" : "טקס השבעה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "8Ts8x7",
+            "txt" : "deleted list",
+            "createdAt" : 1622966592332.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : {
+                "_id" : "60bb4f6fde25e242a425cd20",
+                "title" : "הקמת ממשלה"
+            },
+            "app" : null
+        }, 
+        {
+            "id" : "ccEi2K",
+            "txt" : "added הודעת עלה בידי",
+            "createdAt" : 1622966535098.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "dujGdT",
+                "title" : "חתימה על הסכם קואליציואני"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "ddBnUe",
+            "txt" : "added פגישות יו\"ר סיעות ",
+            "createdAt" : 1622966244214.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "dujGdT",
+                "title" : "חתימה על הסכם קואליציואני"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "DkV7eE",
+            "txt" : "added חתימה על הסכמים קואליציואניים",
+            "createdAt" : 1622966153412.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "dujGdT",
+                "title" : "חתימה על הסכם קואליציואני"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Gvsdxb",
+            "txt" : "edited list name בחירות",
+            "createdAt" : 1622966122428.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "בחירות"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "qThCC1",
+            "txt" : "added תוצאות הבחירות",
+            "createdAt" : 1622966089830.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "נושאים לטיפול אחרי ההשבע"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "2vGHp0",
+            "txt" : "added בחירות",
+            "createdAt" : 1622966044501.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "נושאים לטיפול אחרי ההשבע"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "hjeGfn",
+            "txt" : "edited הטלת תפקיד להרכבת ממשלה title",
+            "createdAt" : 1622966039996.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "IcRlTQ",
+                "title" : "הטלת התפקיד"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "83k2fS",
+            "txt" : "edited הטלת התפקיד title",
+            "createdAt" : 1622966014997.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : {
+                "id" : "IcRlTQ",
+                "title" : "lk"
+            },
+            "group" : null,
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Mf1rRZ",
+            "txt" : "deleted list",
+            "createdAt" : 1622965950643.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : {
+                "_id" : "60bb4f6fde25e242a425cd20",
+                "title" : "הקמת ממשלה"
+            },
+            "app" : null
+        }, 
+        {
+            "id" : "9ocMTY",
+            "txt" : "added הגשת 61 חתימות",
+            "createdAt" : 1622965946719.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "PIWyeI",
+                "title" : "קיום ישיבת הכנסת לצורך הצגת משלה"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Enffig",
+            "txt" : "added טקס השבעה",
+            "createdAt" : 1622965903037.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : {
+                "_id" : "60bb4f6fde25e242a425cd20",
+                "title" : "הקמת ממשלה"
+            },
+            "app" : null
+        }, 
+        {
+            "id" : "Zzr65u",
+            "txt" : "added הגשת 61 חתימות",
+            "createdAt" : 1622965893942.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : {
+                "_id" : "60bb4f6fde25e242a425cd20",
+                "title" : "הקמת ממשלה"
+            },
+            "app" : null
+        }, 
+        {
+            "id" : "HuyQDt",
+            "txt" : "added קיום ישיבת הכנסת לצורך הצגת משלה",
+            "createdAt" : 1622965880038.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : {
+                "_id" : "60bb4f6fde25e242a425cd20",
+                "title" : "הקמת ממשלה"
+            },
+            "app" : null
+        }, 
+        {
+            "id" : "uMiLCv",
+            "txt" : "edited list name הודעה לנשיא  \"עלה בידי\"",
+            "createdAt" : 1622965858334.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "COUBr1",
+                "title" : "הודעה לנשיא  \"עלה בידי\""
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "aSjYok",
+            "txt" : "added משא ומתן קואליציאוניות",
+            "createdAt" : 1622965818295.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "dujGdT",
+                "title" : "חתימה על הסכם קואליציואני"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "STFysn",
+            "txt" : "edited הקמת ממשלה title",
+            "createdAt" : 1622965745070.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622965745070.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "5Rw39X",
+            "txt" : "added הטלת המנדט",
+            "createdAt" : 1622965481904.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : {
+                "_id" : "60bb4f6fde25e242a425cd20",
+                "title" : "השבעת ממשלה"
+            },
+            "app" : null
+        }, 
+        {
+            "id" : "zCUi4Z",
+            "txt" : "added חתימה על הסכם קואליציואני",
+            "createdAt" : 1622965470253.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : {
+                "_id" : "60bb4f6fde25e242a425cd20",
+                "title" : "השבעת ממשלה"
+            },
+            "app" : null
+        }, 
+        {
+            "id" : "xvpQ96",
+            "txt" : "edited list name נושאים לטיפול אחרי ההשבע",
+            "createdAt" : 1622965441716.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "נושאים לטיפול אחרי ההשבע"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "QuMfzz",
+            "txt" : "edited השבעת ממשלה title",
+            "createdAt" : 1622965378361.0,
+            "byMember" : {
+                "_id" : "60ba0c28bd410d30e8aae3c8",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622556406/hm1e3sdvbimksh7vavjq.jpg",
+                "fullname" : "Shirly Seggev"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622965378361.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "PDyJhl",
+            "txt" : "edited background color",
+            "createdAt" : 1622888387914.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888387914.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "eh6bfG",
+            "txt" : "edited background color",
+            "createdAt" : 1622888381031.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888381031.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "rk9Sko",
+            "txt" : "edited background color",
+            "createdAt" : 1622888380686.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888380686.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "KUpvpa",
+            "txt" : "edited background color",
+            "createdAt" : 1622888379963.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888379963.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "m4423n",
+            "txt" : "edited background color",
+            "createdAt" : 1622888379475.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888379475.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "d6xPAS",
+            "txt" : "edited background color",
+            "createdAt" : 1622888378766.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888378766.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "bMikNv",
+            "txt" : "edited background color",
+            "createdAt" : 1622888378227.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888378227.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "1fgFvK",
+            "txt" : "edited background image",
+            "createdAt" : 1622888377570.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888377570.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "qyOErL",
+            "txt" : "edited background image",
+            "createdAt" : 1622888376762.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888376762.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "M5qyNG",
+            "txt" : "edited background image",
+            "createdAt" : 1622888375756.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888375756.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "D4udlW",
+            "txt" : "edited background image",
+            "createdAt" : 1622888373774.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888373774.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "PUcXCu",
+            "txt" : "edited members",
+            "createdAt" : 1622888352838.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888352838.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "FV91UJ",
+            "txt" : "edited members",
+            "createdAt" : 1622888351624.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888351624.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "mIRQaz",
+            "txt" : "edited members",
+            "createdAt" : 1622888350142.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888350142.0,
+                "app" : "this board"
+            }
+        }, 
+        {
+            "id" : "f2Uzbc",
+            "txt" : "added lk",
+            "createdAt" : 1622888313517.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : {
+                "id" : "cNjImG",
+                "title" : "bfcdh"
+            },
+            "board" : null,
+            "app" : null
+        }, 
+        {
+            "id" : "Qsfzo5",
+            "txt" : "added bfcdh",
+            "createdAt" : 1622888311526.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : {
+                "_id" : "60bb4f6fde25e242a425cd20",
+                "title" : "vdfv"
+            },
+            "app" : null
+        }, 
+        {
+            "id" : "TClxBE",
+            "txt" : "added vdfv",
+            "createdAt" : 1622888303643.0,
+            "byMember" : {
+                "_id" : "u100",
+                "imgUrl" : "https://res.cloudinary.com/dzzvf5ewj/image/upload/v1622888211/vjpdzmerodpx1lizxs8p.png",
+                "fullname" : "Guest User"
+            },
+            "task" : null,
+            "group" : null,
+            "board" : null,
+            "app" : {
+                "_id" : 1622888303643.0,
+                "app" : " WePlan"
+            }
+        }
+    ]
+}

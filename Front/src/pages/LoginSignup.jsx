@@ -45,6 +45,9 @@ class _LoginSignup extends Component {
     toggleNewUser = () => {
         this.setState({ isNewUser: !this.state.isNewUser });
     }
+    // toggleGoogle = () => {
+    //     this.setState({ isGoogle: !this.state.isGoogle });
+    // }
 
     setMsg = (msg) => {
         this.setState({ ...this.state, msg })

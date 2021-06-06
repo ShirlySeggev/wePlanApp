@@ -21,7 +21,18 @@ export class TaskImg extends React.Component {
         return (
             <div className="TaskImg-modal" style={{ ...modalPos }}>
                 <ModalHeader title='Upload image' closeModal={toggleImgUpload} />
-                <input type="file" onChange={(ev) => this.onUpload(ev)} />
+                <label
+                    htmlFor="upload"
+                    className="primary-btn"
+                >
+                    upload
+                </label>
+                <input
+                    hidden
+                    type="file"
+                    id="upload"
+                    onChange={(ev) => this.onUpload(ev)}
+                />
             </div>
 
         )

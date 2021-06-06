@@ -57,7 +57,6 @@ export class GroupHeader extends Component {
 
     toggleActions = (ev) => {
         const { clientX, clientY } = ev
-        console.log('client X,Y', { clientX, clientY })
         modalPos = { left: (clientX) + 'px', top: (clientY - 80) + 'px' }
         this.setState({ toggleActions: !this.state.toggleActions })
     }
@@ -75,7 +74,14 @@ export class GroupHeader extends Component {
         return (
             <section className="GroupHeader" style={{ backgroundColor: style.bgc }}>
                 <form className="group-header" onSubmit={this.editGroupName}>
-                    <input type="text" name="title" onBlur={this.editGroupName} value={title} autoComplete="off" spellCheck="false" onChange={this.handleChange} />
+                    <input type="text" 
+                    name="title" 
+                    value={title} 
+                    autoComplete="off" 
+                    spellCheck="false" 
+                    onChange={this.handleChange} 
+                    onBlur={this.editGroupName}
+                    />
                     <BsThreeDots className="icon" onClick={this.toggleActions} />
                 </form>
                 <div className="group-actions">
