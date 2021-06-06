@@ -33,22 +33,15 @@ async function signup(req, res) {
 
         if (!isGoogle || !googleUser) {
             // console.log('Signing up in auth contorller!');
-            const account = await authService.signup(username, password, fullname, email, imgUrl)            // if we found a user:
+            const account = await authService.signup(username, password, fullname, email, imgUrl)  
+            // if we found a user:
             console.log('account is:', req.body);
             logger.debug(`auth.route - new account created: ` + JSON.stringify(account))
             const user = await authService.login(email, password)
             req.session.loggedinUser = user //saved in an orange balloon (cookie session
             delete user.password
             res.json(user)
-            // res.send(account)
         }
-
-        // const account = await authService.signup(username, password, fullname, email, imgUrl)
-        // // console.log('account is:', req.body);
-        // logger.debug(`auth.route - new account created: ` + JSON.stringify(account))
-        // const user = await authService.login(username, password)
-        // req.session.user = user
-        // res.json(user)
     } catch (err) {
         logger.error('Failed to signup ' + err)
         res.status(500).send({ err: 'Failed to signup' })

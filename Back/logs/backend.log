@@ -442,3 +442,12 @@
 05/06/2021, 17:46:21 - ERROR - Failed to Login Invalid username/email or password (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
 05/06/2021, 17:46:37 - DEBUG - auth.service - login with username/email: shirlys (sid: jQvQiwdudPMUrrYm_aE-aEN9zpowvzvc)
 >>>>>>> 1b5e5dfb237a0c073266faa2cf983ae38cd6c4ee
+6.6.2021, 9:27:48 - INFO - Server is running on port: 3030 
+6.6.2021, 9:32:46 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: 16huQFYB888ns0JgNZE6Zv9g0CNaGgIq)
+6.6.2021, 9:32:50 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: 16huQFYB888ns0JgNZE6Zv9g0CNaGgIq)
+6.6.2021, 9:33:08 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: FebtFLeU3TgtHUyiT4L0OgsbfVXAS16M)
+6.6.2021, 10:11:10 - INFO - Server is running on port: 3030 
+6.6.2021, 10:44:11 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: QgajsucaOOAPONCjye_0X2UG7E-3ldCU)
+6.6.2021, 10:44:16 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: QgajsucaOOAPONCjye_0X2UG7E-3ldCU)
+6.6.2021, 12:57:38 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: SRqAsK5pf1KWAQWEW3pYsTLgmQ_-f8iI)
+6.6.2021, 16:58:53 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: SRqAsK5pf1KWAQWEW3pYsTLgmQ_-f8iI)
