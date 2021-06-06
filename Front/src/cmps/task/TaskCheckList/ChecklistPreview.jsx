@@ -22,8 +22,9 @@ export class ChecklistPreview extends Component {
         const { checklist, task } = this.props
         const idx = this.findChecklistIdx()
         const newChecklist = { ...checklist, title }
-        task.checklists.splice(idx, 1, newChecklist)
-        this.props.updateTask(task, `edited ${checklist.title}`)
+        const updatedTask = {...task}
+        updatedTask.checklists.splice(idx, 1, newChecklist)
+        this.props.updateTask(updatedTask, `edited ${checklist.title}`)
     }
 
     removeChecklist = () => {

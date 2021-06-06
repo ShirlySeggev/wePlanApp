@@ -25,6 +25,7 @@ export class TaskAdd extends Component {
     onAddTask = (ev) => {
         ev.preventDefault()
         const taskTitle = this.state.task.title;
+        if (!taskTitle) return this.toggleUpdate()
         const task = this.createTask(taskTitle);
         const { group, updateGroup } = this.props;
         const updatedGroup = { ...group };
@@ -62,7 +63,7 @@ export class TaskAdd extends Component {
                 bgColor: utilService.getRandomColor()
             }
         }
-        console.log(task);
+        // console.log(task);
         return task;
     }
     render() {
@@ -79,6 +80,7 @@ export class TaskAdd extends Component {
                         spellCheck="false"
                         onChange={this.handleChange}
                         onFocus={this.toggleUpdate}
+                        onBlur={this.onAddTask}
                     />
                 </form>
                 {toggleUpdate &&
