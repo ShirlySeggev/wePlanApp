@@ -57,9 +57,9 @@ export class ChecklistTodoPreview extends Component {
 
                 <input id="myCheck" type="checkbox" onChange={this.toggleIsDone} checked={isDone} value={isDone} />
 
-                <div style={isDone ? { textDecoration: 'line-through' } : {}}>
+                <div>
 
-                    {!isTodoClick && <h6 onClick={this.toggleTodoClick} className="checklist-todo">{title}</h6>}
+                    {!isTodoClick && <h6  style={isDone ? { textDecoration: 'line-through' } : {}} onClick={this.toggleTodoClick} className="checklist-todo">{title}</h6>}
 
                     {isTodoClick && <div className="todo-edit">
                         <input className="todo-edit-input" type="text" value={title} name="title"

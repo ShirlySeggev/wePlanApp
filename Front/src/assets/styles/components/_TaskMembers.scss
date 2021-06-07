@@ -50,19 +50,21 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    h3 {
-        color: #5e6c84;
-        font-size: 12px;
-        font-weight: 500;
-        letter-spacing: 0.04em;
-        line-height: 16px;
-        text-transform: uppercase;
-        display: block;
-        line-height: 20px;
-        margin: 0 8px 4px 0;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
+    ul {
+        h3 {
+            color: #5e6c84;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            line-height: 16px;
+            text-transform: uppercase;
+            display: block;
+            line-height: 20px;
+            margin: 0 8px 4px 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
     }
 }
 .task-members-preview-avatar {
@@ -76,7 +78,7 @@
 .board-header {
     .add-members-container {
         padding: 0 10px;
-        position:absolute;
+        position: absolute;
         z-index: 2;
         width: 300px;
         height: fit-content;
@@ -172,6 +174,15 @@
                     margin-inline-start: 10px;
                 }
             }
+        }
+    }
+}
+
+@media (max-height: 700) {
+    .board-header {
+        .add-members-container {
+            top: 90px;
+            right: 30px;
         }
     }
 }

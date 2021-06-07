@@ -130,3 +130,30 @@
         }
     }
 }
+
+
+
+@media (max-width: 950px){
+    .boardApp-main{
+        margin-inline: 50px;
+    }
+}
+@media (max-width: 650px){
+    .boardApp-main{
+        margin-inline: 20px;
+        .boards-container{
+            display: flex;
+            flex-direction: column;
+            grid-template-columns: unset;
+            justify-content: center;
+            .boardAdd, .single-board-preview{
+                width: 90%;
+                padding: 0;
+                margin: 0 auto;
+            }
+        }
+        .boardAdd-modal{
+            width: 90%;
+        }
+    }
+}

@@ -533,3 +533,14 @@
 06/06/2021, 18:39:41 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: vsnlN0O6IHAHwXSFs3DG7uMJhM4NAhNe)
 >>>>>>> 96b2f2530b539b96d4daa248d55fcb08769bb27a
 6.6.2021, 19:20:18 - INFO - Server is running on port: 3030 
+6.6.2021, 19:32:40 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: pUC8nFKBipFhxp83Hz9PrOWX-GwKvhPW)
+6.6.2021, 19:34:42 - DEBUG - auth.service - signup with username: shlomoV, fullname: Shlomo Vacnin,email: bzvczxb, imgUrl:  (sid: RW8qCxsGpGkJUiNYo52RLzbh-n4RGfUI)
+6.6.2021, 19:34:42 - DEBUG - auth.route - new account created: {"fullname":"Shlomo Vacnin","username":"shlomoV","email":"bzvczxb","imgUrl":"","password":"$2b$10$NPd/WN/DPdi/3KEfH4chjOGZNVaXgIE1Lt4RQA2LutPL39QMWzHgm","_id":"60bcf922afe03f3708dacd22"} (sid: RW8qCxsGpGkJUiNYo52RLzbh-n4RGfUI)
+6.6.2021, 19:34:42 - DEBUG - auth.service - login with username/email: bzvczxb (sid: RW8qCxsGpGkJUiNYo52RLzbh-n4RGfUI)
+6.6.2021, 20:57:06 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: 0YzyAl4QiRXCWU7ZMh4WRtCJeb2-osxP)
+6.6.2021, 21:02:30 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: J-EQJi8zVrjoW4QLvpUskKQJdF9ci4g7)
+7.6.2021, 0:06:46 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: KKFadw_2mmWu1zEiqKPbDkWfqJMJO3iW)
+7.6.2021, 0:18:49 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: X-4QNkw38WB_ZCuV6a8FmiDpsWOgT5tg)
+7.6.2021, 2:29:15 - INFO - Server is running on port: 3030 
+7.6.2021, 2:48:34 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: jFiMCmUVixIq8tViZtoJgujhtmL4s2wA)
+7.6.2021, 10:42:22 - INFO - Server is running on port: 3030 

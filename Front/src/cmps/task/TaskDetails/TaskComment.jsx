@@ -39,7 +39,6 @@ export class TaskComment extends Component {
         const { txt } = this.state.comment;
         if (!txt) return;
         const comment = this.addComment();
-        if (!comment) return
         const { task, updateTask } = this.props;
         const newTask = { ...task };
         if (newTask.comments) newTask.comments.unshift(comment);
@@ -47,13 +46,12 @@ export class TaskComment extends Component {
             newTask.comments = [];
             newTask.comments.unshift(comment);
         }
-        updateTask(newTask, 'addea a new comment');
+        updateTask(newTask, 'added a new comment');
         this.clearComment();
     }
 
     addComment = () => {
         const { txt } = this.state.comment;
-        if (!txt) return;
         const newComment = {
             id: utilService.makeId(),
             createdAt: Date.now(),
@@ -75,7 +73,7 @@ export class TaskComment extends Component {
 
         return (
             <section className="comment-container">
-                <div className="taskDetails-coment">
+                <div className="taskDetails-coment" >
                     <span className="avatar"><MemberAvatar member={userService.getLoggedinUser() || utilService.getGuestUser()} /></span>
                     <textarea className="text-area-comment"
                         value={comment.txt}
@@ -84,7 +82,7 @@ export class TaskComment extends Component {
                         spellCheck="false"
                         onChange={this.handleChange}
                         onFocus={this.toggleUpdate}
-                        onBlur={this.toggleUpdate}
+                    // onBlur={this.toggleUpdate}
                     />
                 </div>
                 {toggleUpdate && <button className="primary-btn" onClick={this.saveComment}>Save</button>}
