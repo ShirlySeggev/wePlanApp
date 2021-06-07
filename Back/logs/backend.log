@@ -316,3 +316,60 @@
 06/06/2021, 18:34:16 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: jJYLvuvoefInOgdgqihhw0YbaqiW0nyi)
 06/06/2021, 18:34:29 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: _KyYx4hzFiffmJC_VHdF1vG3kpuuEa5W)
 06/06/2021, 18:39:41 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: vsnlN0O6IHAHwXSFs3DG7uMJhM4NAhNe)
+06/06/2021, 20:44:50 - INFO - Server is running on port: 3030 
+06/06/2021, 20:46:15 - INFO - Server is running on port: 3030 
+06/06/2021, 20:53:45 - INFO - Server is running on port: 3030 
+06/06/2021, 20:54:31 - INFO - Server is running on port: 3030 
+06/06/2021, 20:57:08 - INFO - Server is running on port: 3030 
+06/06/2021, 21:07:42 - INFO - Server is running on port: 3030 
+06/06/2021, 21:09:40 - INFO - Server is running on port: 3030 
+06/06/2021, 21:10:12 - INFO - Server is running on port: 3030 
+06/06/2021, 21:36:19 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: VN-A2M-s9R0EamZxLn4lKcQhmKjtcuh2)
+06/06/2021, 21:36:19 - DEBUG - auth.service - signup with username: shirlyarcusin@gmail.com, fullname: Shirly Arcusin,email: shirlyarcusin@gmail.com, imgUrl: https://lh3.googleusercontent.com/a-/AOh14GicfwAuh8HYURa3EShwfl1Xz6oxShs0Z4BDHC61psw=s96-c (sid: VN-A2M-s9R0EamZxLn4lKcQhmKjtcuh2)
+06/06/2021, 21:36:20 - DEBUG - auth.route - new account created: {"fullname":"Shirly Arcusin","username":"shirlyarcusin@gmail.com","email":"shirlyarcusin@gmail.com","imgUrl":"https://lh3.googleusercontent.com/a-/AOh14GicfwAuh8HYURa3EShwfl1Xz6oxShs0Z4BDHC61psw=s96-c","password":"$2b$10$kL5ohGT5YnZEsmp6vk.vS.HGAigJqETqUWVCJwqmmKXQ40dqCLI4y","_id":"60bd15a3878cc94fb8e546a9"} (sid: VN-A2M-s9R0EamZxLn4lKcQhmKjtcuh2)
+06/06/2021, 21:36:20 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: VN-A2M-s9R0EamZxLn4lKcQhmKjtcuh2)
+06/06/2021, 22:36:54 - INFO - Server is running on port: 3030 
+06/06/2021, 22:38:15 - INFO - Server is running on port: 3030 
+06/06/2021, 22:38:26 - INFO - Server is running on port: 3030 
+06/06/2021, 22:43:36 - INFO - Server is running on port: 3030 
+06/06/2021, 23:11:19 - INFO - Server is running on port: 3030 
+06/06/2021, 23:13:11 - INFO - Server is running on port: 3030 
+06/06/2021, 23:22:10 - INFO - Server is running on port: 3030 
+06/06/2021, 23:24:59 - INFO - Server is running on port: 3030 
+06/06/2021, 23:27:35 - INFO - Server is running on port: 3030 
+07/06/2021, 9:55:36 - INFO - Server is running on port: 3030 
+07/06/2021, 9:58:22 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: V7qd6XQ0_ry9_tgeh8PINMappjlmPUcY)
+07/06/2021, 10:12:40 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: -7JyfDVZrhHhRx5YfochVnvgPrPMH8QX)
+07/06/2021, 10:38:56 - ERROR - while finding board undefined | {} (sid: -7JyfDVZrhHhRx5YfochVnvgPrPMH8QX)
+07/06/2021, 10:38:56 - ERROR - Failed to get board | {} (sid: -7JyfDVZrhHhRx5YfochVnvgPrPMH8QX)
+07/06/2021, 10:50:35 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: yWSNPTQDGFlAMHUo68xaKjspvbrsd9aB)
+07/06/2021, 10:50:51 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: FCM8qWUOAXWSXXYfB3kRYjZUlmxw7oJb)
+07/06/2021, 10:51:57 - ERROR - while finding board undefined | {} (sid: FCM8qWUOAXWSXXYfB3kRYjZUlmxw7oJb)
+07/06/2021, 10:51:57 - ERROR - Failed to get board | {} (sid: FCM8qWUOAXWSXXYfB3kRYjZUlmxw7oJb)
+07/06/2021, 12:01:27 - INFO - Server is running on port: 3030 
+07/06/2021, 12:19:18 - INFO - Server is running on port: 3030 
+07/06/2021, 13:09:31 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: ToZmNlGd19ivFY8w7ZNayGN10K3zYrNw)
+07/06/2021, 13:09:54 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: T_IVHkm85SJWtJQsDiLtrT3xiHd48-So)
+07/06/2021, 13:10:49 - ERROR - while finding board undefined | {} (sid: T_IVHkm85SJWtJQsDiLtrT3xiHd48-So)
+07/06/2021, 13:10:49 - ERROR - Failed to get board | {} (sid: T_IVHkm85SJWtJQsDiLtrT3xiHd48-So)
+07/06/2021, 13:21:11 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: J_hV8zvQQpmY4nufyFi54fWlKBClOtqV)
+07/06/2021, 13:28:31 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: jnHHx9qSYpL5Y9i7RC0IWKtScuTJ5Ngo)
+07/06/2021, 13:36:02 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: dfJALic4cN0e272JIuEN6sdZIy576lFS)
+07/06/2021, 14:07:45 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: wWz_E_CDovuN7kGkCq4OVrkWh-9H3Nd4)
+07/06/2021, 14:18:13 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: anDASW5IEew0LoFOUrR2JmJW_Tg4k2_C)
+07/06/2021, 14:25:34 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: PAI_x349X5Bssbbm8HXLYze4f8agkcHv)
+07/06/2021, 14:57:58 - DEBUG - auth.service - login with username/email: Gali (sid: i_udK4kfxAiqTfGCtkSNWRv5m_-YJv1O)
+07/06/2021, 14:58:16 - DEBUG - auth.service - login with username/email: Gali (sid: i_udK4kfxAiqTfGCtkSNWRv5m_-YJv1O)
+07/06/2021, 14:58:18 - DEBUG - auth.service - login with username/email: Gali (sid: i_udK4kfxAiqTfGCtkSNWRv5m_-YJv1O)
+07/06/2021, 14:58:20 - DEBUG - auth.service - login with username/email: Gali (sid: i_udK4kfxAiqTfGCtkSNWRv5m_-YJv1O)
+07/06/2021, 15:00:32 - DEBUG - auth.service - login with username/email: Gali (sid: i_udK4kfxAiqTfGCtkSNWRv5m_-YJv1O)
+07/06/2021, 15:00:34 - DEBUG - auth.service - login with username/email: Gali (sid: i_udK4kfxAiqTfGCtkSNWRv5m_-YJv1O)
+07/06/2021, 15:00:40 - DEBUG - auth.service - login with username/email: galn (sid: i_udK4kfxAiqTfGCtkSNWRv5m_-YJv1O)
+07/06/2021, 15:00:42 - DEBUG - auth.service - login with username/email: galn (sid: i_udK4kfxAiqTfGCtkSNWRv5m_-YJv1O)
+07/06/2021, 15:01:34 - DEBUG - auth.service - signup with username: galn, fullname: Gal Nelken,email: 12345@gmail.com, imgUrl:  (sid: i_udK4kfxAiqTfGCtkSNWRv5m_-YJv1O)
+07/06/2021, 15:01:34 - DEBUG - auth.route - new account created: {"fullname":"Gal Nelken","username":"galn","email":"12345@gmail.com","imgUrl":"","password":"$2b$10$Im5tDlFBEfOP1I3KZGuu1./4fNrUKfMTWMhVbw22BtujiGXQdLzie","_id":"60be0a9eed73a745ccf6acfc"} (sid: i_udK4kfxAiqTfGCtkSNWRv5m_-YJv1O)
+07/06/2021, 15:01:34 - DEBUG - auth.service - login with username/email: 12345@gmail.com (sid: i_udK4kfxAiqTfGCtkSNWRv5m_-YJv1O)
+07/06/2021, 15:04:15 - DEBUG - auth.service - login with username/email: galn (sid: XuKPomTqEaNxz2x6BSYWfgWfnfgHdVyd)
+07/06/2021, 16:26:02 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: EtOoPpA7aAtJaUAi0pc3x-afR2FMqP1o)
+07/06/2021, 17:38:45 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: dAqrD05Wlvf9_9Z4eyQ01fIutTX6xL1j)
+07/06/2021, 18:38:03 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: RzCfoW4HwtWVXKZMOL4VHy_9bYLduen2)

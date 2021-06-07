@@ -95,7 +95,7 @@ class _WePlanApp extends Component {
     handleDragEnd = async (res) => {
         console.log('in handleDragEnd')
         const { source, destination, type } = res;
-        const { board } = this.props;
+        const { board, loggedInUser } = this.props;
         const updatedBoard = { ...board };
         if (!destination) return;
         if (destination.droppableId === source.droppableId
@@ -125,7 +125,9 @@ class _WePlanApp extends Component {
                 updatedBoard.groups[destinationGroupIdx].tasks = destinationGroupItems;
             }
         }
-        await this.props.updateBoard(updatedBoard);
+        const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
+        const activity = utilService.addActivity(user, `moved`, null, null, null, null);
+        await this.props.updateBoard(updatedBoard, activity);
         this.loadBoard();
     }
 

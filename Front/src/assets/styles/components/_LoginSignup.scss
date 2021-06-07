@@ -132,16 +132,17 @@
     text-align: center;
     align-items: center;
     gap: 10px 0;
-    justify-content: start;
+    justify-content: center;
     text-align: start;
     input {
         grid-column: 3;
         border: none;
         outline: none;
-        padding: 5px 5px;
     }
     label {
         grid-column: 1;
+        align-self: center;
+        margin-block-end: 1.2em;
     }
 }
 .user-signup-btn {
@@ -153,21 +154,19 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    
+
     div {
         display: flex;
         flex-direction: column;
-        margin-inline-start: 10px ;
+        margin-inline-start: 10px;
         h5 {
             margin-block-end: 10px;
             font-size: 16px;
         }
         h6 {
             font-size: 12px;
-            // margin-block-end: 10px;
         }
     }
-  
 }
 
 .user-logout-auth {
@@ -178,5 +177,60 @@
     h6 {
         font-size: 14px;
         margin-block-end: 15px;
+    }
+    .yes-no-btns {
+        button {
+            &:first-child {
+                margin-inline-end: 30px;
+            }
+        }
+        .cancel-btn {
+            & :hover {
+                cursor: pointer;
+            }
+        }
+        button.logout-btn {
+            box-shadow: none !important;
+            div {
+                display: none;
+            }
+            span {
+                border-radius: 10px;
+                background-color: #0079bf;
+                color: whitesmoke;
+                box-shadow: none;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        .user-signup-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            main {
+                width: 100%;
+                label {
+                    font-size: 16px;
+                    width: 80%;
+                    margin: 0;
+                }
+                input {
+                    width: 80%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .user-log-page {
+        main {
+            width: 100%;
+        }
     }
 }

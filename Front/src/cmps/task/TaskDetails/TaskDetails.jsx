@@ -82,11 +82,11 @@ class _TaskDetails extends Component {
         const taskIdx = board.groups[groupIdx].tasks.findIndex(task => task.id === taskId);
         const updatedBoard = { ...board };
         const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
-        // updatedBoard.activities.unshift(utilService.addActivity(user, `deleted task ${this.state.task.title}`, null, this.state.group, null, null));        updatedBoard.groups[groupIdx].tasks.splice(taskIdx, 1)
+        // updatedBoard.activities.unshift(utilService.addActivity(user, `deleted task ${this.state.task.title}`, null, this.state.group, null, null));       
+        updatedBoard.groups[groupIdx].tasks.splice(taskIdx, 1);
         const activity = utilService.addActivity(user, `deleted task ${this.state.task.title}`, null, this.state.group, null, null)
         this.updateBoard(updatedBoard, activity);
         this.props.history.push(`/board/${boardId}`)
-
     }
 
     copyTask = () => {
@@ -126,7 +126,7 @@ class _TaskDetails extends Component {
     deletImg = () => {
         const taskId = this.state.task.id;
         const { id } = this.state.group;
-        const { board } = this.props;
+        const { board,loggedInUser } = this.props;
         const groupIdx = board.groups.findIndex(group => group.id === id);
         const taskIdx = board.groups[groupIdx].tasks.findIndex(task => task.id === taskId);
         const updatedBoard = { ...board };
@@ -136,7 +136,9 @@ class _TaskDetails extends Component {
         ), () => {
             this.updateTask(this.state.task, `removed image`)
         })
-        this.updateBoard(updatedBoard);
+        const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
+        const activity = utilService.addActivity(user, `removed image`, null, null, null, null)
+        this.updateBoard(updatedBoard, activity);
     }
 
     taskDetailsRef = React.createRef();

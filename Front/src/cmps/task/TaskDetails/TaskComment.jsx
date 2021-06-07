@@ -46,7 +46,7 @@ export class TaskComment extends Component {
             newTask.comments = [];
             newTask.comments.unshift(comment);
         }
-        updateTask(newTask, 'addea a new comment');
+        updateTask(newTask, 'add a new comment');
         this.clearComment();
     }
 
@@ -83,7 +83,7 @@ export class TaskComment extends Component {
                         spellCheck="false"
                         onChange={this.handleChange}
                         onFocus={this.toggleUpdate}
-                        onBlur={this.toggleUpdate}
+                        // onBlur={this.toggleUpdate}
                     />
                 </div>
                 {toggleUpdate && <button className="primary-btn" onClick={this.saveComment}>Save</button>}

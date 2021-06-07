@@ -53,6 +53,7 @@ async function login(userCred) {
 
 async function signup(userCred, isGoogle) {
     // const user = await asyncUserStorage.post(STORAGE_KEY, userCred)
+    console.log('user service signup', userCred);
     const user = await httpService.post('auth/signup',{ userCred, isGoogle})
     try {
         if (user) return _saveLocalUser(user)

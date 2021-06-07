@@ -127,3 +127,26 @@
         }
     }
 }
+
+
+@media (max-width: 740px) {
+    .board-header{
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        margin-block-end: 10px;
+        .board-heder-titleAndMembers{
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+            margin-block-end: 10px;
+            .board-header-title{
+                margin-block-end: 10px;
+            }
+            .board-members {
+                align-items: center;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
