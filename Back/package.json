@@ -1,12 +1,15 @@
 {
     "name": "server",
     "version": "1.0.0",
+    "engines":{
+        "node":"14.x"
+    },
     "description": "production ready server",
     "main": "server.js",
     "scripts": {
-        "start": "set NODE_ENV=production && nodemon server.js",
+        "start:prod": "set NODE_ENV=production && nodemon server.js",
         "server:dev": "set NODE_ENV=development && nodemon server.js",
-        "server:prod": "node server.js"
+        "start": "node server.js"
     },
     "author": "Me",
     "license": "ISC",

@@ -12,7 +12,7 @@ function emit({ type, data }) {
 function connectSockets(http, session) {
     gIo = require('socket.io')(http, {
         cors: {
-            origin: 'http://localhost:3000',
+           origin: 'http://localhost:3000',
             methods: ["GET", "POST", "PUT", "DELETE"],
             credentials: true
         }
