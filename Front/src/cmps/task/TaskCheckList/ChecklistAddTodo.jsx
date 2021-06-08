@@ -9,13 +9,6 @@ export class CheckListAddTodo extends Component {
         title: ''
     }
 
-    // onEnter = (ev) => {
-    //     if (ev.key === "Enter" && ev.shiftKey === false) {
-    //         ev.preventDefault()
-    //         this.onAddTodo()
-    //     }
-    // }
-
     onAddTodo = () => {
         const { title } = this.state
         if (!title) return

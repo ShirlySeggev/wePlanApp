@@ -1,6 +1,6 @@
 import { ChecklistPreview } from './ChecklistPreview';
 
-export function ChecklistList({ task, checklists, updateTask }) {
+export function ChecklistList({ task, checklists, updateTask, group }) {
     return (
         <div className="checklists-container">
             {checklists.map(checklist =>
@@ -8,7 +8,9 @@ export function ChecklistList({ task, checklists, updateTask }) {
                     key={checklist.id}
                     task={task}
                     checklist={checklist}
-                    updateTask={updateTask} />
+                    updateTask={updateTask} 
+                    group={group}
+                    />
             )}
         </div>
 
