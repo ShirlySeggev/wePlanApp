@@ -604,3 +604,4 @@
 07/06/2021, 17:38:45 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: dAqrD05Wlvf9_9Z4eyQ01fIutTX6xL1j)
 07/06/2021, 18:38:03 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: RzCfoW4HwtWVXKZMOL4VHy_9bYLduen2)
 >>>>>>> b39488fc490e47781a2217d943bf376e4be639c6
+7.6.2021, 19:10:25 - INFO - Server is running on port: 3030 
