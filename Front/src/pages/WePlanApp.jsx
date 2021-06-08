@@ -50,6 +50,10 @@ class _WePlanApp extends Component {
     }
 
     onRemoveBoard = async (boardId) => {
+        // const {loggedInUser, board} = this.props
+        // if (!loggedInUser._id || loggedInUser._id !== board.createdBy._id) console.log('not creator');
+        // console.log('loggedInUser', loggedInUser);
+        // console.log('board', board);
         try {
             await this.props.removeBoard(boardId);
             this.props.history.push('/board')

@@ -162,7 +162,7 @@ class _TaskDetails extends Component {
     }
 
     render() {
-        const { board } = this.props;
+        const { board, loggedInUser } = this.props;
         const { task, group, toggleTaskLabel, toggleAddCheckList, toggleMembers, toggleImgUpload, toggleDueDate } = this.state;
         if (!task) return <Loading />
         const { checklists, labelIds, comments, members, img, dueDate, isDone } = this.state.task;
@@ -219,7 +219,7 @@ class _TaskDetails extends Component {
                             </div>
                             }
 
-                            {checklists && <ChecklistList checklists={checklists} task={task} updateTask={this.updateTask} />}
+                            {checklists && <ChecklistList checklists={checklists} group={group} task={task} updateTask={this.updateTask} updateBoard={this.updateBoard}/>}
 
                             <TaskDetailsActivity task={task} board={board} updateTask={this.updateTask} />
                         </div>

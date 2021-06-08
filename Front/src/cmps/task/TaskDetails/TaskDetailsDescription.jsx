@@ -39,7 +39,7 @@ export class TaskDetailsDescription extends Component {
             <section className="taskDetails-description">
                  <SectionTitle className="detailsIcon" Icon={BsTextLeft}>Description</SectionTitle>
                 {(description)
-                    ? <textarea className="text-area-description" value={description} name="description" spellCheck="false" onChange={this.handleChange} onFocus={this.toggleUpdate} />
+                    ? <textarea className="text-area-description" value={description} name="description" spellCheck="false" onChange={this.handleChange} onFocus={this.toggleUpdate} onBlur={this.updateTaskDescription}/>
                     : <textarea className="text-area-description" value={description} name="description" placeholder="Add a more detailed description..." spellCheck="false" onChange={this.handleChange} rows="2"
                         onBlur={this.updateTaskDescription} onFocus={this.toggleUpdate}
                     />

@@ -52,11 +52,10 @@ export class TaskComment extends Component {
 
     addComment = () => {
         const { txt } = this.state.comment;
-        if (!txt) return;
         const newComment = {
             id: utilService.makeId(),
             createdAt: Date.now(),
-            txt: this.state.comment.txt,
+            txt,
             byMember: userService.getLoggedinUser() || utilService.getGuestUser()
         }
         return newComment;
@@ -74,7 +73,7 @@ export class TaskComment extends Component {
 
         return (
             <section className="comment-container">
-                <div className="taskDetails-coment">
+                <div className="taskDetails-coment" >
                     <span className="avatar"><MemberAvatar member={userService.getLoggedinUser() || utilService.getGuestUser()} /></span>
                     <textarea className="text-area-comment"
                         value={comment.txt}

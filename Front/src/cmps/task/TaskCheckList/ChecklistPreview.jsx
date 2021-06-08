@@ -3,7 +3,7 @@ import { ChecklistTodoPreview } from './ChecklistTodoPreview'
 import { CheckListAddTodo } from './ChecklistAddTodo'
 import { ChecklistProgressBar } from './ChecklistProgressBar'
 import { BsCheckBox } from 'react-icons/bs';
-
+import {Loading} from '../../shared/Loading';
 
 
 export class ChecklistPreview extends Component {
@@ -80,8 +80,8 @@ export class ChecklistPreview extends Component {
     }
 
     render() {
-        if (!this.props.checklist) return <div>Loading...</div>
-        const { checklist } = this.props
+        if (!this.props.checklist) return <Loading />
+        const { checklist, group, task } = this.props
         const { isAddTodo, title } = this.state
         const { todos } = checklist
         return (
@@ -109,6 +109,9 @@ export class ChecklistPreview extends Component {
                             todo={todo}
                             updateTodo={this.updateTodo}
                             removeTodo={this.removeTodo}
+                            group={group}
+                            task={task}
+                            findChecklistIdx={this.findChecklistIdx}
                         />)}
                     {!isAddTodo && <button className="checklist-todo-add-btn secondary-btn" onClick={this.toggleAddTodo}>Add an item</button>}
                     {isAddTodo && <CheckListAddTodo

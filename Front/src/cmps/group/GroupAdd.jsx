@@ -23,10 +23,9 @@ export class GroupAdd extends Component {
     }
 
     onAddGroup = (ev) => {
-        console.log('onAddGroup');
+        const {title} = this.state.group
+    if (!title) return this.toggleUpdate()
         ev.preventDefault();
-        const { title } = this.state.group;
-        if (!title) return this.toggleUpdate();
         const groupTitle = title;
         const group = this.createGroup(groupTitle);
         const { addGroup } = this.props;

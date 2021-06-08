@@ -63,7 +63,7 @@ export class TaskAdd extends Component {
                 bgColor: utilService.getRandomColor()
             }
         }
-        console.log(task);
+        // console.log(task);
         return task;
     }
     render() {
