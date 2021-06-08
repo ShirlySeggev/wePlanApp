@@ -134,7 +134,9 @@
         flex-direction: column;
         align-self: center;
         justify-content: center;
-        margin-block-end: 10px;
+        width: 100%;
+        padding: 5px ;
+
         .board-heder-titleAndMembers{
             flex-direction: column;
             align-self: center;
@@ -144,6 +146,8 @@
                 margin-block-end: 10px;
             }
             .board-members {
+                display: flex;
+                justify-content:center;
                 align-items: center;
                 flex-wrap: wrap;
             }

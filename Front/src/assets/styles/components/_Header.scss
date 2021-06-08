@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // position: relative;
 
     .boards-btn {
         display: flex;
@@ -23,10 +24,23 @@
         color: $clr5;
         font-size: rem(30px);
         font-family: Permanent Marker;
+        // position:absolute;
+        // top: 0;
+        // padding: 0.5rem;
+        // display: block;
     }
+ 
+    .home{
+       font-size: 1.2rem;
+
+    }
+   
 }
 
 .header-format {
+    align-items: center;
+    display: flex;
+    justify-content:center;
     align-items: center;
     background: hsla(0, 0%, 100%, 0.24);
     border-radius: 4px;

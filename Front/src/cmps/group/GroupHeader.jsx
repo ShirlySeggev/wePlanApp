@@ -82,7 +82,7 @@ export class GroupHeader extends Component {
                     onChange={this.handleChange} 
                     onBlur={this.editGroupName}
                     />
-                    <BsThreeDots className="icon" onClick={this.toggleActions} />
+                    <BsThreeDots className="icon-dots" onClick={this.toggleActions} />
                 </form>
                 <div className="group-actions">
                     {toggleActions && <div className="group-menu" >

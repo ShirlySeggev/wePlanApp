@@ -244,6 +244,9 @@
     align-items: center;
     justify-content: flex-start;
     width: 250px;
+    .container{
+        border: none;
+    }
     .todo-action-modal-header {
         width: 95%;
         display: flex;

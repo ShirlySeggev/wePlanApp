@@ -11,7 +11,13 @@ export class Home extends Component {
                         <h1>WePlan<span className="smart">.</span></h1>
                         <h2 className="sec-header">Task Managment,</h2>
                         <h2 className="sec-header">The Smart Way.</h2>
-                        <Link className="home-link flex align-center justify-center cta-btn primary-btn " to="/board">Check our boards</Link>
+                        <Link to="/board" class="button2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Check our boards
+                                </Link>
                     </div>
                     <div className="homepage-img">
                     </div>
@@ -20,7 +26,7 @@ export class Home extends Component {
                 <section className="features  ">
                 </section>
                 <footer className="flex align-center justify-center">
-                    <p>® 2021 WePlan | Shirly Seggev | Linoy Fakiro | Gal Nekel</p>
+                    <p>® 2021 WePlan | Shirly Seggev | Linoy Fakiro | Gal Nelken</p>
                 </footer>
             </main>
         )

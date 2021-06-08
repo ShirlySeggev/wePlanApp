@@ -3,6 +3,7 @@ import Avatar from 'react-avatar';
 
 export default function MemberAvatar({ member }) {
     if(!member) return <h1></h1>;
+    console.log(member);
     const isImg = member?.imgUrl;
     return (
         <div>

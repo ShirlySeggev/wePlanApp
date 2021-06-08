@@ -105,7 +105,7 @@ class _ChecklistTodoPreview extends Component {
 
                 <input id="myCheck" type="checkbox" onChange={this.toggleIsDone} checked={isDone} value={isDone} />
 
-                <div>
+                <div >
 
                     {!isTodoClick && <h6 style={isDone ? { textDecoration: 'line-through' } : {}} onClick={this.toggleTodoClick} className="checklist-todo">{title}</h6>}
 
@@ -124,8 +124,8 @@ class _ChecklistTodoPreview extends Component {
                 </div>
 
                 {/* TOOGLE ACTION MODAL */}
-                <div className="todo-action-icon primary-btn">
-                <BsThreeDots  onClick={this.toggleActions} />
+                <div className="todo-action-icon primary-btn" onClick={this.toggleActions}>
+                <BsThreeDots  />
                 </div>
                 {toggleActions && <div className="todo-action-modal" style={{ ...modalPos }}>
                     <ModalHeader title='Item actions' className="todo-action-modal-header" closeModal={this.toggleActions} />

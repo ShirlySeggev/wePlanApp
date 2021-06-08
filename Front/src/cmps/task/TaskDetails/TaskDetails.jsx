@@ -227,7 +227,7 @@ class _TaskDetails extends Component {
                         {/* POPUPS BUTTONS */}
                         <ul className="task-actions">
                             {/* ADD MEMBERS */}
-                            <li className="detail-act-btn" onClick={ev => this.toggle(ev, 'members')}><BsPerson /><span className="txt">Memebrs</span></li>
+                            <li className="detail-act-btn" onClick={ev => this.toggle(ev, 'members')}><BsPerson /><span className="txt">Members</span></li>
                             {/* ADD LABELS */}
                             <li className="detail-act-btn" onClick={ev => this.toggle(ev, 'taskLabel')}><MdLabelOutline /><span className="txt">Labels</span></li>
                             {/* ADD DATES */}

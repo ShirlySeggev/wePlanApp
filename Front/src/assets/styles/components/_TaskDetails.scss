@@ -25,7 +25,6 @@
 
         .taskDetails-body {
             display: flex;
-            // flex-direction: column;
             min-height: 24px;
             .task-details {
                 flex-basis: 80%;
@@ -38,12 +37,6 @@
                 padding-inline-start: 20px;
             }
         }
-
-        // .task-actions{
-        //     display: flex;
-        //     flex-wrap: wrap;
-        //     justify-content:space-between;
-        // }
 
         .taskDetails-task-status {
             display: flex;
@@ -76,7 +69,7 @@
         .taskDetails-img {
             .uploaded-img {
                 max-height: 250px;
-                max-width: 482px;
+                max-width: 496px;
                 object-fit: cover;
                 margin-inline-start: 30px;
             }
@@ -106,14 +99,18 @@
             flex-direction: column;
             width: 90%;
             top: 10px;
-            .labels-container{
+            .labels-container {
                 display: flex;
                 flex-wrap: wrap;
             }
-            .task-members-preview-avatar{
+            .task-members-preview-avatar {
                 display: flex;
                 flex-wrap: wrap;
-
+            }
+            .taskDetails-img {
+                .uploaded-img {
+                    max-width: 268px;
+                }
             }
             .card-detail-window {
                 display: flex;
