@@ -27,3 +27,11 @@
         margin-inline-start: 30px;
     }
 }
+
+@media (max-width: 800px) {
+    .taskDetails-description {
+        .text-area-description {
+            width: 90%;
+        }
+    }
+}

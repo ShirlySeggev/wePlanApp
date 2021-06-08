@@ -29,7 +29,7 @@
         color: #172b4d;
         font-size: 14px;
     }
-    &-img{
+    &-img {
         max-width: 240px;
         max-height: 250px;
         object-fit: cover;
@@ -73,7 +73,7 @@
 
 .editable {
     font-size: 1.5rem;
-    color: rgba(9, 30, 66, 0.08);
+    color: transparent;
     &:hover {
         color: $font;
     }
@@ -91,9 +91,9 @@
         background-color: $groupGrey;
     }
     &.done {
-        background-color:#61BD4F;
+        background-color: #61bd4f;
     }
-    span{
+    span {
         margin-inline-start: 5px;
     }
 }

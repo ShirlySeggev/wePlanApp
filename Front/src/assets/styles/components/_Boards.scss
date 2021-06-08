@@ -140,7 +140,10 @@
 }
 @media (max-width: 650px){
     .boardApp-main{
-        margin-inline: 20px;
+        margin: 20px;
+        .section-title {
+            margin-inline-start: 15px;
+        }
         .boards-container{
             display: flex;
             flex-direction: column;

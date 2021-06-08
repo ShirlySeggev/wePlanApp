@@ -67,7 +67,7 @@ class _LoginSignup extends Component {
                     <h1>WePlan</h1>
                 </header>
 
-                <span>{msg}</span>
+                <span className="msg-user">{msg}</span>
 
                 {/* LOGIN */}
                 {!loggedInUser && !isNewUser && <UserLogin

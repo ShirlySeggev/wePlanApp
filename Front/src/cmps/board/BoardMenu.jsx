@@ -5,12 +5,15 @@ import { ActivityLog } from './ActivityLog.jsx';
 import { CgClose } from 'react-icons/cg';
 import { BoardMembers } from './BoardMembers';
 import { BoardBackgroundImg } from './BoardBackgroundImg.jsx';
+import { DashBoard } from '../dashboard/DashBoard.jsx';
+import { DashBoardPie } from '../dashboard/DashBoardPie.jsx';
 
 export class BoardMenu extends Component {
     state = {
         toggleBoardBcg: false,
         toggleRemoveBoard: false,
         toggleActivity: false,
+        toggleDashboard: false,
         isMember: false
     }
 
@@ -32,10 +35,14 @@ export class BoardMenu extends Component {
         this.setState({ isMembers: !this.state.isMembers })
     }
 
+    toggleDash = () => {
+        this.setState({ toggleDashboard: !this.state.toggleDashboard })
+    }
+
 
     onRemove = () => {
-// const {createdBy} = this.props.board
-// console.log(createdBy);
+        // const {createdBy} = this.props.board
+        // console.log(createdBy);
         const { board, onRemoveBoard } = this.props;
         onRemoveBoard(board._id);
         // this.props.history.push('/board');
@@ -56,14 +63,12 @@ export class BoardMenu extends Component {
         onUpdateBoard(updatedBoard, `edited background image`);
     }
 
-    toggleMembers = () => {
-        this.setState({ isMembers: !this.state.isMembers })
-    }
+ 
 
     render() {
-        const { toggleBoardBcg, toggleRemoveBoard, toggleActivity, isMembers } = this.state;
+        const { toggleBoardBcg, toggleRemoveBoard, toggleActivity, toggleDashboard, isMembers } = this.state;
         const { toggleBoardMenu, board, onUpdateBoard } = this.props;
-        const { activities } = this.props.board;
+        const { activities, groups } = this.props.board;
         return (
             <section className="wePlanApp-menu open" >
                 <ModalHeader title='About this board' closeModal={toggleBoardMenu} />
@@ -74,7 +79,7 @@ export class BoardMenu extends Component {
 
                     <li onClick={this.toggleRemoveBoard}>Delete board</li>
                     <li onClick={this.toggleActivity}>Activity menu</li>
-                    <li>Board dashboard</li>
+                    <li onClick={this.toggleDash}>Board dashboard</li>
                     {toggleBoardBcg &&
                         <div>
                             <BoardBackground onUpdateBgc={this.onUpdateBgc} />
@@ -92,6 +97,10 @@ export class BoardMenu extends Component {
                     }
                     {isMembers && <BoardMembers toggleMembers={this.toggleMembers} onUpdateBoard={onUpdateBoard} members={board.members} board={board} />}
                     {toggleActivity && <ActivityLog activities={activities} />}
+                    {toggleDashboard &&
+                        <DashBoard board={board} groups={groups} activities={activities} />}
+                    {toggleDashboard &&
+                        <DashBoardPie board={board} groups={groups} activities={activities} />}
                 </ul>
 
             </section >

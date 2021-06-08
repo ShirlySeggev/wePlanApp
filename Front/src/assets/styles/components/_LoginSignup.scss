@@ -4,6 +4,10 @@
     justify-content: center;
     align-items: center;
 
+    .colored-txt{
+        color: rgb(230, 99, 99);
+    }
+
     header {
         display: flex;
         align-items: center;
@@ -21,9 +25,8 @@
             margin: 0;
         }
     }
-    span {
+    .msg-user {
         text-align: center;
-        // margin-block-end: 10px;
         font-size: 16px;
         color: rgb(230, 99, 99);
     }
@@ -158,7 +161,7 @@
     div {
         display: flex;
         flex-direction: column;
-        margin-inline-start: 10px;
+        margin-inline-end: 5px;
         h5 {
             margin-block-end: 10px;
             font-size: 16px;
@@ -195,7 +198,7 @@
                 display: none;
             }
             span {
-                border-radius: 10px;
+                border-radius: 3px;
                 background-color: #0079bf;
                 color: whitesmoke;
                 box-shadow: none;
@@ -232,5 +235,15 @@
         main {
             width: 100%;
         }
+        .user-login-container{
+            width: 90%;
+            input {
+               width:100%;
+            }
+        }
+        
+    }
+    .user-signup-container{
+        width: 90%;
     }
 }

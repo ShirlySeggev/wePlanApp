@@ -73,7 +73,7 @@ export class UserSignup extends Component {
 
                 </form>
                 <button className="user-signup-btn" onClick={this.onSubmit}>Submit!</button>
-                <NavLink to="/login" onClick={toggleNewUser}>Already have an account?<span> Login!</span></NavLink>
+                <NavLink to="/login" onClick={toggleNewUser}>Already have an account?<span className="colored-txt"> Login!</span></NavLink>
                 
                 <h5 className="social-login">or</h5>
  

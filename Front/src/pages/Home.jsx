@@ -20,7 +20,7 @@ export class Home extends Component {
                 <section className="features  ">
                 </section>
                 <footer className="flex align-center justify-center">
-                    <p>® 2021 WePlan | Shirly Seggev | Linoy Fakiro | Gal Nekel</p>
+                    <p>® 2021 WePlan | Shirly Seggev | Linoy Fakiro | Gal Nelken</p>
                 </footer>
             </main>
         )
