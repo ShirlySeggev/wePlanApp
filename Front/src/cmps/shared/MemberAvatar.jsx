@@ -5,6 +5,7 @@ export default function MemberAvatar({ member }) {
     if(!member) return <h1></h1>;
     console.log(member);
     const isImg = member?.imgUrl;
+    console.log(isImg);
     return (
         <div>
             {isImg &&
@@ -13,7 +14,6 @@ export default function MemberAvatar({ member }) {
             {!isImg &&
                 < Avatar
                     color={'#0079bf'}
-                    // src={member.imgUrl}
                     className="member-avatar"
                     name={member.fullname.charAt(0)}
                     round={true}
