@@ -45,8 +45,7 @@ export class TaskAdd extends Component {
 
     createTask = (title) => {
         const {loggedInUser} = this.props
-        let user
-        loggedInUser ? user = {...loggedInUser} : user = {_id: 'guest', fullname: 'Guest', username: 'Guest'}
+        const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
         const task = {
             id: utilService.makeId(),
             title,

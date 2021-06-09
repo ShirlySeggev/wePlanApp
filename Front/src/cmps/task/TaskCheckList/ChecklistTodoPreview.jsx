@@ -47,8 +47,7 @@ class _ChecklistTodoPreview extends Component {
     convertToTask = () => {
         const { group, board, loggedInUser } = this.props
         const { title } = this.state
-        let user
-        loggedInUser ? user = { ...loggedInUser } : user = { _id: 'guest', fullname: 'Guest', username: 'Guest' }
+        const user = loggedInUser ? loggedInUser : utilService.getGuestUser();
         const newTask = this.createTask(title, user)
         const updatedGroup = { ...group, tasks: [...group.tasks, newTask] }
         const groupIdx = board.groups.findIndex(currGroup => group.id === currGroup.id)
@@ -128,7 +127,7 @@ class _ChecklistTodoPreview extends Component {
                 <BsThreeDots  />
                 </div>
                 {toggleActions && <div className="todo-action-modal" style={{ ...modalPos }}>
-                    <ModalHeader title='Item actions' className="todo-action-modal-header" closeModal={this.toggleActions} />
+                    <ModalHeader title='Item actions' closeModal={this.toggleActions} />
 
                     <div className="todo-action-btn-container">
 

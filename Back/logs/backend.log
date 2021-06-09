@@ -709,3 +709,22 @@
 8.6.2021, 15:29:50 - DEBUG - auth.service - login with username/email: galnelken07@gmail.com (sid: 55quRciRjdw8F2sRpsmZXZ3ZSgd3HH68)
 8.6.2021, 15:59:01 - INFO - Server is running on port: 3030 
 >>>>>>> ed9108d0d9641577e5d36f159d79401a6423f169
+08/06/2021, 17:01:33 - INFO - Server is running on port: 3030 
+08/06/2021, 17:04:40 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: szEQglb2MvFuoXn0fA8mysAPkE5g8sak)
+08/06/2021, 20:49:35 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: KFv6nAwcTMHes5gb7uQInzY1xLytKwKp)
+08/06/2021, 21:00:24 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: ohkfJRbG-ZLge8xvsfpXuFXrc5DiGoqU)
+08/06/2021, 21:00:57 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: I_zsu3awiMtVLvvHgbfMw6ZaXyyEHeBZ)
+08/06/2021, 21:43:09 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: dSKVstLg3tAhSeJfcnjjTMQfj-6GsZaU)
+08/06/2021, 21:44:28 - DEBUG - auth.service - signup with username: shirlys, fullname: Shirly Seggev,email: 123@gmail.com, imgUrl:  (sid: RdsyFU1TpepRSOASdBLZYBmN1KOK2RHO)
+08/06/2021, 21:44:28 - DEBUG - auth.route - new account created: {"fullname":"Shirly Seggev","username":"shirlys","email":"123@gmail.com","imgUrl":"","password":"$2b$10$Q.L/wSwxKFl/xjsNxcgPyOd.ixRT3gwTwdUsAgNFgiO.6ZEbW8Cpe","_id":"60bfba8c4124d60fb47bfe4b"} (sid: RdsyFU1TpepRSOASdBLZYBmN1KOK2RHO)
+08/06/2021, 21:44:28 - DEBUG - auth.service - login with username/email: 123@gmail.com (sid: RdsyFU1TpepRSOASdBLZYBmN1KOK2RHO)
+08/06/2021, 21:48:55 - DEBUG - auth.service - login with username/email: shirlys (sid: WtHw9FffgaNazWV52vrwTJPZHQ4y0usw)
+08/06/2021, 21:50:09 - DEBUG - auth.service - login with username/email: shirlys (sid: TkuFHTT310B3r3629RLsn52jdeSNtPSS)
+08/06/2021, 21:56:45 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: uTPu2AzB0jixEcc-61vmWi1K1UwmpQSD)
+08/06/2021, 21:58:10 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: uTPu2AzB0jixEcc-61vmWi1K1UwmpQSD)
+08/06/2021, 22:48:41 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: K4rFFbBiDxr-ZB2Gg366suR9vqolBqMt)
+08/06/2021, 22:50:35 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: ZaNVlfnRktI5KtqpkDL8T_MlgT3EIwfR)
+08/06/2021, 22:53:11 - DEBUG - auth.service - login with username/email: shirlyarcusin@gmail.com (sid: SdwuOoDAln8dYUz-O_UMhiFqH5QGpfuV)
+08/06/2021, 22:59:57 - ERROR - while finding board undefined | {} (sid: SdwuOoDAln8dYUz-O_UMhiFqH5QGpfuV)
+08/06/2021, 22:59:57 - ERROR - Failed to get board | {} (sid: SdwuOoDAln8dYUz-O_UMhiFqH5QGpfuV)
+08/06/2021, 23:19:36 - INFO - Server is running on port: 3030 

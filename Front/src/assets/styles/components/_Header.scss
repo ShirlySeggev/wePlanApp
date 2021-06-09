@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // position: relative;
 
     .boards-btn {
         display: flex;
@@ -24,23 +23,24 @@
         color: $clr5;
         font-size: rem(30px);
         font-family: Permanent Marker;
-        // position:absolute;
-        // top: 0;
-        // padding: 0.5rem;
-        // display: block;
+        position: absolute;
+        width: fit-content;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 5px;
+        top: 5px;
     }
- 
-    .home{
-       font-size: 1.2rem;
 
+    .home {
+        // font-size: 1.2rem;
+        font-size: 18px;
     }
-   
 }
 
 .header-format {
     align-items: center;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     background: hsla(0, 0%, 100%, 0.24);
     border-radius: 4px;
@@ -50,8 +50,9 @@
     color: #fff;
     padding: 0.5rem;
 
-    &.first{
+    &.first {
         margin-inline-end: 5px;
+        height: 37px;
     }
 
     &:hover {
@@ -61,4 +62,10 @@
     }
 }
 
-
+@media (max-width: 550px) {
+    .app-header {
+        .board {
+            display: none;
+        }
+    }
+}

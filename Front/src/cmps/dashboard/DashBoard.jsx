@@ -3,8 +3,6 @@ import {dashboard} from '../../services/dashboard.services'
 import { Bar } from 'react-chartjs-2';
 
 export function DashBoard({groups ,activities, board}){
-    console.log('groups', groups);
-    console.log('groups[0]', groups[0]);
     
     const data = {
       
@@ -13,12 +11,12 @@ export function DashBoard({groups ,activities, board}){
           {
             label:'Done Tasks' ,
             data: dashboard.getDoneTasks(groups),
-            backgroundColor: '#9DF5FF',
+            backgroundColor: '#8DA47E',
           },
           {
             label:'UnDone Tasks',
             data: dashboard.getUndoneTasks(groups),
-            backgroundColor: '#FFD47A',
+            backgroundColor: '#ff7a7b',
           },
         
         ],
@@ -38,9 +36,7 @@ export function DashBoard({groups ,activities, board}){
       
       
       return(
-        <>
         <div className="container">
-
           <div className='header'>
             <h1 className='title-dashboard flex align-center justify-center'>Tasks by group</h1>
             <div className='links'>
@@ -48,6 +44,5 @@ export function DashBoard({groups ,activities, board}){
           </div>
           <Bar className="labels" data={data} options={options} />
         </div>
-        </>
       );
 }

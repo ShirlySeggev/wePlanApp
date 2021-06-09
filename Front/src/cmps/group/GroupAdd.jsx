@@ -70,7 +70,7 @@ export class GroupAdd extends Component {
                         spellCheck="false"
                         onChange={this.handleChange}
                         onFocus={this.toggleUpdate}
-                        onBlur={this.onAddGroup}
+                        // onBlur={this.onAddGroup}
                     />
                 </form>
                 {toggleUpdate &&

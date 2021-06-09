@@ -61,7 +61,7 @@ export class TaskMembers extends Component {
                         <li key={member._id} className="task-add-member-container" onClick={() => this.onClickMember(member)}>
                             <MemberAvatar member={member} />
                             <h4>{member.fullname}</h4>
-                            <h4>({member.username})</h4>
+                            {/* <h4>({member.username})</h4> */}
                             {<FontAwesomeIcon icon={faCheck} />}
                         </li>)}
 
@@ -70,7 +70,7 @@ export class TaskMembers extends Component {
                         <li key={member._id} className="task-add-member-container" onClick={() => this.onClickMember(member)}>
                             <MemberAvatar member={member} />
                             <h4>{member.fullname}</h4>
-                            <h4>({member.username})</h4>
+                            {/* <h4>({member.username})</h4> */}
                         </li>)}
 
                 </ul>

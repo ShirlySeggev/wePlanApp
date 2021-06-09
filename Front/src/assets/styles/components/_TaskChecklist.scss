@@ -130,7 +130,7 @@
     .checklist-remove-todo {
         color: rgba(138, 135, 135, 0.418);
     }
-}+
+}
 
 // --- CHEACKLIST TODO ADD --- \\
 .checklist-add-todo-container {
@@ -234,49 +234,31 @@
 
 // TODO ACTION MODAL
 .todo-action-modal {
+    padding: 0 10px 10px 10px;
     position: absolute;
-    display: flex;
-    flex-direction: column;
+    z-index: 2;
+    width: 180px;
+    border-radius: 3px;
     box-shadow: 0 0px 3px 2px #7e7d7d78;
     background-color: #fff;
-    z-index: 2;
-    border-radius: 3px;
-    align-items: center;
-    justify-content: flex-start;
-    width: 250px;
-    .container{
-        border: none;
+    .modalHeader {
+        @include modalHeader;
     }
-    .todo-action-modal-header {
-        width: 95%;
-        display: flex;
-        padding-block: 10px;
-        border-bottom: 1px solid rgba(9, 30, 66, 0.13);
-        font-weight: bold;
-        svg {
-            position: absolute;
-            right: 10px;
-            cursor: pointer;
-            font-size: 1.2em;
-        }
-    }
+ 
+
+ 
+ 
     .todo-action-btn-container {
         display: flex;
         flex-direction: column;
         align-self: flex-start;
-        width: 100%;
         button {
             display: flex;
             font-family: Poppings, "Segoe UI", sans-serif;
-            padding: 10px;
             background-color: inherit;
             border: none;
-
-            width: 100%;
-            &:hover {
-                cursor: pointer;
-                background-color: rgba(9, 30, 66, 0.08);
-            }
+            padding: 0;
+            margin-top: 10px;
         }
     }
 }

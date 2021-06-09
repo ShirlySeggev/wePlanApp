@@ -16,7 +16,6 @@ export class TaskDetailsActivity extends Component {
         const { board } = this.props;
         const { id } = this.props.task;
         if (board.activities.length <= 0) return;
-        console.log(board.activities)
         const activities = board.activities.filter(activity => {
             if (!activity.task) return;
             if (activity.task) {

@@ -82,19 +82,21 @@ export class TaskLabel extends Component {
                 <ModalHeader title='Labels' closeModal={toggleTaskLabel} />
                 {labels.map((label, idx) => {
                     return (
-                        <div className="label-container" key={label.id}>
-                            <input
-                                style={{ backgroundColor: label.color }}
-                                value={label.title}
-                                spellCheck="false"
-                                onClick={() => this.onPickLabel(idx)}
-                                onChange={(ev) => this.handleChange(ev, label.id, idx)}
-                                ref={labelsRef[idx]}
-                            >
-                            </input>
-                            <BsPencil title="edit label name" onClick={(ev) => this.setFocus(ev, idx)} />
-                            {/* <BiCheck onClick={this.onUpdateLabel} /> */}
-                        </div>
+                        // <div  style={{ backgroundColor: label.color }} className="label-container" key={label.id}>
+                            <label className="label-container" key={label.id} >
+                                <input
+/*                                 style={{backgroundColor:'transparent'}}
+ */                                     style={{ backgroundColor: label.color }} 
+                                    value={label.title}
+                                    spellCheck="false"
+                                    onClick={() => this.onPickLabel(idx)}
+                                    onChange={(ev) => this.handleChange(ev, label.id, idx)}
+                                    ref={labelsRef[idx]}
+                                >
+                                </input>
+                                <BsPencil title="edit label name" /* onClick={(ev) => this.setFocus(ev, idx)}  */ />
+                            </label>
+                        // </div>
                     )
                 })
                 }

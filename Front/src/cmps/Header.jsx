@@ -27,8 +27,6 @@ class _Header extends Component {
 }
 
 
-{/* <MemberAvatar member={user} key={user._id} /> */}
-
 function mapStateToProps(state) {
     return {
         user: state.userModule.loggedInUser,

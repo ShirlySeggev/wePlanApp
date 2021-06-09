@@ -9,7 +9,6 @@ const clientId = '769637694802-vf75osrds0ldm86vk8q2o9n5hjvbs5k1.apps.googleuserc
 export function LoginGoogle({ submitUser, setMsg }) {
     const onSuccess = (res) => {
         const googleUser = res.profileObj
-        console.log('GOOGLE PROFILE', googleUser);
         const user = {
             email: googleUser.email,
             fullname: googleUser.name,
@@ -19,7 +18,6 @@ export function LoginGoogle({ submitUser, setMsg }) {
         }
         const isGoogle = true
         submitUser(user, isGoogle)
-        // console.log('add user',user);
         refreshTokenSetup(res);
 
     };
