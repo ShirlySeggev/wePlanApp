@@ -241,13 +241,12 @@
     border-radius: 3px;
     box-shadow: 0 0px 3px 2px #7e7d7d78;
     background-color: #fff;
+    top: 400px !important;
+    left: 470px !important;
     .modalHeader {
         @include modalHeader;
     }
- 
 
- 
- 
     .todo-action-btn-container {
         display: flex;
         flex-direction: column;
